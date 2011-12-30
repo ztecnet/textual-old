@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/NSDataHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSDataHelper.m

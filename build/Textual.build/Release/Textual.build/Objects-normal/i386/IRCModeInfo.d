@@ -1,1 +1,1 @@
-dependencies: /Users/nicholas/Downloads/textual/Classes/IRC/IRCModeInfo.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/IRC/IRCModeInfo.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/ServerSheet.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/ServerSheet.m

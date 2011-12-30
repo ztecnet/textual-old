@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/IRC/IRCChannelConfig.m
+  /Users/nicholas/Desktop/Textual/Classes/IRC/IRCChannelConfig.m

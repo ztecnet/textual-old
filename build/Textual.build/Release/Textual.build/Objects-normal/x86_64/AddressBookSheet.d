@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/AddressBookSheet.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/AddressBookSheet.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/HighlightSheet.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/HighlightSheet.m

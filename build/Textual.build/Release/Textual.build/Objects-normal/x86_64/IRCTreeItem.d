@@ -1,1 +1,1 @@
-dependencies: /Users/nicholas/Downloads/textual/Classes/IRC/IRCTreeItem.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/IRC/IRCTreeItem.m

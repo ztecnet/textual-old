@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Library/FileLogger.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/FileLogger.m

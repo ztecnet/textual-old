@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Library/RLMAsyncSocket.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/RLMAsyncSocket.m

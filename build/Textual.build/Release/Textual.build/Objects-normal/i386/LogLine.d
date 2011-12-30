@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Views/Log/LogLine.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/Views/Log/LogLine.m

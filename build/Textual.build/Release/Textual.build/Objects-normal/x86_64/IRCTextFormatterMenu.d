@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Views/IRCTextFormatterMenu.m
+  /Users/nicholas/Desktop/Textual/Classes/Views/IRCTextFormatterMenu.m

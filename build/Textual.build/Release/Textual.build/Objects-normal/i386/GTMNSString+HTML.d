@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/GTMNSString+HTML.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/GTMNSString+HTML.m

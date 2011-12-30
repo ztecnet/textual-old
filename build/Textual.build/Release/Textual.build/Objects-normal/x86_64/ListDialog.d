@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/ListDialog.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/ListDialog.m

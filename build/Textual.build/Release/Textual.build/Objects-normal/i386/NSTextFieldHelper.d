@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/NSTextFieldHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSTextFieldHelper.m

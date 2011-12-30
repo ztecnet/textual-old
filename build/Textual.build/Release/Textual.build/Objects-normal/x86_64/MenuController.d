@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Controllers/MenuController.m
+  /Users/nicholas/Desktop/Textual/Classes/Controllers/MenuController.m

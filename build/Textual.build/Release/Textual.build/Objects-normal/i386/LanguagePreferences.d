@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Library/LanguagePreferences.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/LanguagePreferences.m

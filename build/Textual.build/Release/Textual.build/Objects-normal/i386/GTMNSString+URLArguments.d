@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/GTMNSString+URLArguments.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/GTMNSString+URLArguments.m

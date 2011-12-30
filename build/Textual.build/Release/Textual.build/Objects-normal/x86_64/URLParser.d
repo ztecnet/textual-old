@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Library/URLParser.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/Library/URLParser.m

@@ -82,7 +82,8 @@
                 return [NSString stringWithFormat:@"http://puu.sh/%@.jpg", s];
             }
         }
-    } else if ([host hasSuffix:@"movapic.com"]) {
+    } 
+    else if ([host hasSuffix:@"movapic.com"]) {
 		if ([path hasPrefix:@"/pic/"]) {
 			NSString *s = [path safeSubstringFromIndex:5];
 			

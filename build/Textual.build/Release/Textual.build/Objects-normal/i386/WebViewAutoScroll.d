@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Views/Log/WebViewAutoScroll.m
+  /Users/nicholas/Desktop/Textual/Classes/Views/Log/WebViewAutoScroll.m

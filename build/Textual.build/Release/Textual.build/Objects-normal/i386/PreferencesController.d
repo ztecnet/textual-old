@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/Preferences/PreferencesController.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/Preferences/PreferencesController.m

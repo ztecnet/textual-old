@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/NSOutlineViewHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSOutlineViewHelper.m

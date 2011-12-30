@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Library/../IRC/AddressBook.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/../IRC/AddressBook.m

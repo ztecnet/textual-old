@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Views/Log/LogScriptEventSink.m
+  /Users/nicholas/Desktop/Textual/Classes/Views/Log/LogScriptEventSink.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/NSPasteboardHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSPasteboardHelper.m

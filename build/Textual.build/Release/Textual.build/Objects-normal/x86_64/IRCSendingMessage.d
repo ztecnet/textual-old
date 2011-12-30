@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/IRC/IRCSendingMessage.m
+  /Users/nicholas/Desktop/Textual/Classes/IRC/IRCSendingMessage.m

@@ -1,1 +1,1 @@
-dependencies: /Users/nicholas/Downloads/textual/Classes/Views/DockIcon.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/Views/DockIcon.m

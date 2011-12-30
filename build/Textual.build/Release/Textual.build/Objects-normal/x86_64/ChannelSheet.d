@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Dialogs/ChannelSheet.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/ChannelSheet.m

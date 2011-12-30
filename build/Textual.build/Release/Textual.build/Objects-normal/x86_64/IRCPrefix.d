@@ -1,1 +1,1 @@
-dependencies: /Users/nicholas/Downloads/textual/Classes/IRC/IRCPrefix.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/IRC/IRCPrefix.m

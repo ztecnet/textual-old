@@ -1858,7 +1858,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 						}
 						
 						if (c) {
-							[self printBoth:c type:type nick:myNick text:t identified:YES];
+							[self printBoth:[world selectedChannelOn:self] type:type nick:myNick text:t identified:YES];
 							
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;
@@ -1882,7 +1882,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 						[self send:localCmd, chname, t, nil];
 
                         if (c && [Preferences giveFocusOnMessage]) {
-                            [world select:c];
+                            [world selectedChannelOn:self];
                         }
 					}
 				}

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/NSNumberHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSNumberHelper.m

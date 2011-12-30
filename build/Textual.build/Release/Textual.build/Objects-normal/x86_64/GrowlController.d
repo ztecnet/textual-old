@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Controllers/GrowlController.m
+  /Users/nicholas/Desktop/Textual/Classes/Controllers/GrowlController.m

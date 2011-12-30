@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Downloads/textual/Classes/Helpers/UnicodeHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/UnicodeHelper.m
