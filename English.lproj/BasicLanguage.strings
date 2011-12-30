@@ -139,7 +139,7 @@
 "IRC_USER_WHOWAS_HOSTMASK" = "%1$@ had userhost %2$@@%3$@ and realname %4$@";
 "IRC_USER_WHOIS_UPTIME" = "%1$@ signed on at %2$@ and has been idle for %3$@";
 "IRC_CHANNEL_TOPIC_CHANGED" = "\002%1$@\002 changed the topic to \002%2$@\002";
-"IRC_USER_KICKED_FROM_CHANNEL" = "\002%1$@\002 kicked \002%2$@\002 from the channel. (%3$@)";
+"IRC_USER_KICKED_FROM_CHANNEL" = "\002%2$@\002 was kicked from the channel by \002%1$@\002. (%3$@)";
 
 "INPUT_TEXT_FIELD_PLACE_HOLDER" = "Type text here and then press Enter to send it";
 
