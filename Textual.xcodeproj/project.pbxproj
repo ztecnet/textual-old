@@ -2270,11 +2270,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = Resources/Miscellaneous/Info.plist;
-<<<<<<< HEAD
 				INSTALL_PATH = /Users/nicholas/Desktop;
-=======
-				INSTALL_PATH = /Applications;
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 				KEEP_PRIVATE_EXTERNS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
@@ -2356,11 +2352,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Resources/Miscellaneous/Info.plist;
-<<<<<<< HEAD
 				INSTALL_PATH = /Users/nicholas/Desktop;
-=======
-				INSTALL_PATH = /Applications;
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 				KEEP_PRIVATE_EXTERNS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
@@ -2403,11 +2395,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = Resources/Miscellaneous/Info.plist;
-<<<<<<< HEAD
 				INSTALL_PATH = /Users/nicholas/Desktop;
-=======
-				INSTALL_PATH = /Applications;
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 				KEEP_PRIVATE_EXTERNS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
@@ -2512,11 +2500,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = Resources/Miscellaneous/Info.plist;
-<<<<<<< HEAD
 				INSTALL_PATH = /Users/nicholas/Desktop;
-=======
-				INSTALL_PATH = /Applications;
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 				KEEP_PRIVATE_EXTERNS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
@@ -2527,11 +2511,7 @@
 				);
 				PRODUCT_NAME = Textual;
 				SDKROOT = "";
-<<<<<<< HEAD
 				VERSION_INFO_BUILDER = /Applications;
-=======
-				VERSION_INFO_BUILDER = "Codeux Software";
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};

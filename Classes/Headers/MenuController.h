@@ -138,10 +138,7 @@
 - (void)onWantHostServVhostSet:(id)sender;
 - (void)onWantFindPanel:(id)sender;
 - (void)onWantChannelBanList:(id)sender;
-<<<<<<< HEAD
 - (void)onWantGlineBanList:(id)sender;
-=======
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 - (void)onWantChannelBanExceptionList:(id)sender;
 - (void)onWantChannelInviteExceptionList:(id)sender;
 

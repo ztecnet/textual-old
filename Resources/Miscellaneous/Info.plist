@@ -5,11 +5,7 @@
 	<key>Build Number</key>
 	<string>5</string>
 	<key>Build Reference</key>
-<<<<<<< HEAD
 	<string>2.1 ZTN 1.0.4-7-g8c947eb-master</string>
-=======
-	<string>2.1 ZTN 1.0.3-7-g8c947eb-master</string>
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 	<key>CFBundleExecutable</key>
 	<string>Textual</string>
 	<key>CFBundleIconFile</key>
@@ -23,11 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-<<<<<<< HEAD
 	<string>2.1 ZTN 1.0.4</string>
-=======
-	<string>2.1 ZTN 1.0.3</string>
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 	<key>CFBundleSignature</key>
 	<string>TXTL</string>
 	<key>CFBundleURLTypes</key>
@@ -46,11 +38,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-<<<<<<< HEAD
 	<string>2.1 ZTN 1.0.4</string>
-=======
-	<string>2.1 ZTN 1.0.3</string>
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.social-networking</string>
 	<key>LSArchitecturePriority</key>

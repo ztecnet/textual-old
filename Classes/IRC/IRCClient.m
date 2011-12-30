@@ -2534,7 +2534,6 @@ static NSDateFormatter *dateTimeFormatter = nil;
 			return YES;
 			break;
 		}
-<<<<<<< HEAD
 //		case 96: // Command: ZLINE
 //		case 97: // Command: GLINE
 //		case 98: // Command: GZLINE
@@ -2571,44 +2570,6 @@ static NSDateFormatter *dateTimeFormatter = nil;
 //			return YES;
 //			break;
 //		}
-=======
-		case 96: // Command: ZLINE
-		case 97: // Command: GLINE
-		case 98: // Command: GZLINE
-		{
-			NSString *peer = s.getToken.string;
-			
-			if ([peer hasPrefix:@"-"]) {
-				[self send:cmd, peer, s.string, nil];
-			} else {
-				NSString *time   = s.getToken.string;
-				NSString *reason = s.string;
-				
-				if (peer) {
-					reason = [reason trim];
-					
-					if (NSObjectIsEmpty(reason)) {
-						reason = [Preferences IRCopDefaultGlineMessage];
-						
-						if ([reason contains:NSWhitespaceCharacter]) {
-							NSInteger spacePos = [reason stringPosition:NSWhitespaceCharacter];
-							
-							if (NSObjectIsEmpty(time)) {
-								time = [reason safeSubstringToIndex:spacePos];
-							}
-							
-							reason = [reason safeSubstringAfterIndex:spacePos];
-						}
-					}
-					
-					[self send:cmd, peer, time, reason, nil];
-				}
-			}
-			
-			return YES;
-			break;
-		}
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 		case 99:  // Command: SHUN
 		case 100: // Command: TEMPSHUN
 		{

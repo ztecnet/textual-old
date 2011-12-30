@@ -1493,11 +1493,7 @@
 
 - (void)onWantTextualConnnectToHelp:(id)sender 
 {
-<<<<<<< HEAD
 	[world createConnection:@"irc.ztecnet.net +6697" chan:@"#ztecnet"];
-=======
-	[world createConnection:@"irc.wyldryde.org +6697" chan:@"#textual,#textual-offtopic"];
->>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 }
 
 - (void)__onWantHostServVhostSet:(id)sender andVhost:(NSString *)vhost
