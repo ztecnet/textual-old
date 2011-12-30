@@ -168,7 +168,11 @@
 - (void)queueLoop
 {
     if ([view isLoading]) {
+<<<<<<< HEAD
         while ([view isLoading]) {
+=======
+        while ([view isLoading] && PointerIsEmpty([self mainFrameDocument])) {
+>>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
             [NSThread sleepForTimeInterval:0.2];
             
             continue;

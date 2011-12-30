@@ -74,6 +74,7 @@
 				return [NSString stringWithFormat:@"http://img.ly/show/large/%@", s];
 			}
 		}
+<<<<<<< HEAD
 	} else if ([host isEqualToString:@"puu.sh"]) {
         if (NSObjectIsNotEmpty(path)) {
             NSString *s = [path safeSubstringFromIndex:1];
@@ -83,6 +84,9 @@
             }
         }
     } else if ([host hasSuffix:@"movapic.com"]) {
+=======
+	} else if ([host hasSuffix:@"movapic.com"]) {
+>>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
 		if ([path hasPrefix:@"/pic/"]) {
 			NSString *s = [path safeSubstringFromIndex:5];
 			

@@ -24,13 +24,19 @@
     self = [super initWithCoder:coder];
 	
 	if (self) {
+<<<<<<< HEAD
             
+=======
+>>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
         self.delegate = self;
         
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
         
         /* Default Value */
+<<<<<<< HEAD
         if ([Preferences handleIRCopAlerts]) {
+=======
+>>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
         [attrs setObject:DefaultTextFieldFont forKey:NSFontAttributeName];
         [attrs setObject:[NSColor grayColor]  forKey:NSForegroundColorAttributeName];
         
@@ -49,8 +55,13 @@
         [self setStringValue:NSNullObject];
         
         [temps drain];
+<<<<<<< HEAD
      }
             }
+=======
+    }
+	
+>>>>>>> 1eb178c528991d7ae8053a4497cb75aa29687673
     return self;
 }
 
