@@ -1858,8 +1858,12 @@ static NSDateFormatter *dateTimeFormatter = nil;
 						}
 						
 						if (c) {
+                            if ([cmd isEqualToString:IRCCI_PRIVMSG]) {
+                                [self printBoth:c type:type nick:myNick text:t identified:YES];
+                            }
+                            else {
 							[self printBoth:[world selectedChannelOn:self] type:type nick:myNick text:t identified:YES];
-							
+							}
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;
 							}
