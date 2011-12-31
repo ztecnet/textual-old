@@ -104,7 +104,7 @@
     
 	[scroller	setFrame:textBoxFrame];
 	[superView	setFrame:superViewFrame];
-    
+   
     [scroller setNeedsDisplay:YES];
 }
 
