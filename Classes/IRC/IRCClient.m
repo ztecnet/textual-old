@@ -1886,7 +1886,9 @@ static NSDateFormatter *dateTimeFormatter = nil;
 						[self send:localCmd, chname, t, nil];
 
                         if (c && [Preferences giveFocusOnMessage]) {
-                            [world selectedChannelOn:self];
+                            if ([cmd isEqualToString:IRCCI_PRIVMSG]) {
+                                [world select:c];
+                            }
                         }
 					}
 				}

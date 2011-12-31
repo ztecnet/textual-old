@@ -4,7 +4,7 @@
 *.pbxuser
 *.perspectivev3
 *.pyc
-build.sh
+*.sh
 Rakefile
 build/
 Signing/

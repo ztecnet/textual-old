@@ -1,0 +1,55 @@
+--v1.0.9--
+-fixed white bar appearing when you enter fullscreen and type text
+-updated version number
+
+--v1.0.8.3--
+-fixed nickserv password field in server settings (again, still useless with atheme)
+-updated version number
+
+--v1.0.8.2--
+-re-added nickserv password field in server settings (still useless with atheme)
+
+--v1.0.8.1--
+-removed nickserv password field in server settings (useless with atheme)
+
+--v1.0.8--
+-added Sparkle automatic updates
+-changed default quit message
+-changed kick message
+-changed IRC networks list
+
+--v1.0.7--
+-fixed major bug with /msg
+
+--v1.0.6--
+-changed some more colors
+-moved location of overlay toggle AGAIN
+
+--v1.0.5--
+-fixed notice focus
+-changed location of overlay toggle
+-changed kick text
+-fixed bug where images opened twice when clicked
+-added alias script (/alias)
+
+--v1.0.4--
+-fixed crash on /clear
+-updated image parser to show puu.sh images
+-changed help server address
+-removed gline override
+-made input overlay togglable
+
+--v1.0.3--
+-added additional scripts courtesy of Ryan H. (techhelper1)
+
+--v1.0.2--
+-updated xsysinfo script (1.6.0 -> 2.0.4)
+-updated IRCNetworks.plist to include more networks
+-updated quit message
+-updated about message
+
+--v1.0.1--
+-bug fix for text entry bar left padding (was too large)
+
+--v1.0--
+Original build
