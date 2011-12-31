@@ -141,7 +141,7 @@
 "IRC_CHANNEL_TOPIC_CHANGED" = "\002%1$@\002 changed the topic to \002%2$@\002";
 "IRC_USER_KICKED_FROM_CHANNEL" = "\002%2$@\002 was kicked from the channel by \002%1$@\002 (%3$@)";
 
-"INPUT_TEXT_FIELD_PLACE_HOLDER" = "Type text here and then press Enter to send it";
+"INPUT_TEXT_FIELD_PLACE_HOLDER" = "Type something here and then press Enter to send it";
 
 "IRC_HAS_NETWORK_NAME" = "%@ IRC Network";
 
