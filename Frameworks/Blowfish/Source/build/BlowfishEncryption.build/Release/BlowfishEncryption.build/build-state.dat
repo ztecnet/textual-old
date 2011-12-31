@@ -2,39 +2,39 @@ TBlowfishEncryption
 v4
 r1
 cCheck dependencies
-cSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current A
-cSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources
-cSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption
-cSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers
-cProcessInfoPlistFile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist
+cSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current A
+cSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources
+cSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption
+cSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers
+cProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist
 cCpHeader Classes/DH1080.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h
 cCpHeader Classes/BlowfishEncryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h
 cCpHeader Classes/Encryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h
-cProcessPCH /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gdpwgxgxgagikjfhkqoulxrnnadr/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gyobsuxuiatcbxhhdrhcfawvrlka/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-ahiwuslnhngdmagvnjiyifxwtagm/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-hdsnqcsuwnvllcfciqjsiseocxhs/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-etjuvelpzalmupfljuoqrvaeurxp/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-csozgejncgpftwaxhxzcfashehwg/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386
-cCreateUniversalBinary /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"
-cGenerateDSYMFile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
-cTouch /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
+cProcessPCH /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-eltpdoifiojmnreszvnwpxymbaxw/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gmxqewihcvksimcnibrtkezjuxqp/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-fntrjzhrthnmvnhkpbephgpjfcsb/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-giywbtzrorpvaicpeonjzvxjotzl/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-cjqaeoieqpbntegpdmwcmmlkhrin/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-bhcyotljqotxytenjaecqpbfgjpr/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64
+cLd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386
+cCreateUniversalBinary /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"
+cGenerateDSYMFile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
+cTouch /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
 
 N/Developer/SDKs/MacOSX10.6.sdk
-c000000004EDD57EF00000000000000EE
-t1323128815
+c000000004EBDEBD100000000000000EE
+t1321069521
 s238
 
 N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework/Security
@@ -53,454 +53,454 @@ t1311713671
 s126180
 
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004E12ABDC0000000000006560
-t1309846492
+c000000004EBDCD2D0000000000006560
+t1321061677
 s25952
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/BlowfishEncryption_Prefix.pch
-c000000004EFE0E9C0000000000000032
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/BlowfishEncryption_Prefix.pch
+c000000004EFE6EE60000000000000032
+t1325297382
 s50
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/BlowfishEncryption.h
-c000000004EFE0E9C0000000000000097
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/BlowfishEncryption.h
+c000000004EFE6EE60000000000000097
+t1325297382
 s151
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.h
-c000000004EFE0E9C00000000000000ED
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.h
+c000000004EFE6EE600000000000000ED
+t1325297382
 s237
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
-c000000004EFE0E9C0000000000000521
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
+c000000004EFE6EE60000000000000521
+t1325297382
 s1313
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.h
-c000000004EFE0E9C0000000000000135
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.h
+c000000004EFE6EE60000000000000135
+t1325297382
 s309
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
-c000000004EFE0E9C0000000000000483
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
+c000000004EFE6EE60000000000000483
+t1325297382
 s1155
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
-c000000004EFE0E9C0000000000000F8D
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
+c000000004EFE6EE60000000000000F8D
+t1325297382
 s3981
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
-c000000004EFE0E9C0000000000000D05
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
+c000000004EFE6EE60000000000000D05
+t1325297382
 s3333
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
-c000000004EFE0E9C00000000000012D0
-t1325272732
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
+c000000004EFE6EE600000000000012D0
+t1325297382
 s4816
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption.LinkFileList
-c000000004EFEA04E000000000000030C
-t1325310030
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption.LinkFileList
+c000000004EFF502D0000000000000302
+t1325355053
+s770
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption
+t2
+s0
+
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption.LinkFileList
+c000000004EFF502D000000000000030C
+t1325355053
 s780
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption.LinkFileList
-c000000004EFEA04E0000000000000316
-t1325310030
-s790
-
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources
+N/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current
 t2
 s0
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
-t2
-s0
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-bhcyotljqotxytenjaecqpbfgjpr/BlowfishEncryption_Prefix.pch.pth
+t1325301256
+s14008240
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h
-t2
-s0
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-cjqaeoieqpbntegpdmwcmmlkhrin/BlowfishEncryption_Prefix.pch.pth
+t1325301253
+s76120
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h
-t2
-s0
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-eltpdoifiojmnreszvnwpxymbaxw/BlowfishEncryption_Prefix.pch.pth
+t1325301255
+s10323836
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h
-t2
-s0
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-fntrjzhrthnmvnhkpbephgpjfcsb/BlowfishEncryption_Prefix.pch.pth
+t1325301255
+s13156544
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist
-t2
-s0
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-giywbtzrorpvaicpeonjzvxjotzl/BlowfishEncryption_Prefix.pch.pth
+t1325301255
+s11019048
 
-N/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current
-t2
-s0
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-ahiwuslnhngdmagvnjiyifxwtagm/BlowfishEncryption_Prefix.pch.pth
-t1325274121
-s13156556
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-csozgejncgpftwaxhxzcfashehwg/BlowfishEncryption_Prefix.pch.pth
-t1325274127
-s14008256
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-etjuvelpzalmupfljuoqrvaeurxp/BlowfishEncryption_Prefix.pch.pth
-t1325274123
-s76144
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gdpwgxgxgagikjfhkqoulxrnnadr/BlowfishEncryption_Prefix.pch.pth
-t1325274120
-s10323856
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gyobsuxuiatcbxhhdrhcfawvrlka/BlowfishEncryption_Prefix.pch.pth
-t1325274115
-s77596
-
-N/var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-hdsnqcsuwnvllcfciqjsiseocxhs/BlowfishEncryption_Prefix.pch.pth
-t1325274125
-s11019072
+N/var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gmxqewihcvksimcnibrtkezjuxqp/BlowfishEncryption_Prefix.pch.pth
+t1325301253
+s77572
 
 NInfo.plist
-c000000004EFE0E9C000000000000026B
-t1325272732
+c000000004EFE6EE6000000000000026B
+t1325297382
 s619
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc631eecdd7aeb441^cac471ced7aeb441^---0#1#0#--18"Check dependencies36"AE395BFE-AB5F-4D89-8803-DEA979547051-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies5c56a5ad87afb441^e771ecad87afb441^---0#1#0#--18"Check dependencies36"D9E31379-E066-4E39-BD10-D5624C9191BC-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002839.366149
-e347002840.256246
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047855.091948
+e347047855.638202
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
 xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mmfe6563d7d7aeb441^d09841d8d7aeb441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm0000000000000000^2693"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-csozgejncgpftwaxhxzcfashehwg/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o36"C935F56A-0D4B-4C87-A093-99C232B7DD41-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm35ec17af87afb441^bb61a3af87afb441^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm0000000000000000^2669"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o Classes/DH1080.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-bhcyotljqotxytenjaecqpbfgjpr/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/DH1080.o36"1C1ECAAF-547D-4F2F-94C6-D5648EC7FF46-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347002835.107070
-e347002836.194730
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.115395
+e347047854.199779
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.medb61bd3d7aeb441^ffe631d4d7aeb441^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m0000000000000000^2658"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-hdsnqcsuwnvllcfciqjsiseocxhs/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o36"8201B36D-34BF-4CF2-BB24-6D07185255AE-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.mba111eae87afb441^829133ae87afb441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m0000000000000000^2634"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o Classes/Encryption.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-giywbtzrorpvaicpeonjzvxjotzl/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/Encryption.o36"4C192EA7-730E-47FF-8AA0-406E005CA12D-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347002839.193701
-e347002839.357237
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.981103
+e347047855.090360
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m65e331d7d7aeb441^5c735bd7d7aeb441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m0000000000000000^2663"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-hdsnqcsuwnvllcfciqjsiseocxhs/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o36"82082199-DC09-47D2-9C77-7F5598E6ABA4-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.mca6dfbae87afb441^6f2d17af87afb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m0000000000000000^2639"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o Classes/blowfish_be.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-giywbtzrorpvaicpeonjzvxjotzl/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/blowfish_be.o36"253E2508-AEA0-421E-9C40-6E3539FF948F-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002836.210287
-e347002838.367819
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.201215
+e347047855.706341
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cppc42236d4d7aeb441^fa295ed6d7aeb441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp0000000000000000^2514"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-etjuvelpzalmupfljuoqrvaeurxp/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o36"0D1BF519-A37C-4696-AF26-F2DD969F2CB2-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp80d733ae87afb441^1bd6b4af87afb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp0000000000000000^2490"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o Classes/dh1080_be.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-cjqaeoieqpbntegpdmwcmmlkhrin/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/dh1080_be.o36"31596587-D6F6-4F33-98EB-1C96240FCA7D-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002836.497232
-e347002837.199280
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.742327
+e347047855.619498
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cppbb977fd4d7aeb441^c00333d5d7aeb441^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp0000000000000000^2489"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-etjuvelpzalmupfljuoqrvaeurxp/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o36"7609BDAF-40AA-4D95-8C71-C094FE1C95A3-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp49bebeae87afb441^d49a9eaf87afb441^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp0000000000000000^2465"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o Classes/misc.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-cjqaeoieqpbntegpdmwcmmlkhrin/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/misc.o36"6D25FD8F-FFD3-47F4-9151-BB072BB5E227-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002834.780360
-e347002836.445179
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.101611
+e347047854.740008
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm
 xnormal
 xx86_64
 xobjective-c++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm770fc8d2d7aeb441^4f0772d4d7aeb441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm0000000000000000^2705"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-ahiwuslnhngdmagvnjiyifxwtagm/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o36"A934488B-69B4-4DB1-B058-47BE1A3C7658-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mmb4581aae87afb441^2c80bdae87afb441^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm0000000000000000^2681"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o Classes/DH1080.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-fntrjzhrthnmvnhkpbephgpjfcsb/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.mm -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/DH1080.o36"A571F286-310F-4923-8537-F711BFBA16F8-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347002830.611607
-e347002831.705597
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.019902
+e347047854.100420
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m40dd9cced7aeb441^a9a2b4cfd7aeb441^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m0000000000000000^2670"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gdpwgxgxgagikjfhkqoulxrnnadr/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o36"AFC26FBA-947E-483A-8E5A-1DAC0D197CB4-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.md87f05ae87afb441^f1b71dae87afb441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m0000000000000000^2646"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o Classes/Encryption.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-eltpdoifiojmnreszvnwpxymbaxw/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.m -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/Encryption.o36"CBE96997-840C-4393-BB60-BC928E974C55-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347002834.581432
-e347002834.779057
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.019942
+e347047854.112918
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.md21c95d2d7aeb441^0470c7d2d7aeb441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m0000000000000000^2675"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gdpwgxgxgagikjfhkqoulxrnnadr/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o36"7C117938-48B2-4A05-8FDB-7CFA72D4F5EE-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m728705ae87afb441^7ac31dae87afb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m0000000000000000^2651"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o Classes/blowfish_be.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-eltpdoifiojmnreszvnwpxymbaxw/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/blowfish_be.m -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/blowfish_be.o36"E3204B38-F7D5-44F9-B232-5DDAF497DFDA-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002831.706921
-e347002834.578393
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.019909
+e347047855.425485
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp9545b5cfd7aeb441^082194d2d7aeb441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp0000000000000000^2526"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gyobsuxuiatcbxhhdrhcfawvrlka/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o36"57498988-A3B7-42A8-93FA-EDDBD234BC1B-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cppf08505ae87afb441^2ae26caf87afb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp0000000000000000^2502"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o Classes/dh1080_be.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gmxqewihcvksimcnibrtkezjuxqp/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/dh1080_be.cpp -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/dh1080_be.o36"55E7C497-8CB3-40A7-8807-0DB09D4D2018-
 
-CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s347002834.579824
-e347002835.105572
+CCompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s347047854.019935
+e347047854.978439
 r1
 xCompileC
 xbuild/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp45b994d2d7aeb441^4a071bd3d7aeb441^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp0000000000000000^2501"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gyobsuxuiatcbxhhdrhcfawvrlka/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.d -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o36"AB068405-9BB1-4154-BDEB-5996F3402B76-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp728705ae87afb441^d07cfaae87afb441^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp0000000000000000^2477"CompileC build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o Classes/misc.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/BlowfishEncryption-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/include -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -include /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gmxqewihcvksimcnibrtkezjuxqp/BlowfishEncryption_Prefix.pch -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.d -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/misc.o36"94722FBE-0450-4912-8EAE-B059D28F6CC6-
 
 CCpHeader Classes/BlowfishEncryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h
-s347002830.558998
-e347002830.590900
+s347047853.998196
+e347047854.003041
 r1
 xCpHeader
 xClasses/BlowfishEncryption.h
 xbuild/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.hdd618fced7aeb441^634797ced7aeb441^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h00f4e0acddffdf42^535"CpHeader Classes/BlowfishEncryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/BlowfishEncryption.h /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"4AD7236E-75CA-48E8-B8C9-9F321657F25A-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h72deffad87afb441^43c900ae87afb441^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h00f438a0dcffdf42^529"CpHeader Classes/BlowfishEncryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/BlowfishEncryption.h    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/BlowfishEncryption.h /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"1C719FB9-C0FD-4752-875D-6F28FED79043-
 
 CCpHeader Classes/DH1080.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h
-s347002830.544661
-e347002830.557738
+s347047853.998175
+e347047854.001798
 r1
 xCpHeader
 xClasses/DH1080.h
 xbuild/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h18b58bced7aeb441^21cb8eced7aeb441^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h00f4e0acddffdf42^499"CpHeader Classes/DH1080.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.h /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"D898E6ED-133F-4235-8AD2-DDF6E19DAA3F-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h14d1ffad87afb441^197600ae87afb441^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h00f438a0dcffdf42^493"CpHeader Classes/DH1080.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/DH1080.h    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/DH1080.h /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"67E56408-0E2B-4BCA-B554-931495235CD5-
 
 CCpHeader Classes/Encryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h
-s347002830.592211
-e347002830.596244
+s347047853.998217
+e347047854.004630
 r1
 xCpHeader
 xClasses/Encryption.h
 xbuild/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.hfaed97ced7aeb441^64ae98ced7aeb441^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h00f4e0acddffdf42^511"CpHeader Classes/Encryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.h /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"B69BECF8-2461-4C3D-A2B9-B66D243D6145-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h36e4ffad87afb441^032501ae87afb441^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h00f438a0dcffdf42^505"CpHeader Classes/Encryption.h build/Release/BlowfishEncryption.framework/Versions/A/Headers/Encryption.h    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/Encryption.h /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Headers36"126E9C80-14DE-4438-B0C9-63318535AA37-
 
-CCreateUniversalBinary /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"
-s347002840.756141
-e347002840.797246
+CCreateUniversalBinary /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"
+s347047855.812260
+e347047855.829751
 r1
 xCreateUniversalBinary
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
 xnormal
 xx86_64 i386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"Create universal binary /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption03cfc1d8d7aeb441^c119ccd8d7aeb441^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption00f4e0acddffdf42^682"CreateUniversalBinary build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /usr/bin/lipo -create /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption -output /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption36"7D9D91DA-BC03-41C4-B58F-D21932D536CC-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Create universal binary /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption85b6d0af87afb441^e76dd4af87afb441^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption00f438a0dcffdf42^674"CreateUniversalBinary build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption normal "x86_64 i386"    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /usr/bin/lipo -create /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption -output /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption36"FB1B68EF-382A-4A9A-B130-B0B1BC97B707-
 
-CGenerateDSYMFile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
-s347002840.804022
-e347002840.913507
+CGenerateDSYMFile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
+s347047855.838298
+e347047855.908551
 r1
 xGenerateDSYMFile
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Generating /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYMf110ced8d7aeb441^f4dde9d8d7aeb441^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM00f4e0acddffdf42^484"GenerateDSYMFile build/Release/BlowfishEncryption.framework.dSYM build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /Developer/usr/bin/dsymutil /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM36"7539F947-C4A4-41B1-8C2E-0E8814C9444E-
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Generating /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYMb7d3d6af87afb441^8198e8af87afb441^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM00f438a0dcffdf42^478"GenerateDSYMFile build/Release/BlowfishEncryption.framework.dSYM build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /Developer/usr/bin/dsymutil /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/BlowfishEncryption -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework.dSYM36"E80F2DFE-6319-48D9-A2B1-40587E50165A-
 
-CLd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386
-s347002840.263846
-e347002840.749123
+CLd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386
+s347047855.715679
+e347047855.804864
 r1
 xLd
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption
 xnormal
 xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryptiond1cc43d8d7aeb441^60c7bfd8d7aeb441^---0#0#0#--1073"Ld build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -filelist /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption.LinkFileList -install_name "@executable_path/../Frameworks/BlowfishEncryption.framework/Versions/A/BlowfishEncryption" -mmacosx-version-min=10.6 -framework Cocoa -framework Security -lcrypto -lssl -single_module -compatibility_version 1 -current_version 1 -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption36"324263E8-1FBE-4591-9C5D-E57F8A8A0C52-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection166"Link /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption6974b7af87afb441^f50fceaf87afb441^---0#0#0#--1063"Ld build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption normal i386    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -filelist /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption.LinkFileList -install_name "@executable_path/../Frameworks/BlowfishEncryption.framework/Versions/A/BlowfishEncryption" -mmacosx-version-min=10.6 -framework Cocoa -framework Security -lcrypto -lssl -single_module -compatibility_version 1 -current_version 1 -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/i386/BlowfishEncryption36"A250C925-C372-45B3-A373-B8ADBC8D1220-
 
-CLd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64
-s347002837.200657
-e347002839.192492
+CLd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64
+s347047855.448389
+e347047855.595502
 r1
 xLd
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption
 xnormal
 xx86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Link /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption2ba133d5d7aeb441^605931d7d7aeb441^---0#0#0#--1083"Ld build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang++ -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -F/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -filelist /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption.LinkFileList -install_name "@executable_path/../Frameworks/BlowfishEncryption.framework/Versions/A/BlowfishEncryption" -mmacosx-version-min=10.6 -framework Cocoa -framework Security -lcrypto -lssl -single_module -compatibility_version 1 -current_version 1 -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption36"4D1626EC-D827-45EB-9DC1-9C7307BE8068-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryptionb91c73af87afb441^9b7398af87afb441^---0#0#0#--1073"Ld build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption normal x86_64    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang++ -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release -filelist /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption.LinkFileList -install_name "@executable_path/../Frameworks/BlowfishEncryption.framework/Versions/A/BlowfishEncryption" -mmacosx-version-min=10.6 -framework Cocoa -framework Security -lcrypto -lssl -single_module -compatibility_version 1 -current_version 1 -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/BlowfishEncryption.build/Release/BlowfishEncryption.build/Objects-normal/x86_64/BlowfishEncryption36"FC80973A-5EDA-4951-80FF-947FBE8F1AF1-
 
-CProcessInfoPlistFile /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist
-s347002830.532732
-e347002830.536913
+CProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist
+s347047853.984642
+e347047853.990237
 r1
 xProcessInfoPlistFile
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist
 xInfo.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist72a388ced7aeb441^757389ced7aeb441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/Info.plist0000000000000000^392"ProcessInfoPlistFile build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist36"A14D0C71-7C6B-415F-B048-BC0785C8D807-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plistc24ffcad87afb441^a180fdad87afb441^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Info.plist0000000000000000^388"ProcessInfoPlistFile build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist Info.plist    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/A/Resources/Info.plist36"D7AC871F-BBF5-4A64-8788-16840AAC5D91-
 
-CProcessPCH /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gdpwgxgxgagikjfhkqoulxrnnadr/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-eltpdoifiojmnreszvnwpxymbaxw/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CProcessPCH /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-hdsnqcsuwnvllcfciqjsiseocxhs/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-giywbtzrorpvaicpeonjzvxjotzl/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-ahiwuslnhngdmagvnjiyifxwtagm/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-bhcyotljqotxytenjaecqpbfgjpr/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-csozgejncgpftwaxhxzcfashehwg/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-cjqaeoieqpbntegpdmwcmmlkhrin/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-etjuvelpzalmupfljuoqrvaeurxp/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-fntrjzhrthnmvnhkpbephgpjfcsb/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CProcessPCH++ /var/folders/wg/p3lcf0wn4qg09stz092w9t6r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gyobsuxuiatcbxhhdrhcfawvrlka/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+CProcessPCH++ /var/folders/1h/yl6dnn9s0l33k19ys882sk1c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BlowfishEncryption_Prefix-gmxqewihcvksimcnibrtkezjuxqp/BlowfishEncryption_Prefix.pch.pth BlowfishEncryption_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
-CSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption
-s347002830.499141
-e347002830.513312
+CSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption
+s347047853.944413
+e347047853.953358
 r1
 xSymLink
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption
 xVersions/Current/BlowfishEncryption
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Process /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption707d80ced7aeb441^b87583ced7aeb441^---0#0#0#--349"SymLink build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/BlowfishEncryption /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption36"AC51308C-2AAE-4DE0-9949-1E42C3999EEC-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Process /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption0a4df2ad87afb441^3010f4ad87afb441^---0#0#0#--345"SymLink build/Release/BlowfishEncryption.framework/BlowfishEncryption Versions/Current/BlowfishEncryption    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/BlowfishEncryption /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/BlowfishEncryption36"E5D555CD-D79E-4508-B809-E8E95E8297CD-
 
-CSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers
-s347002830.515242
-e347002830.524440
+CSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers
+s347047853.964077
+e347047853.971717
 r1
 xSymLink
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers
 xVersions/Current/Headers
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Process /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers032684ced7aeb441^5b4286ced7aeb441^---0#0#0#--305"SymLink build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/Headers /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers36"2B90BF2E-5334-4019-9513-1846837CA5B8-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Process /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers4209f7ad87afb441^50c2f8ad87afb441^---0#0#0#--301"SymLink build/Release/BlowfishEncryption.framework/Headers Versions/Current/Headers    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/Headers /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Headers36"B4584418-DDD9-4D10-A2DE-9BA4B0731E66-
 
-CSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources
-s347002830.464402
-e347002830.489413
+CSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources
+s347047853.943477
+e347047853.954900
 r1
 xSymLink
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources
 xVersions/Current/Resources
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Process /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resourcesa12d77ced7aeb441^130a7dced7aeb441^---0#0#0#--313"SymLink build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/Resources /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources36"68EE8F61-879A-4E37-B2A7-E3D2EA3F6A59-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Process /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources2b4df2ad87afb441^4e7df4ad87afb441^---0#0#0#--309"SymLink build/Release/BlowfishEncryption.framework/Resources Versions/Current/Resources    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf Versions/Current/Resources /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Resources36"0F655C28-E9AA-4001-AA64-FDA082CF7A9B-
 
-CSymLink /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current A
-s347002830.464266
-e347002830.489438
+CSymLink /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current A
+s347047853.943440
+e347047853.957196
 r1
 xSymLink
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current
 xA
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Process /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current902d77ced7aeb441^77127dced7aeb441^---0#0#0#--277"SymLink build/Release/BlowfishEncryption.framework/Versions/Current A    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf A /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current36"ECF2058A-C79B-4FC6-B46A-0D6EB15FD0F2-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Process /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Currentcf4ef2ad87afb441^c80bf5ad87afb441^---0#0#0#--273"SymLink build/Release/BlowfishEncryption.framework/Versions/Current A    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /bin/ln -sf A /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework/Versions/Current36"9FC615B4-05CB-4EAC-BEAC-2B3861A70334-
 
-CTouch /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
-s347002840.922276
-e347002840.947979
+CTouch /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
+s347047855.917251
+e347047855.928409
 r1
 xTouch
-x/Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Touch /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework8062ecd8d7aeb441^abaff2d8d7aeb441^---0#0#0#--243"Touch build/Release/BlowfishEncryption.framework    cd /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source    /usr/bin/touch -c /Users/ajcutshall/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework36"F0EDD7BF-2322-4734-844B-92D41E7F2569-
+x/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework280febaf87afb441^ab09eeaf87afb441^---0#0#0#--239"Touch build/Release/BlowfishEncryption.framework    cd /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source    /usr/bin/touch -c /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/build/Release/BlowfishEncryption.framework36"166F8AF0-6423-4248-82DA-F541DC4276C7-
 

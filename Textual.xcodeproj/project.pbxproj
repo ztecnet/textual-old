@@ -480,7 +480,6 @@
 		4C400E2F1238A655005BDA9D /* LanguagePreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguagePreferences.m; sourceTree = "<group>"; };
 		4C4107B31359684400614BBF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		4C4107B61359686200614BBF /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Classes/Headers/GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
-		4C49192611FF723D0065E5D5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4C4A041612EF1C65009A7988 /* PopupPrompts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupPrompts.m; sourceTree = "<group>"; };
 		4C4B7689138973830061A00B /* AddTemplateWithDisclosureTriangle.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddTemplateWithDisclosureTriangle.tif; sourceTree = "<group>"; };
 		4C5938E511D0E0790094B049 /* AGKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKeychain.m; sourceTree = "<group>"; };
@@ -1113,7 +1112,6 @@
 		4C5AEF7F12D1B71400D6B18C /* Important */ = {
 			isa = PBXGroup;
 			children = (
-				4C49192611FF723D0065E5D5 /* README */,
 			);
 			name = Important;
 			sourceTree = "<group>";

@@ -118,7 +118,7 @@
     
     [super textDidChange:self pasted:NO range:[self fullSelectionRange]];
     
-    [self resetTextFieldCellSize];
+    //[self resetTextFieldCellSize];
 }
 
 - (void)drawRect:(NSRect)dirtyRect
@@ -156,7 +156,7 @@
     
     [super paste:self];
     
-    [self resetTextFieldCellSize];
+    //[self resetTextFieldCellSize];
 }
 
 - (void)setReturnActionWithSelector:(SEL)selector owner:(id)owner
@@ -171,7 +171,7 @@
         [_actionTarget performSelector:_actonSelector];
         
         [self toggleFontResetStatus:YES];
-        [self resetTextFieldCellSize];
+      // [self resetTextFieldCellSize];
         
         return YES;
     }
@@ -236,7 +236,7 @@
     
 	[gradient      drain];
 	[frameGradient drain];
-	
+
 	[super drawRect:dirtyRect];
 }
 
