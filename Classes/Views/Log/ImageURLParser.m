@@ -11,13 +11,18 @@
 	
 	NSString *host = [u.host lowercaseString];
 	NSString *path = u.path;
-	
+
+    
 	if ([lowerUrl hasSuffix:@".jpg"]
 		|| [lowerUrl hasSuffix:@".jpeg"] || [lowerUrl hasSuffix:@".png"]
 		|| [lowerUrl hasSuffix:@".gif"]  || [lowerUrl hasSuffix:@".tif"]
 		|| [lowerUrl hasSuffix:@".tiff"] || [lowerUrl hasSuffix:@".bmp"]) {
 		
         if ([host hasSuffix:@"wikipedia.org"]) {
+            return nil;
+        } else if ([host hasSuffix:@"goatse.*"]) {
+            return nil;
+        } else if ([path hasSuffix:@"hello.jpg"]) {
             return nil;
         } else if ([url hasPrefix:@"http://fukung.net/v/"]) {
             url = [url stringByReplacingOccurrencesOfString:@"http://fukung.net/v/" withString:@"http://media.fukung.net/images/"];
@@ -82,8 +87,7 @@
                 return [NSString stringWithFormat:@"http://puu.sh/%@.jpg", s];
             }
         }
-    } 
-    else if ([host hasSuffix:@"movapic.com"]) {
+    } else if ([host hasSuffix:@"movapic.com"]) {
 		if ([path hasPrefix:@"/pic/"]) {
 			NSString *s = [path safeSubstringFromIndex:5];
 			
