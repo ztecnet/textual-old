@@ -27,7 +27,7 @@
 "SOUND_IS_ALREADY_MUTED" = "Sound is already muted.";
 "SOUND_IS_NO_LONGER_MUTED" = "Sound is no longer muted.";
 
-"DEFAULT_QPS_MESSAGE" = "[Textual IRC Client - ZTN Build: http://dev.xdk2.net/p/textual/]";
+"DEFAULT_QPS_MESSAGE" = "[Textual IRC Client - ZTN Build: http://dev.ztecnet.net/p/textual/]";
 "SLEEPING_APPLICATION_QUIT_MESSAGE" = "Computer has gone to sleep.";
 
 "DCC_REQUEST_ERROR_MESSAGE" = "The Textual IRC Client has received a DCC request that could not be processed.";
@@ -139,7 +139,7 @@
 "IRC_USER_WHOWAS_HOSTMASK" = "%1$@ had userhost %2$@@%3$@ and realname %4$@";
 "IRC_USER_WHOIS_UPTIME" = "%1$@ signed on at %2$@ and has been idle for %3$@";
 "IRC_CHANNEL_TOPIC_CHANGED" = "\002%1$@\002 changed the topic to \002%2$@\002";
-"IRC_USER_KICKED_FROM_CHANNEL" = "\002%2$@\002 was kicked from the channel by \002%1$@\002. (%3$@)";
+"IRC_USER_KICKED_FROM_CHANNEL" = "\002%2$@\002 was kicked from the channel by \002%1$@\002 (%3$@)";
 
 "INPUT_TEXT_FIELD_PLACE_HOLDER" = "Type text here and then press Enter to send it";
 

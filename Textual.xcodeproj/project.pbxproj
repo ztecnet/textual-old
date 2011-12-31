@@ -349,6 +349,9 @@
 		4CFB1059138CEAA3007B8F2E /* HighlightSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB1058138CEAA3007B8F2E /* HighlightSheet.m */; };
 		77A33938146B3B300003ACD2 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A33937146B3B300003ACD2 /* Growl.framework */; };
 		77A3394E146B47710003ACD2 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77A33937146B3B300003ACD2 /* Growl.framework */; };
+		E128FC3714AEB50300A84CDE /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E128FC3614AEB50300A84CDE /* dsa_pub.pem */; };
+		E16F16DB14AEA8660007C174 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16F16DA14AEA8660007C174 /* Sparkle.framework */; };
+		E16F16DC14AEA8800007C174 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E16F16DA14AEA8660007C174 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,6 +443,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				77A3394E146B47710003ACD2 /* Growl.framework in CopyFiles */,
+				E16F16DC14AEA8800007C174 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +764,8 @@
 		78A8C18E11737F660044E7A1 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
 		78A8C19011737F660044E7A1 /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 		78A8C19711737F660044E7A1 /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
+		E128FC3614AEB50300A84CDE /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		E16F16DA14AEA8660007C174 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -778,6 +784,7 @@
 				4C5AF37012D1BA9800D6B18C /* IOKit.framework in Frameworks */,
 				4C66E88512DF69E500446250 /* BlowfishEncryption.framework in Frameworks */,
 				4C3BCC98130D8373006C36A9 /* AutoHyperlinks.framework in Frameworks */,
+				E16F16DB14AEA8660007C174 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +828,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E128FC3614AEB50300A84CDE /* dsa_pub.pem */,
 				4C5AEF2212D1B6E400D6B18C /* Images */,
 				4C1BBCB411954F7800D968BB /* Documents */,
 				4C1BBCB311954F7300D968BB /* Templates */,
@@ -832,6 +840,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E16F16DA14AEA8660007C174 /* Sparkle.framework */,
 				4C5AF05112D1B77100D6B18C /* System Libraries */,
 				4C5AF05012D1B76A00D6B18C /* System Frameworks */,
 				4C66E86912DF694A00446250 /* External Frameworks */,
@@ -1722,6 +1731,34 @@
 				Japanese,
 				French,
 				German,
+				ca,
+				cs,
+				cy,
+				da,
+				de,
+				el,
+				en,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				id,
+				is,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* LimeChat */;
 			projectDirPath = "";
@@ -1845,6 +1882,7 @@
 				4CD3CA48138B9768002FD1E3 /* ServerCellSelection_Graphite.tif in Resources */,
 				4CD3CA49138B9768002FD1E3 /* ServerCellSelection_Aqua.tif in Resources */,
 				4CFB1055138CE8E0007B8F2E /* HighlightSheet.xib in Resources */,
+				E128FC3714AEB50300A84CDE /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2257,6 +2295,9 @@
 					"\"$(SRCROOT)/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks/Blowfish\"",
 					"\"$(SRCROOT)/Frameworks/Adium/AutoHyperlinks\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6/With Garbage Collection\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"";
@@ -2335,6 +2376,9 @@
 					"\"$(SRCROOT)/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks/Blowfish\"",
 					"\"$(SRCROOT)/Frameworks/Adium/AutoHyperlinks\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6/With Garbage Collection\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"";
@@ -2382,6 +2426,9 @@
 					"\"$(SRCROOT)/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks/Blowfish\"",
 					"\"$(SRCROOT)/Frameworks/Adium/AutoHyperlinks\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6/With Garbage Collection\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"";
@@ -2484,6 +2531,9 @@
 					"\"$(SRCROOT)/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks/Blowfish\"",
 					"\"$(SRCROOT)/Frameworks/Adium/AutoHyperlinks\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6\"",
+					"\"$(SRCROOT)/Sparkle 1.5b6/With Garbage Collection\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"";
