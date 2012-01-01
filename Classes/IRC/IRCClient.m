@@ -1862,7 +1862,9 @@ static NSDateFormatter *dateTimeFormatter = nil;
                                 [self printBoth:c type:type nick:myNick text:t identified:YES];
                             }
                             else {
-							[self printBoth:[world selectedChannelOn:self] type:type nick:chname text:t identified:YES];
+                                NSString *msg;
+                                msg = [NSString stringWithFormat:@">-%@", chname ];
+							[self printBoth:[world selectedChannelOn:self] type:type nick:msg text:t identified:YES];
 							}
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;
@@ -2540,42 +2542,42 @@ static NSDateFormatter *dateTimeFormatter = nil;
 			return YES;
 			break;
 		}
-//		case 96: // Command: ZLINE
-//		case 97: // Command: GLINE
-//		case 98: // Command: GZLINE
-//		{
-//			NSString *peer = s.getToken.string;
-//			
-//			if ([peer hasPrefix:@"-"]) {
-//				[self send:cmd, peer, s.string, nil];
-//			} else {
-//				NSString *time   = s.getToken.string;
-//				NSString *reason = s.string;
-//				
-//				if (peer) {
-//					reason = [reason trim];
-//					
-//					if (NSObjectIsEmpty(reason)) {
-//						reason = [Preferences IRCopDefaultGlineMessage];
-//						
-//						if ([reason contains:NSWhitespaceCharacter]) {
-//							NSInteger spacePos = [reason stringPosition:NSWhitespaceCharacter];
-//							
-//							if (NSObjectIsEmpty(time)) {
-//								time = [reason safeSubstringToIndex:spacePos];
-//							}
-//							
-//							reason = [reason safeSubstringAfterIndex:spacePos];
-//						}
-//					}
-//					
-//					[self send:cmd, peer, time, reason, nil];
-//				}
-//			}
-//			
-//			return YES;
-//			break;
-//		}
+		case 96: // Command: ZLINE
+		case 97: // Command: GLINE
+		case 98: // Command: GZLINE
+		{
+			NSString *peer = s.getToken.string;
+			
+			if ([peer hasPrefix:@"-"]) {
+				[self send:cmd, peer, s.string, nil];
+			} else {
+				NSString *time   = s.getToken.string;
+				NSString *reason = s.string;
+				
+				if (peer) {
+					reason = [reason trim];
+					
+					if (NSObjectIsEmpty(reason)) {
+						reason = [Preferences IRCopDefaultGlineMessage];
+						
+						if ([reason contains:NSWhitespaceCharacter]) {
+							NSInteger spacePos = [reason stringPosition:NSWhitespaceCharacter];
+							
+							if (NSObjectIsEmpty(time)) {
+								time = [reason safeSubstringToIndex:spacePos];
+							}
+							
+							reason = [reason safeSubstringAfterIndex:spacePos];
+						}
+					}
+					
+					[self send:cmd, peer, time, reason, nil];
+				}
+			}
+			
+			return YES;
+			break;
+		}
 		case 99:  // Command: SHUN
 		case 100: // Command: TEMPSHUN
 		{
