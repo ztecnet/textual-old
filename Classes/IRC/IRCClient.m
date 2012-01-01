@@ -1862,7 +1862,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
                                 [self printBoth:c type:type nick:myNick text:t identified:YES];
                             }
                             else {
-							[self printBoth:[world selectedChannelOn:self] type:type nick:myNick text:t identified:YES];
+							[self printBoth:[world selectedChannelOn:self] type:type nick:chname text:t identified:YES];
 							}
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;

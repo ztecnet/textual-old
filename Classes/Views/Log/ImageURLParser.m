@@ -87,6 +87,14 @@
                 return [NSString stringWithFormat:@"http://puu.sh/%@.jpg", s];
             }
         }
+    } else if ([host hasSuffix:@"imgur.com"]) {
+        if ([path hasPrefix:@"/gallery/"]) {
+            NSString *s = [path safeSubstringFromIndex:9];
+            
+            if ([s isAlphaNumOnly]) {
+                return [NSString stringWithFormat:@"http://i.imgur.com/%@.png", s];
+            }
+        }
     } else if ([host hasSuffix:@"movapic.com"]) {
 		if ([path hasPrefix:@"/pic/"]) {
 			NSString *s = [path safeSubstringFromIndex:5];

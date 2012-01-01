@@ -1530,6 +1530,357 @@
 	[[self invokeInBackgroundThread] _onWantHostServVhostSet:sender];
 }
 
+// add operserv akill dialog functions
+
+- (void)__onWantOperServerAkillSet7d:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 7d %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet7d:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet7d:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet7d:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet7d:sender];
+}
+
+- (void)__onWantOperServerAkillSetperm:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !p %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSetperm:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSetperm:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSetperm:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSetperm:sender];
+}
+
+- (void)__onWantOperServerAkillSet1m:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 30D %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet1m:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet1m:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet1m:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet1m:sender];
+}
+
+- (void)__onWantOperServerAkillSet3d:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 3d %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet3d:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet3d:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet3d:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet3d:sender];
+}
+
+- (void)__onWantOperServerAkillSet2d:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 2d %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet2d:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet2d:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet2d:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet2d:sender];
+}
+
+- (void)__onWantOperServerAkillSet1d:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 1d %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet1d:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet1d:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet1d:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet1d:sender];
+}
+
+- (void)__onWantOperServerAkillSet12h:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 12h %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet12h:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet12h:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet12h:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet12h:sender];
+}
+
+- (void)__onWantOperServerAkillSet6h:(id)sender andVhost:(NSString *)reason
+{
+	if (NSObjectIsNotEmpty(reason)) {
+		IRCClient *u = [world selectedClient];
+		IRCChannel *c = [world selectedChannel];
+		
+		if (NO_CLIENT || IS_CLIENT) return;
+		
+		NSArray *nicknames = [self selectedMembers:sender];
+		
+		for (IRCUser *m in nicknames) {
+			[u sendCommand:[NSString stringWithFormat:@"os akill add %@ !t 6h %@", m.nick, reason] completeTarget:NO target:nil];
+		}
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)_onWAntOperServAkillSet6h:(id)sender
+{
+	NSString *reason = [PopupPrompts dialogWindowWithInput:TXTLS(@"Enter ban message")
+                                                     title:TXTLS(@"Akill") 
+                                             defaultButton:TXTLS(@"OK_BUTTON")  
+                                           alternateButton:TXTLS(@"CANCEL_BUTTON") 
+                                              defaultInput:nil];
+	
+	[[self iomt] __onWantOperServerAkillSet6h:sender andVhost:reason];
+}
+
+- (void)onWantOperServAkillSet6h:(id)sender
+{
+    [[self invokeInBackgroundThread] _onWAntOperServAkillSet6h:sender];
+}
+
+
+// end operserv akill dialog functions
+
+// add chanserv dialog functions
+
+- (void)onWantChanServSOP:(id)sender
+{
+	IRCClient *u = [world selectedClient];
+	IRCChannel *c = [world selectedChannel];
+	
+	if (NO_CLIENT_OR_CHANNEL || IS_CLIENT || IS_QUERY) return;
+	
+	for (IRCUser *m in [self selectedMembers:sender]) {
+		[u sendCommand:[NSString stringWithFormat:@"CS SOP %@ add %@", c.name, m.nick] completeTarget:NO target:nil];
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)onWantChanServAOP:(id)sender
+{
+    IRCClient *u = [world selectedClient];
+	IRCChannel *c = [world selectedChannel];
+	
+	if (NO_CLIENT_OR_CHANNEL || IS_CLIENT || IS_QUERY) return;
+	
+	for (IRCUser *m in [self selectedMembers:sender]) {
+		[u sendCommand:[NSString stringWithFormat:@"CS AOP %@ add %@", c.name, m.nick] completeTarget:NO target:nil];
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)onWantChanServHOP:(id)sender
+{
+    IRCClient *u = [world selectedClient];
+	IRCChannel *c = [world selectedChannel];
+	
+	if (NO_CLIENT_OR_CHANNEL || IS_CLIENT || IS_QUERY) return;
+	
+	for (IRCUser *m in [self selectedMembers:sender]) {
+		[u sendCommand:[NSString stringWithFormat:@"CS HOP %@ add %@", c.name, m.nick] completeTarget:NO target:nil];
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)onWantChanServVOP:(id)sender
+{
+    IRCClient *u = [world selectedClient];
+	IRCChannel *c = [world selectedChannel];
+	
+	if (NO_CLIENT_OR_CHANNEL || IS_CLIENT || IS_QUERY) return;
+	
+	for (IRCUser *m in [self selectedMembers:sender]) {
+		[u sendCommand:[NSString stringWithFormat:@"CS VOP %@ add %@", c.name, m.nick] completeTarget:NO target:nil];
+	}
+	
+	[self deselectMembers:sender];
+}
+
+- (void)onWantChanServnf:(id)sender
+{
+    IRCClient *u = [world selectedClient];
+	IRCChannel *c = [world selectedChannel];
+	
+	if (NO_CLIENT_OR_CHANNEL || IS_CLIENT || IS_QUERY) return;
+	
+	for (IRCUser *m in [self selectedMembers:sender]) {
+		[u sendCommand:[NSString stringWithFormat:@"CS FLAGS %@ %@ -*", c.name, m.nick] completeTarget:NO target:nil];
+	}
+	
+	[self deselectMembers:sender];
+}
+
+// end chanserv dialog functions
+
 - (void)onWantChannelBanList:(id)sender
 {
 	IRCChannel *c = [world selectedChannel];

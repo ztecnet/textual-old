@@ -666,7 +666,7 @@
 }
 
 #pragma mark -
-#pragma mark Nick Completion
+#pragma mark Nick
 
 - (void)completeNick:(BOOL)forward
 {

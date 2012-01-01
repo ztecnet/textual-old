@@ -136,9 +136,21 @@
 - (void)onWantToReadChannelLogs:(id)sender;
 - (void)onWantTextualConnnectToHelp:(id)sender;
 - (void)onWantHostServVhostSet:(id)sender;
+- (void)onWantOperServAkillSet7d:(id)sender;
+- (void)onWantOperServAkillSetperm:(id)sender;
+- (void)onWantOperServAkillSet1m:(id)sender;
+- (void)onWantOperServAkillSet3d:(id)sender;
+- (void)onWantOperServAkillSet2d:(id)sender;
+- (void)onWantOperServAkillSet1d:(id)sender;
+- (void)onWantOperServAkillSet12h:(id)sender;
+- (void)onWantOperServAkillSet6h:(id)sender;
+- (void)onWantChanServSOP:(id)sender;
+- (void)onWantChanServAOP:(id)sender;
+- (void)onWantChanServHOP:(id)sender;
+- (void)onWantChanServVOP:(id)sender;
+- (void)onWantChanServnf:(id)sender;
 - (void)onWantFindPanel:(id)sender;
 - (void)onWantChannelBanList:(id)sender;
-- (void)onWantGlineBanList:(id)sender;
 - (void)onWantChannelBanExceptionList:(id)sender;
 - (void)onWantChannelInviteExceptionList:(id)sender;
 
