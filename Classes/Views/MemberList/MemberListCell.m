@@ -13,12 +13,12 @@
 #define BADGE_SHADOW_COLOR                          [NSColor colorWithCalibratedWhite:1.00 alpha:0.60]
 #define BADGE_MESSAGE_BACKGROUND_COLOR_TS           [NSColor whiteColor]
 
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Q		[NSColor _colorWithCalibratedRed:186 green:0   blue:0   alpha:1]
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_A		[NSColor _colorWithCalibratedRed:157 green:0   blue:89  alpha:1]
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_O		[NSColor _colorWithCalibratedRed:210 green:105 blue:30  alpha:1]
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_H		[NSColor _colorWithCalibratedRed:48  green:128 blue:17  alpha:1]
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_V		[NSColor _colorWithCalibratedRed:57  green:154 blue:199 alpha:1]
-#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_X		[NSColor _colorWithCalibratedRed:152 green:168 blue:202 alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Q		[NSColor _colorWithCalibratedRed:255 green:220   blue:0   alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_A		[NSColor _colorWithCalibratedRed:74 green:74   blue:74  alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_O		[NSColor _colorWithCalibratedRed:255 green:0 blue:0  alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_H		[NSColor _colorWithCalibratedRed:255  green:153 blue:0  alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_V		[NSColor _colorWithCalibratedRed:0  green:204 blue:255 alpha:1]
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_X		[NSColor _colorWithCalibratedRed:0 green:255 blue:0 alpha:1]
 
 #define USER_CELL_FONT                              [NSFont fontWithName:@"LucidaGrande" size:11.0]
 #define USER_CELL_FONT_COLOR                        [NSColor blackColor]
@@ -109,7 +109,7 @@
     } 
     
     if (mcstring == ' ' && [_NSUserDefaults() boolForKey:@"Preferences.General.use_nomode_symbol"]) {
-        mcstring = 'x';
+        //mcstring = 'x';
     }
     
 	badgePath = [NSBezierPath bezierPathWithRoundedRect:badgeFrame
