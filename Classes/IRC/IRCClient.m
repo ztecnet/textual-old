@@ -106,6 +106,8 @@ static NSDateFormatter *dateTimeFormatter = nil;
 @synthesize inSASLRequest;
 @synthesize world;
 
+NSString *rawhost;
+
 - (id)init
 {
 	if ((self = [super init])) {
@@ -1544,7 +1546,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 	} else if (completeTarget && u == self && c) {
 		selChannel = c;
 	}
-	
+	    
 	BOOL cutColon = NO;
 	
 	if ([s.string hasPrefix:@"/"]) {
@@ -1861,11 +1863,14 @@ static NSDateFormatter *dateTimeFormatter = nil;
                             if ([cmd isEqualToString:IRCCI_PRIVMSG]) {
                                 [self printBoth:c type:type nick:myNick text:t identified:YES];
                             }
-                            else {
+                            else if ([cmd isEqualToString:IRCCI_NOTICE]) {
                                 NSString *msg;
                                 msg = [NSString stringWithFormat:@">-%@", chname ];
 							[self printBoth:[world selectedChannelOn:self] type:type nick:msg text:t identified:YES];
 							}
+                            else {
+                                [self printBoth:[world selectedChannelOn:self] type:type nick:myNick text:t identified:NO];
+                            }
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;
 							}
@@ -3330,7 +3335,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 		if ([Preferences logTranscript]) {
 			return [self printAndLog:c withHTML:NO];
 		} else {
-			return [log print:c];
+            return [log print:c];
 		}
 	}
 }
@@ -3466,6 +3471,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 {
 	NSString *anick  = m.sender.nick;
 	NSString *target = [m paramAt:0];
+    rawhost = m.sender.raw;
 	
 	LogLineType type = LINE_TYPE_PRIVMSG;
 	
@@ -3478,7 +3484,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 	if ([target hasPrefix:@"@"]) {
 		target = [target safeSubstringFromIndex:1];
 	}
-	
+
 	AddressBook *ignoreChecks = [self checkIgnoreAgainstHostmask:m.sender.raw 
 													 withMatches:[NSArray arrayWithObjects:@"ignoreHighlights", 
 																  @"ignorePMHighlights",
@@ -3504,8 +3510,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 			if ([ignoreChecks ignorePublicMsg] == YES) {
 				return;
 			}
-		}
-		
+		} 		
 		IRCChannel *c = [self findChannel:target];
 		if (PointerIsEmpty(c)) return;
 		

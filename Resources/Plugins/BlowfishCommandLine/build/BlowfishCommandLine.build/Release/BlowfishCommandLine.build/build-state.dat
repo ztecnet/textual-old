@@ -3,8 +3,8 @@ v4
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist Info.plist
-cCompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
 cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine normal x86_64
 cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine normal i386
 cCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine normal "i386 x86_64"
@@ -103,13 +103,13 @@ t1325297382
 s481
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/AddressBook.h
-c000000004EFE6EE6000000000000056C
-t1325297382
+c000000004F01EDE5000000000000056C
+t1325526501
 s1388
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/AddressBookSheet.h
-c000000004EFE6EE60000000000000652
-t1325297382
+c000000004F01EDE50000000000000652
+t1325526501
 s1618
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/AsyncSocketExtensions.h
@@ -234,9 +234,9 @@ t1325297382
 s875
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/IRCClient.h
-c000000004EFE6EE600000000000023CA
-t1325297382
-s9162
+c000000004F01E6EA00000000000023E5
+t1325524714
+s9189
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/IRCClientConfig.h
 c000000004EFE6EE60000000000000EC4
@@ -359,9 +359,9 @@ t1325297382
 s771
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/LogController.h
-c000000004EFE6EE60000000000000B8C
-t1325297382
-s2956
+c000000004F01E8CA0000000000000B8B
+t1325525194
+s2955
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/LogLine.h
 c000000004EFE6EE6000000000000069F
@@ -374,9 +374,9 @@ t1325297382
 s1061
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/LogRenderer.h
-c000000004EFE6EE600000000000002F9
-t1325297382
-s761
+c000000004F01EAE300000000000002F8
+t1325525731
+s760
 
 N/Users/nicholas/Desktop/Textual/Classes/Headers/LogScriptEventSink.h
 c000000004EFE6EE60000000000000238
@@ -879,8 +879,8 @@ t2
 s0
 
 N/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine.LinkFileList
-c000000004F00E03B00000000000000B3
-t1325457467
+c000000004F01EDFD00000000000000B3
+t1325526525
 s179
 
 N/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o
@@ -892,8 +892,8 @@ t2
 s0
 
 N/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine.LinkFileList
-c000000004F00E03B00000000000000B5
-t1325457467
+c000000004F01EDFD00000000000000B5
+t1325526525
 s181
 
 N/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o
@@ -932,11 +932,11 @@ s585
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesac8e94bb17b1b441^db36e0bb17b1b441^---0#1#0#--18"Check dependencies36"48394D70-6690-4254-B41B-85EDED4E1048-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies06672c7d25b2b441^c939557d25b2b441^---0#1#0#--18"Check dependencies36"59EA4433-D8CD-44F1-88D8-F8AF88900FAE-
 
 CCompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s347150267.900619
-e347150268.944821
+s347219325.359375
+e347219326.202440
 r1
 xCompileC
 xbuild/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o
@@ -945,11 +945,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m9ae9e6bb17b1b441^fcdff1bc17b1b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m0000000000000000^3158"CompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o TPI_BlowfishCommands.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o36"8339E7B0-E494-46CE-BA9D-597B33F06551-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m39635c7d25b2b441^87dd337e25b2b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m0000000000000000^3158"CompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o TPI_BlowfishCommands.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/TPI_BlowfishCommands.o36"FE93CCEA-F205-4F2C-9726-E0C30E0E8392-
 
 CCompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
-s347150267.900617
-e347150268.883622
+s347219325.359378
+e347219326.175450
 r1
 xCompileC
 xbuild/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o
@@ -958,61 +958,61 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m67ede6bb17b1b441^6363e2bc17b1b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m0000000000000000^3168"CompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o TPI_BlowfishCommands.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o36"5FE7783B-479E-4C1F-9244-662AD0C98DBF-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m1f655c7d25b2b441^abeb2c7e25b2b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m0000000000000000^3168"CompileC build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o TPI_BlowfishCommands.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/BlowfishCommandLine-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/TPI_BlowfishCommands.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/TPI_BlowfishCommands.o36"53A4B485-739F-4E22-B569-86918C3E69D7-
 
 CCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine normal "i386 x86_64"
-s347150269.012107
-e347150269.019899
+s347219326.267290
+e347219326.276089
 r1
 xCreateUniversalBinary
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine
 xnormal
 xi386 x86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection167"Create universal binary /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLinef35803bd17b1b441^5d1805bd17b1b441^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine00f438a0dcffdf42^726"CreateUniversalBinary ../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine normal "i386 x86_64"    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /usr/bin/lipo -create /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine -output /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine36"337F34D9-0452-49EC-9FA2-35400858800C-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection167"Create universal binary /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLinefbb2447e25b2b441^19ae467e25b2b441^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine00f438a0dcffdf42^726"CreateUniversalBinary ../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine normal "i386 x86_64"    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /usr/bin/lipo -create /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine -output /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine36"2A2D492F-1F1E-4C71-AE09-FDF1C25FE8A4-
 
 CGenerateDSYMFile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine
-s347150269.026704
-e347150269.051805
+s347219326.282997
+e347219326.361559
 r1
 xGenerateDSYMFile
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Generating /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM5d1607bd17b1b441^c4420dbd17b1b441^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM00f438a0dcffdf42^505"GenerateDSYMFile ../Compiled/BlowfishCommandLine.bundle.dSYM ../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /Developer/usr/bin/dsymutil /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM36"F8D09780-8033-44E8-B510-115567E461AB-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Generating /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM5bb4487e25b2b441^f19d5c7e25b2b441^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM00f438a0dcffdf42^505"GenerateDSYMFile ../Compiled/BlowfishCommandLine.bundle.dSYM ../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /Developer/usr/bin/dsymutil /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/MacOS/BlowfishCommandLine -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle.dSYM36"96D1EE69-4E3E-4324-A57D-645F07D577E7-
 
 CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine normal i386
-s347150268.951298
-e347150269.004984
+s347219326.209224
+e347219326.260825
 r1
 xLd
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine
 xnormal
 xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection180"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine4bccf3bc17b1b441^0e4901bd17b1b441^---0#0#0#--2105"Ld build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine normal i386    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch i386 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework BlowfishEncryption -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine36"1CFAB3C4-BE93-4B32-B24F-C66751D97080-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection180"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLineabcf357e25b2b441^c1c5427e25b2b441^---0#0#0#--2105"Ld build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine normal i386    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch i386 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework BlowfishEncryption -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/i386/BlowfishCommandLine36"F74B0087-92F9-4658-856D-C41DE24188E4-
 
 CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine normal x86_64
-s347150268.891029
-e347150268.947241
+s347219326.182598
+e347219326.260828
 r1
 xLd
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine
 xnormal
 xx86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLined769e4bc17b1b441^ed7df2bc17b1b441^---0#0#0#--2115"Ld build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine normal x86_64    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch x86_64 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework BlowfishEncryption -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine36"BF67DAA8-0E0D-4053-B5C9-752BA290C5F3-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine700a2f7e25b2b441^20cf427e25b2b441^---0#0#0#--2115"Ld build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine normal x86_64    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch x86_64 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework BlowfishEncryption -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/build/BlowfishCommandLine.build/Release/BlowfishCommandLine.build/Objects-normal/x86_64/BlowfishCommandLine36"2CD032C6-14FC-466E-8D11-9D0C0BE5D276-
 
 CProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist Info.plist
-s347150267.887569
-e347150267.892802
+s347219325.342496
+e347219325.346928
 r1
 xProcessInfoPlistFile
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist
 xInfo.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist029be3bb17b1b441^a08de4bb17b1b441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/Info.plist0000000000000000^378"ProcessInfoPlistFile ../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist Info.plist    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist36"667D276D-9DF1-43D6-94D5-AA9744930672-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plistfc00587d25b2b441^7863597d25b2b441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/Info.plist0000000000000000^378"ProcessInfoPlistFile ../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist Info.plist    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle/Contents/Info.plist36"3A36A1BF-AC5A-41A4-8116-40B4E14979AA-
 
 CTouch /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle
-s347150269.059728
-e347150269.067009
+s347219326.369433
+e347219326.384880
 r1
 xTouch
 x/Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Touch /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle6f820fbd17b1b441^7f2f11bd17b1b441^---0#0#0#--253"Touch ../Compiled/BlowfishCommandLine.bundle    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /usr/bin/touch -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle36"0B3C6FEB-BF96-4DEB-AE40-C978C90EE44A-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Touch /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle1cd05e7e25b2b441^7689627e25b2b441^---0#0#0#--253"Touch ../Compiled/BlowfishCommandLine.bundle    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine    /usr/bin/touch -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BlowfishCommandLine/../Compiled/BlowfishCommandLine.bundle36"FCB4DC3E-7CFC-4E33-9C23-F6809A4866CA-
 

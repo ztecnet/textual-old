@@ -433,15 +433,15 @@ static NSString *renderRange(NSString *body, attr_t attr, NSInteger start, NSInt
 					NSRange r = NSRangeFromString(rn);
 					
 					if (r.length >= 1) {
-						setFlag(attrBuf, URL_ATTR, r.location, r.length);
+                        setFlag(attrBuf, URL_ATTR, r.location, r.length);
 						
 						[urlAry safeAddObject:[NSValue valueWithRange:r]];
 					}
 				}
 			}
-			
+            
 			[resultInfo setObject:urlAry forKey:@"URLRanges"];
-		}
+        }
 		
 		/* Word Matching — Highlights */
 		

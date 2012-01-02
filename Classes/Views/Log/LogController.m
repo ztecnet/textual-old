@@ -616,7 +616,6 @@
             
             for (NSValue *rangeValue in urlRanges) {
                 NSString *url = [line.body safeSubstringWithRange:[rangeValue rangeValue]];
-                
                 imageUrl = [ImageURLParser imageURLForURL:url];
                 
                 if (imageUrl) {
