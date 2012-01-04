@@ -14,10 +14,11 @@
 	
 	BOOL q;
 	BOOL a;
+    BOOL y;
 	BOOL o;
 	BOOL h;
 	BOOL v;
-	
+    
 	BOOL isMyself;
 	
 	NSInteger colorNumber;
@@ -34,6 +35,7 @@
 @property (nonatomic, retain) NSString *address;
 @property (nonatomic, assign) BOOL q;
 @property (nonatomic, assign) BOOL a;
+@property (nonatomic, assign) BOOL y;
 @property (nonatomic, assign) BOOL o;
 @property (nonatomic, assign) BOOL h;
 @property (nonatomic, assign) BOOL v;

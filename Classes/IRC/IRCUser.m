@@ -16,6 +16,7 @@
 @synthesize a;
 @synthesize o;
 @synthesize h;
+@synthesize y;
 @synthesize v;
 @synthesize isMyself;
 @synthesize incomingWeight;
@@ -66,6 +67,7 @@
 {
 	if (q) return [supportInfo.userModeQPrefix safeCharacterAtIndex:0];
 	if (a) return [supportInfo.userModeAPrefix safeCharacterAtIndex:0];
+    if (y) return [supportInfo.userModeYPrefix safeCharacterAtIndex:0];
 	if (o) return [supportInfo.userModeOPrefix safeCharacterAtIndex:0];
 	if (h) return [supportInfo.userModeHPrefix safeCharacterAtIndex:0];
 	if (v) return [supportInfo.userModeVPrefix safeCharacterAtIndex:0];
@@ -75,7 +77,7 @@
 
 - (BOOL)isOp
 {
-	return (o || a || q);
+	return (o || a || q || y);
 }
 
 - (BOOL)isHalfOp 
@@ -97,6 +99,7 @@
 	switch (mode) {
 		case 'q': return q;
 		case 'a': return a;
+        case 'y': return y;
 		case 'o': return o;
 		case 'h': return h;
 		case 'v': return v;

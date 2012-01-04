@@ -4790,9 +4790,9 @@ NSString *rawhost;
 					NSString *u  = [nick safeSubstringWithRange:NSMakeRange(0, 1)];
 					NSString *op = NSWhitespaceCharacter;
 					
-					if ([u isEqualTo:isupport.userModeQPrefix] || [u isEqualTo:isupport.userModeHPrefix] || 
-						[u isEqualTo:isupport.userModeAPrefix] || [u isEqualTo:isupport.userModeVPrefix] || 
-						[u isEqualTo:isupport.userModeOPrefix]) {
+					if ([u isEqualTo:isupport.userModeYPrefix] || [u isEqualTo:isupport.userModeOPrefix] || 
+						[u isEqualTo:isupport.userModeQPrefix] || [u isEqualTo:isupport.userModeHPrefix] || 
+						[u isEqualTo:isupport.userModeAPrefix] || [u isEqualTo:isupport.userModeVPrefix]) {
 						
 						nick = [nick safeSubstringFromIndex:1];
 						op   = u;
@@ -4802,7 +4802,8 @@ NSString *rawhost;
 					
 					m.nick        = nick;
 					
-					m.q = ([op isEqualTo:isupport.userModeQPrefix]);
+					m.y = ([op isEqualTo:isupport.userModeYPrefix]);
+                    m.q = ([op isEqualTo:isupport.userModeQPrefix]);
 					m.a = ([op isEqualTo:isupport.userModeAPrefix]);
 					m.o = ([op isEqualTo:isupport.userModeOPrefix] || m.q);
 					m.h = ([op isEqualTo:isupport.userModeHPrefix]);
@@ -4814,7 +4815,7 @@ NSString *rawhost;
 					[c addMember:m reload:NO];
 					
 					if (m.isMyself) {
-						c.isOp     = (m.q || m.a | m.o);
+						c.isOp     = (m.q || m.a | m.o | m.y);
 						c.isHalfOp = (m.h || c.isOp);
 					}
 				}

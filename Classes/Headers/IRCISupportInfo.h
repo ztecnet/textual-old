@@ -11,11 +11,13 @@
 	
 	NSString *networkName;
 	
-	NSString *userModeQPrefix;
+    NSString *userModeYPrefix;
+    NSString *userModeQPrefix;
 	NSString *userModeAPrefix;
 	NSString *userModeOPrefix;
 	NSString *userModeHPrefix;
 	NSString *userModeVPrefix;
+
 	
 	unsigned char modes[MODES_SIZE];
 }
@@ -23,6 +25,7 @@
 @property (nonatomic, readonly) NSInteger nickLen;
 @property (nonatomic, readonly) NSInteger modesCount;
 @property (nonatomic, retain) NSString *networkName;
+@property (nonatomic, retain) NSString *userModeYPrefix;
 @property (nonatomic, retain) NSString *userModeQPrefix;
 @property (nonatomic, retain) NSString *userModeAPrefix;
 @property (nonatomic, retain) NSString *userModeOPrefix;

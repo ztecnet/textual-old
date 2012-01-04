@@ -341,6 +341,7 @@
 		switch (modeChar) {
 			case 'q': m.q = value; break;
 			case 'a': m.a = value; break;
+            case 'y': m.y = value; break;
 			case 'o': m.o = value; break;
 			case 'h': m.h = value; break;
 			case 'v': m.v = value; break;
@@ -355,6 +356,10 @@
 		
 		if (m.a && NSObjectIsEmpty(client.isupport.userModeAPrefix)) {
 			m.a = NO;
+		}
+        
+        if (m.y && NSObjectIsEmpty(client.isupport.userModeYPrefix)) {
+			m.y = NO;
 		}
 		
 		if (m.o && NSObjectIsEmpty(client.isupport.userModeOPrefix)) {
