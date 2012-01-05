@@ -70,7 +70,7 @@ NSComparisonResult channelDataSort(IRCChannel *s1, IRCChannel *s2, void *context
 		proxyPassword   = NSNullObject;
         
         pongInterval = 0;
-        timeoutInterval = 0;
+        timeoutInterval = 120;
         
         prefersIPv6 = NO;
 		

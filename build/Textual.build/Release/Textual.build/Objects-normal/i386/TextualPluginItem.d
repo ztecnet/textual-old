@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/TextualPluginItem.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/TextualPluginItem.m

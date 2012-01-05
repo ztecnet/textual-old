@@ -2,13 +2,13 @@ TBragSpam
 v4
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist
-cCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64
-cLd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386
-cCreateUniversalBinary /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"
-cTouch /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
+cProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist
+cCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64
+cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386
+cCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"
+cTouch /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
 
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
 c000000004EBDCD2D0000000000006560
@@ -20,46 +20,46 @@ c000000004EBE3947000000000060E710
 t1321089351
 s6350608
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m
 c000000004F03D1FC000000000000087D
 t1325650428
 s2173
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam.LinkFileList
-c000000004F04BFD70000000000000090
-t1325711319
-s144
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam.LinkFileList
+c000000004F060CDE0000000000000089
+t1325796574
+s137
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam
 t2
 s0
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam.LinkFileList
-c000000004F04BFD70000000000000092
-t1325711319
-s146
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam.LinkFileList
+c000000004F060CDE000000000000008B
+t1325796574
+s139
 
-N/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o
+N/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o
 t2
 s0
 
@@ -70,78 +70,78 @@ s633
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies137d8e57f7b4b441^5ea2a657f7b4b441^---0#1#0#--18"Check dependencies36"93690FA6-E6D4-4824-AA9E-93A639A3DC4E-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3a3c485e44b6b441^c4d1715e44b6b441^---0#1#0#--18"Check dependencies36"ED1B0D31-19A2-4CEA-B593-B317B4DA5BF1-
 
-CCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347404119.658013
-e347404120.401347
+CCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347489374.463384
+e347489375.292585
 r1
 xCompileC
 xbuild/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.mf8e1a857f7b4b441^aa9c6658f7b4b441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m0000000000000000^3510"CompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-gc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-generated-files.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-own-target-headers.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-all-target-headers.hmap -iquote /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-project-headers.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/include -I/Users/nicholas/Desktop/textual-master/Classes/Headers -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources/i386 -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources -F/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Frameworks -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.d -c /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m -o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o36"B20800C4-45B9-4112-BA82-11D48C057C31-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.mde00775e44b6b441^21cd4c5f44b6b441^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m0000000000000000^3321"CompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o TPIBragSpam.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-gc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/TPIBragSpam.o36"944790A2-DFBA-463E-B2BF-6F28D80B5DEF-
 
-CCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347404119.658009
-e347404120.360255
+CCompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s347489374.463034
+e347489375.265542
 r1
 xCompileC
 xbuild/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.mbfd7a857f7b4b441^603b5c58f7b4b441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m0000000000000000^3522"CompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-gc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-generated-files.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-own-target-headers.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-all-target-headers.hmap -iquote /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-project-headers.hmap -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/include -I/Users/nicholas/Desktop/textual-master/Classes/Headers -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources -F/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Frameworks -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.d -c /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/TPIBragSpam.m -o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o36"8C44F5D3-8906-4B7B-BDFB-9143BF22FDDB-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m2ffa765e44b6b441^0915445f44b6b441^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m0000000000000000^3333"CompileC build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o TPIBragSpam.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-gc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/BragSpam-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/TPIBragSpam.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/TPIBragSpam.o36"C94D7344-B69D-4738-85C0-42E84A4D08C4-
 
-CCreateUniversalBinary /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"
-s347404120.467213
-e347404120.474965
+CCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"
+s347489375.376716
+e347489375.384124
 r1
 xCreateUniversalBinary
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam
 xnormal
 xx86_64 i386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Create universal binary /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpamf9d67758f7b4b441^35997958f7b4b441^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam00f438a0dcffdf42^600"CreateUniversalBinary ../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    /usr/bin/lipo -create /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam -output /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam36"2A7600CE-E7D9-45DC-9F93-52146B94188E-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Create universal binary /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam3ab0605f44b6b441^6d55625f44b6b441^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam00f438a0dcffdf42^572"CreateUniversalBinary ../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam normal "x86_64 i386"    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    /usr/bin/lipo -create /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam -output /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/MacOS/BragSpam36"A14317AB-2D54-4B89-B245-6C854E9EB69E-
 
-CLd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386
-s347404120.408160
-e347404120.459744
+CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386
+s347489375.310191
+e347489375.369864
 r1
 xLd
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam
 xnormal
 xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Link /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam55bd6858f7b4b441^c8b17558f7b4b441^---0#0#0#--2054"Ld build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -bundle -L/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Frameworks -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/textual-master/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam36"601229D2-6C6E-47C9-8874-78F1F09C54A3-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam2fc34f5f44b6b441^f3ae5e5f44b6b441^---0#0#0#--1914"Ld build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam normal i386    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/i386/BragSpam36"43D29D32-9AC8-4202-9757-A6C9FDA9B4CD-
 
-CLd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64
-s347404120.367046
-e347404120.420518
+CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64
+s347489375.273012
+e347489375.369110
 r1
 xLd
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam
 xnormal
 xx86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Link /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam4b3a5e58f7b4b441^22a76b58f7b4b441^---0#0#0#--2064"Ld build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -bundle -L/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/textual-master/Frameworks -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/textual-master/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/textual-master/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam36"C1938C89-AA7F-4FF7-B417-6491C754C86D-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpamfe28465f44b6b441^f67f5e5f44b6b441^---0#0#0#--1924"Ld build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam normal x86_64    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/build/BragSpam.build/Release/BragSpam.build/Objects-normal/x86_64/BragSpam36"520936EB-76A7-401F-8686-AA05A0E3A519-
 
-CProcessInfoPlistFile /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist
-s347404119.645807
-e347404119.650158
+CProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist
+s347489374.450217
+e347489374.454563
 r1
 xProcessInfoPlistFile
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist
 xInfo.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist66a1a557f7b4b441^8bc2a657f7b4b441^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/Info.plist0000000000000000^348"ProcessInfoPlistFile ../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist36"E3811831-9518-40AD-A809-BA0937C0CC73-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist9e9a735e44b6b441^6e6a745e44b6b441^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/Info.plist0000000000000000^334"ProcessInfoPlistFile ../Compiled/BragSpam.bundle/Contents/Info.plist Info.plist    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle/Contents/Info.plist36"C4E48ACE-BDDD-42D1-BFAD-8ED368B98DB9-
 
-CTouch /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
-s347404120.482932
-e347404120.489814
+CTouch /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
+s347489375.392300
+e347489375.399205
 r1
 xTouch
-x/Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Touch /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundlef1d87b58f7b4b441^1b657d58f7b4b441^---0#0#0#--223"Touch ../Compiled/BragSpam.bundle    cd /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam    /usr/bin/touch -c /Users/nicholas/Desktop/textual-master/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle36"9DC94608-F6B9-4BE4-9B95-392EFDF0D22F-
+x/Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Touch /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle2ba4645f44b6b441^4d32665f44b6b441^---0#0#0#--209"Touch ../Compiled/BragSpam.bundle    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam    /usr/bin/touch -c /Users/nicholas/Desktop/Textual/Resources/Plugins/BragSpam/../Compiled/BragSpam.bundle36"845B4B5E-6482-4CC5-AAF3-256B770CC4BE-
 

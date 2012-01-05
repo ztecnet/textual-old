@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Preferences/Preferences.m \
-  /Users/nicholas/Desktop/textual-master/Classes/Headers/ValidateReceipt.h
+  /Users/nicholas/Desktop/Textual/Classes/Preferences/Preferences.m \
+  /Users/nicholas/Desktop/Textual/Classes/Headers/ValidateReceipt.h

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSDateHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSDateHelper.m

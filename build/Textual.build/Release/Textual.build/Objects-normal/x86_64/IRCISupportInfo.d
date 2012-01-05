@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/IRC/IRCISupportInfo.m
+  /Users/nicholas/Desktop/Textual/Classes/IRC/IRCISupportInfo.m

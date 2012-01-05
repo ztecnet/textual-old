@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSStringHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSStringHelper.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Views/ThinSplitView.m
+  /Users/nicholas/Desktop/Textual/Classes/Views/ThinSplitView.m

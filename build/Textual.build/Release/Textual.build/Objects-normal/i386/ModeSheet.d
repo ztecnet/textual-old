@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Dialogs/ModeSheet.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/Dialogs/ModeSheet.m

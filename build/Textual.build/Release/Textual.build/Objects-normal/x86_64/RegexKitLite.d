@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Library/RegexKitLite.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/RegexKitLite.m

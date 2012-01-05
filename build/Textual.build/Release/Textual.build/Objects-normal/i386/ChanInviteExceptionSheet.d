@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Dialogs/ChanInviteExceptionSheet.m
+  /Users/nicholas/Desktop/Textual/Classes/Dialogs/ChanInviteExceptionSheet.m

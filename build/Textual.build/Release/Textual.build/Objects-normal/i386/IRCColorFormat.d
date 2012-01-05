@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/../Library/IRCColorFormat.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/../Library/IRCColorFormat.m

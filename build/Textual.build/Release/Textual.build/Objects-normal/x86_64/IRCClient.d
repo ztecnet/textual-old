@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/IRC/IRCClient.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/IRC/IRCClient.m

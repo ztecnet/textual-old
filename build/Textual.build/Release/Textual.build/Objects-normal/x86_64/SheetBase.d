@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Dialogs/SheetBase.m
+dependencies: /Users/nicholas/Desktop/Textual/Classes/Dialogs/SheetBase.m

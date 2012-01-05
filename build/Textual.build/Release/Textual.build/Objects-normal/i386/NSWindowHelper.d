@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSWindowHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSWindowHelper.m

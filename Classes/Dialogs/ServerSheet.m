@@ -306,7 +306,7 @@
     
     /* Sockets */
     pongInterval.integerValue    = config.pongInterval;
-    timeoutInterval.integerValue = config.timeoutInterval;
+    timeoutInterval.integerValue = 120;
     
     /* Flood Control */
     floodControlDelayTimer.integerValue     = config.floodControlDelayTimerInterval;

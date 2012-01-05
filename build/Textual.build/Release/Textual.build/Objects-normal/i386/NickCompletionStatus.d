@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Controllers/NickCompletionStatus.m
+  /Users/nicholas/Desktop/Textual/Classes/Controllers/NickCompletionStatus.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Library/GCDAsyncSocket.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/GCDAsyncSocket.m

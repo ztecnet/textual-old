@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Library/TXRegularExpression.m
+  /Users/nicholas/Desktop/Textual/Classes/Library/TXRegularExpression.m

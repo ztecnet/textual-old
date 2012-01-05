@@ -698,22 +698,18 @@ NSString *rawhost;
 
 - (void)startPongTimer
 {
-    //[self printDebugInformationToConsole:@"start pong timer"];
 	if (pongTimer.isActive) return;
     if (config.pongInterval <= 0) return;
-	
 	[pongTimer start:config.pongInterval];
 }
 
 - (void)stopPongTimer
 {
-    //[self printDebugInformationToConsole:@"stop pong timer"];
 	[pongTimer stop];
 }
 
 - (void)onPongTimer:(id)sender
 {
-    //[self printDebugInformationToConsole:@"on pong timer"];
 	if (isLoggedIn) {
 		if (NSObjectIsNotEmpty(serverHostname)) {
 			[self send:IRCCI_PONG, serverHostname, nil];
@@ -4285,7 +4281,6 @@ NSString *rawhost;
 
 - (void)receivePing:(IRCMessage *)m
 {
-    //[self printDebugInformationToConsole:@"received ping"];
 	[self send:IRCCI_PONG, [m sequence:0], nil];
 	
 	[self stopPongTimer];

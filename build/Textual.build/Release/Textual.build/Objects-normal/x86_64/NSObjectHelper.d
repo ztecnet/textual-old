@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSObjectHelper.m
+  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSObjectHelper.m

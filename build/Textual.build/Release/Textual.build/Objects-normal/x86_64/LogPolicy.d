@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/textual-master/Classes/Views/Log/LogPolicy.m
+  /Users/nicholas/Desktop/Textual/Classes/Views/Log/LogPolicy.m
