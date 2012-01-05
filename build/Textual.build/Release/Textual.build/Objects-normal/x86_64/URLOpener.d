@@ -1,1 +1,2 @@
-dependencies: /Users/nicholas/Desktop/Textual/Classes/Helpers/URLOpener.m
+dependencies: \
+  /Users/nicholas/Desktop/textual-master/Classes/Helpers/URLOpener.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Library/KeyEventHandler.m
+  /Users/nicholas/Desktop/textual-master/Classes/Library/KeyEventHandler.m

@@ -45,7 +45,7 @@
 
 - (NSArray *)badModes 
 {
-	return [NSArray arrayWithObjects:@"q", @"a", @"o", @"h", @"v", @"b", @"e", @"I", nil];
+	return [NSArray arrayWithObjects:@"q", @"a", @"o", @"h", @"v", @"b", @"e", @"I", @"y", nil];
 }
 
 - (NSArray *)update:(NSString *)str

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Views/InputTextField.m
+  /Users/nicholas/Desktop/textual-master/Classes/Views/InputTextField.m

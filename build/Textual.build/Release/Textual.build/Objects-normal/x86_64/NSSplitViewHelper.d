@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSSplitViewHelper.m
+  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSSplitViewHelper.m

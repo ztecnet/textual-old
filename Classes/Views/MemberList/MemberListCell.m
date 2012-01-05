@@ -13,6 +13,7 @@
 #define BADGE_SHADOW_COLOR                          [NSColor colorWithCalibratedWhite:1.00 alpha:0.60]
 #define BADGE_MESSAGE_BACKGROUND_COLOR_TS           [NSColor whiteColor]
 
+#define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Y		[NSColor _colorWithCalibratedRed:186 green:0   blue:0   alpha:1]
 #define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Q		[NSColor _colorWithCalibratedRed:186 green:0   blue:0   alpha:1]
 #define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_A		[NSColor _colorWithCalibratedRed:157 green:0   blue:89  alpha:1]
 #define BADGE_MESSAGE_BACKGROUND_COLOR_MODE_O		[NSColor _colorWithCalibratedRed:210 green:105 blue:30  alpha:1]
@@ -95,10 +96,12 @@
     if (selected == NO) {
         if (mcstring == '~') {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Q;
-        } else if (mcstring == '&' || mcstring == '!') {
+        } else if (mcstring == '&') {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_A;
         } else if (mcstring == '@') {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_O;
+        } else if (mcstring == '!') {
+            backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Y;
         } else if (mcstring == '%') {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_H;
         } else if (mcstring == '+') {

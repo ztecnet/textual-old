@@ -20,6 +20,7 @@
 @synthesize networkName;
 @synthesize userModeQPrefix;
 @synthesize userModeAPrefix;
+@synthesize userModeYPrefix;
 @synthesize userModeOPrefix;
 @synthesize userModeHPrefix;
 @synthesize userModeVPrefix;
@@ -36,11 +37,13 @@
 - (void)dealloc
 {
 	[networkName drain];
-	[userModeQPrefix drain];
+    [userModeYPrefix drain];
+    [userModeQPrefix drain];
 	[userModeAPrefix drain];
 	[userModeOPrefix drain];
 	[userModeHPrefix drain];
 	[userModeVPrefix drain];
+ 
 	
 	[super dealloc];
 }
@@ -52,6 +55,7 @@
 	nickLen = 9;
 	modesCount = 3;
 	
+    [self setValue:OP_VALUE forMode:'y'];
 	[self setValue:OP_VALUE forMode:'o'];
 	[self setValue:OP_VALUE forMode:'h'];
 	[self setValue:OP_VALUE forMode:'v'];
@@ -208,6 +212,8 @@
 					self.userModeHPrefix = modeChar;
 				} else if ([modeKey isEqualToString:@"v"]) {
 					self.userModeVPrefix = modeChar;
+				} else if ([modeKey isEqualToString:@"y"]) {
+					self.userModeYPrefix = modeChar;
 				}
 				
 				[self setValue:OP_VALUE forMode:rawKey];

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Preferences/ViewTheme.m
+  /Users/nicholas/Desktop/textual-master/Classes/Preferences/ViewTheme.m

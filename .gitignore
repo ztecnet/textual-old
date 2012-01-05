@@ -8,6 +8,8 @@
 Rakefile
 build/
 Signing/
+appcast.xml
+changelog.txt
 *~
 Debug.xcconfig
 Resources/Plugins/Compiled

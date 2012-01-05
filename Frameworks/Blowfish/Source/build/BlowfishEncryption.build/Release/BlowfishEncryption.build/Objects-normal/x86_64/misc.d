@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.cpp \
-  /Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes/misc.hpp
+  /Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes/misc.cpp \
+  /Users/nicholas/Desktop/textual-master/Frameworks/Blowfish/Source/Classes/misc.hpp

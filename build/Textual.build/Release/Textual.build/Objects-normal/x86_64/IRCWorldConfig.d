@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/IRC/IRCWorldConfig.m
+  /Users/nicholas/Desktop/textual-master/Classes/IRC/IRCWorldConfig.m

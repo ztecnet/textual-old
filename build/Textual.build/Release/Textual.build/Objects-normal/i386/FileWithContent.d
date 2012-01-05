@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Preferences/FileWithContent.m
+  /Users/nicholas/Desktop/textual-master/Classes/Preferences/FileWithContent.m

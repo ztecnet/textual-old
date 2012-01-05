@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSBundleHelper.m
+  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSBundleHelper.m

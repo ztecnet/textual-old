@@ -1,1 +1,2 @@
-dependencies: /Users/nicholas/Desktop/Textual/Classes/Library/Timer.m
+dependencies: \
+  /Users/nicholas/Desktop/textual-master/Classes/Library/Timer.m

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Others/ValidateReceipt.m \
-  /Users/nicholas/Desktop/Textual/Classes/Headers/ValidateReceipt.h
+  /Users/nicholas/Desktop/textual-master/Classes/Others/ValidateReceipt.m \
+  /Users/nicholas/Desktop/textual-master/Classes/Headers/ValidateReceipt.h

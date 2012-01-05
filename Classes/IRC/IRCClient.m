@@ -106,6 +106,8 @@ static NSDateFormatter *dateTimeFormatter = nil;
 @synthesize inSASLRequest;
 @synthesize world;
 
+NSString *rawhost;
+
 - (id)init
 {
 	if ((self = [super init])) {
@@ -696,6 +698,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 
 - (void)startPongTimer
 {
+    [self printDebugInformationToConsole:@"start pong timer"];
 	if (pongTimer.isActive) return;
     if (config.pongInterval <= 0) return;
 	
@@ -704,11 +707,13 @@ static NSDateFormatter *dateTimeFormatter = nil;
 
 - (void)stopPongTimer
 {
+    [self printDebugInformationToConsole:@"stop pong timer"];
 	[pongTimer stop];
 }
 
 - (void)onPongTimer:(id)sender
 {
+    [self printDebugInformationToConsole:@"on pong timer"];
 	if (isLoggedIn) {
 		if (NSObjectIsNotEmpty(serverHostname)) {
 			[self send:IRCCI_PONG, serverHostname, nil];
@@ -1544,7 +1549,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 	} else if (completeTarget && u == self && c) {
 		selChannel = c;
 	}
-	
+	    
 	BOOL cutColon = NO;
 	
 	if ([s.string hasPrefix:@"/"]) {
@@ -1861,11 +1866,14 @@ static NSDateFormatter *dateTimeFormatter = nil;
                             if ([cmd isEqualToString:IRCCI_PRIVMSG]) {
                                 [self printBoth:c type:type nick:myNick text:t identified:YES];
                             }
-                            else {
+                            else if ([cmd isEqualToString:IRCCI_NOTICE]) {
                                 NSString *msg;
                                 msg = [NSString stringWithFormat:@">-%@", chname ];
 							[self printBoth:[world selectedChannelOn:self] type:type nick:msg text:t identified:YES];
 							}
+                            else {
+                                [self printBoth:[world selectedChannelOn:self] type:type nick:myNick text:t identified:NO];
+                            }
 							if ([self encryptOutgoingMessage:&t channel:c] == NO) {
 								continue;
 							}
@@ -3330,7 +3338,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 		if ([Preferences logTranscript]) {
 			return [self printAndLog:c withHTML:NO];
 		} else {
-			return [log print:c];
+            return [log print:c];
 		}
 	}
 }
@@ -3466,6 +3474,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 {
 	NSString *anick  = m.sender.nick;
 	NSString *target = [m paramAt:0];
+    rawhost = m.sender.raw;
 	
 	LogLineType type = LINE_TYPE_PRIVMSG;
 	
@@ -3478,7 +3487,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 	if ([target hasPrefix:@"@"]) {
 		target = [target safeSubstringFromIndex:1];
 	}
-	
+
 	AddressBook *ignoreChecks = [self checkIgnoreAgainstHostmask:m.sender.raw 
 													 withMatches:[NSArray arrayWithObjects:@"ignoreHighlights", 
 																  @"ignorePMHighlights",
@@ -3504,8 +3513,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 			if ([ignoreChecks ignorePublicMsg] == YES) {
 				return;
 			}
-		}
-		
+		} 		
 		IRCChannel *c = [self findChannel:target];
 		if (PointerIsEmpty(c)) return;
 		
@@ -4277,6 +4285,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 
 - (void)receivePing:(IRCMessage *)m
 {
+    [self printDebugInformationToConsole:@"received ping"];
 	[self send:IRCCI_PONG, [m sequence:0], nil];
 	
 	[self stopPongTimer];
@@ -4785,9 +4794,9 @@ static NSDateFormatter *dateTimeFormatter = nil;
 					NSString *u  = [nick safeSubstringWithRange:NSMakeRange(0, 1)];
 					NSString *op = NSWhitespaceCharacter;
 					
-					if ([u isEqualTo:isupport.userModeQPrefix] || [u isEqualTo:isupport.userModeHPrefix] || 
-						[u isEqualTo:isupport.userModeAPrefix] || [u isEqualTo:isupport.userModeVPrefix] || 
-						[u isEqualTo:isupport.userModeOPrefix]) {
+					if ([u isEqualTo:isupport.userModeYPrefix] || [u isEqualTo:isupport.userModeOPrefix] || 
+						[u isEqualTo:isupport.userModeQPrefix] || [u isEqualTo:isupport.userModeHPrefix] || 
+						[u isEqualTo:isupport.userModeAPrefix] || [u isEqualTo:isupport.userModeVPrefix]) {
 						
 						nick = [nick safeSubstringFromIndex:1];
 						op   = u;
@@ -4797,7 +4806,8 @@ static NSDateFormatter *dateTimeFormatter = nil;
 					
 					m.nick        = nick;
 					
-					m.q = ([op isEqualTo:isupport.userModeQPrefix]);
+					m.y = ([op isEqualTo:isupport.userModeYPrefix]);
+                    m.q = ([op isEqualTo:isupport.userModeQPrefix]);
 					m.a = ([op isEqualTo:isupport.userModeAPrefix]);
 					m.o = ([op isEqualTo:isupport.userModeOPrefix] || m.q);
 					m.h = ([op isEqualTo:isupport.userModeHPrefix]);
@@ -4809,7 +4819,7 @@ static NSDateFormatter *dateTimeFormatter = nil;
 					[c addMember:m reload:NO];
 					
 					if (m.isMyself) {
-						c.isOp     = (m.q || m.a | m.o);
+						c.isOp     = (m.q || m.a | m.o | m.y);
 						c.isHalfOp = (m.h || c.isOp);
 					}
 				}

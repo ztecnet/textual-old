@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Views/MemberList/MemberListCell.m
+  /Users/nicholas/Desktop/textual-master/Classes/Views/MemberList/MemberListCell.m

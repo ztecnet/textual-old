@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Library/GlobalModels.m
+  /Users/nicholas/Desktop/textual-master/Classes/Library/GlobalModels.m

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Controllers/MasterController.m
+  /Users/nicholas/Desktop/textual-master/Classes/Controllers/MasterController.m

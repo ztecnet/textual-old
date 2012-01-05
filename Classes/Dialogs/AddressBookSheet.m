@@ -83,7 +83,7 @@
 	ignore.ignoreJPQE			= [ignoreJPQE state];
 	ignore.notifyJoins			= [notifyJoins state];
 	ignore.ignorePMHighlights	= [ignorePMHighlights state];
-	
+    
 	[ignore processHostMaskRegex];
 	
 	if ([delegate respondsToSelector:@selector(ignoreItemSheetOnOK:)]) {

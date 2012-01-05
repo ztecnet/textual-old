@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Views/MemberList/MemberList.m
+  /Users/nicholas/Desktop/textual-master/Classes/Views/MemberList/MemberList.m

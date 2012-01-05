@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/IRC/IRCChannelMode.m
+  /Users/nicholas/Desktop/textual-master/Classes/IRC/IRCChannelMode.m

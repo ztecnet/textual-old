@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Dialogs/ChanBanExceptionSheet.m
+  /Users/nicholas/Desktop/textual-master/Classes/Dialogs/ChanBanExceptionSheet.m

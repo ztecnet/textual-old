@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/nicholas/Desktop/Textual/Classes/Helpers/NSRectHelper.m
+  /Users/nicholas/Desktop/textual-master/Classes/Helpers/NSRectHelper.m

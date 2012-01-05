@@ -1,1 +1,2 @@
-dependencies: /Users/nicholas/Desktop/Textual/Classes/Dialogs/NickSheet.m
+dependencies: \
+  /Users/nicholas/Desktop/textual-master/Classes/Dialogs/NickSheet.m
