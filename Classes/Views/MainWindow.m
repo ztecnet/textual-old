@@ -48,8 +48,8 @@
 			return;
 		}
 	}
-	
-    //[super sendEvent:e];
+
+    [super sendEvent:e];
 }
 
 @end
