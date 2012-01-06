@@ -1155,7 +1155,7 @@ typedef enum {
 		[world focusInputText];
         
         if ([text respondsToSelector:@selector(resetTextFieldCellSize)]) {
-           // [text resetTextFieldCellSize];
+           //[text resetTextFieldCellSize];
         }
 	}
 }
@@ -1170,7 +1170,7 @@ typedef enum {
 		[world focusInputText];
         
         if ([text respondsToSelector:@selector(resetTextFieldCellSize)]) {
-           // [text resetTextFieldCellSize];
+           //[text resetTextFieldCellSize];
         }
 	}
 }

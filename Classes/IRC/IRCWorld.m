@@ -933,7 +933,7 @@
 			return;
 	}
 	
-	//[window sendEvent:e];
+	[window sendEvent:e];
 }
 
 - (void)logDoubleClick:(NSString *)s

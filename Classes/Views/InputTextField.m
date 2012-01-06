@@ -94,7 +94,7 @@
 			textBoxFrame.size.height = InputTextFiedMaxHeight;
 		}
 	}	
-	
+    
 	NSInteger contentBorder = (textBoxFrame.size.height + 13);
 	
 	superViewFrame.origin.y	   = contentBorder;
@@ -103,7 +103,8 @@
 	[mainWindow setContentBorderThickness:contentBorder forEdge:NSMinYEdge];
     
 	[scroller	setFrame:textBoxFrame];
-	[superView	setFrame:superViewFrame];
+	//this messes up fullscreen mode
+    [superView	setFrame:superViewFrame];
    
     [scroller setNeedsDisplay:YES];
 }
@@ -171,7 +172,7 @@
         [_actionTarget performSelector:_actonSelector];
         
         [self toggleFontResetStatus:YES];
-      // [self resetTextFieldCellSize];
+        //[self resetTextFieldCellSize];
         
         return YES;
     }
