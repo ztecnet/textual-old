@@ -19,7 +19,7 @@
 	<key>DTCompiler</key>
 	<string></string>
 	<key>DTPlatformBuild</key>
-	<string>4D199</string>
+	<string>4D502</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -27,8 +27,8 @@
 	<key>DTSDKName</key>
 	<string></string>
 	<key>DTXcode</key>
-	<string>0420</string>
+	<string>0421</string>
 	<key>DTXcodeBuild</key>
-	<string>4D199</string>
+	<string>4D502</string>
 </dict>
 </plist>
