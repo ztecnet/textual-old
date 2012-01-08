@@ -1,212 +1,0 @@
-TSystemProfiler
-v4
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Info.plist Info.plist
-cCopyPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Resources/MacintoshModels.plist MacintoshModels.plist
-cCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler normal x86_64
-cLd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler normal i386
-cCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler normal "i386 x86_64"
-cTouch /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004EBDCD2D0000000000006560
-t1321061677
-s25952
-
-N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c000000004EBE3947000000000060E710
-t1321089351
-s6350608
-
-N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c000000004EBE3949000000000002D2A0
-t1321089353
-s184992
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Info.plist
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Resources/MacintoshModels.plist
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/MacintoshModels.plist
-c000000004F08DD190000000000000EE2
-t1325980953
-s3810
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m
-c000000004F08DD190000000000000A1C
-t1325980953
-s2588
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m
-c000000004F08DD19000000000000422E
-t1325980953
-s16942
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler.LinkFileList
-c000000004F08E39E000000000000013F
-t1325982622
-s319
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler.LinkFileList
-c000000004F08E39E0000000000000143
-t1325982622
-s323
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o
-t2
-s0
-
-N/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o
-t2
-s0
-
-NInfo.plist
-c000000004F08DD190000000000000285
-t1325980953
-s645
-
-CCheck dependencies
-r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies25e6911e1bb9b441^6a4bb11e1bb9b441^---0#1#0#--18"Check dependencies36"380A647E-A3EC-4CDE-A215-D3E3B0EB7359-
-
-CCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347675422.728934
-e347675423.973777
-r1
-xCompileC
-xbuild/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.md00bbb1e1bb9b441^274bf91f1bb9b441^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m0000000000000000^3545"CompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o TPISystemProfiler.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPISystemProfiler.o36"328DB5E5-B267-479D-9A30-2A11E8A2E852-
-
-CCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347675422.728972
-e347675424.095190
-r1
-xCompileC
-xbuild/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m5b0bbb1e1bb9b441^356018201bb9b441^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m0000000000000000^3530"CompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o TPI_SP_SysInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources/i386 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/TPI_SP_SysInfo.o36"CFB2C1CA-472B-4F6C-8600-8F4B6E5D9589-
-
-CCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347675422.729702
-e347675423.972510
-r1
-xCompileC
-xbuild/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.mb820bb1e1bb9b441^f5f5f81f1bb9b441^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m0000000000000000^3557"CompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o TPISystemProfiler.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPISystemProfiler.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPISystemProfiler.o36"BF683B71-F11D-413D-8A5C-8E3F0556825C-
-
-CCompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347675422.728970
-e347675424.062119
-r1
-xCompileC
-xbuild/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m5b0bbb1e1bb9b441^d6e60f201bb9b441^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m0000000000000000^3542"CompileC build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o TPI_SP_SysInfo.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-generated-files.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-own-target-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-all-target-headers.hmap -iquote /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/SystemProfiler-project-headers.hmap -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/include -I/Users/nicholas/Desktop/Textual/Classes/Headers -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources/x86_64 -I/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/DerivedSources -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -MMD -MT dependencies -MF /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.d -c /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/TPI_SP_SysInfo.m -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/TPI_SP_SysInfo.o36"DB158721-577C-4CA6-BB6C-75362208751D-
-
-CCopyPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Resources/MacintoshModels.plist MacintoshModels.plist
-s347675422.712249
-e347675422.719873
-r1
-xCopyPlistFile
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Resources/MacintoshModels.plist
-xMacintoshModels.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Copy MacintoshModels.plist2993b61e1bb9b441^5551b81e1bb9b441^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/MacintoshModels.plist0000000000000000^357"CopyPlistFile ../Compiled/SystemProfiler.bundle/Contents/Resources/MacintoshModels.plist MacintoshModels.plist    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    builtin-copyPlist --outdir /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Resources -- MacintoshModels.plist36"A9E060AC-81BB-4612-BF2C-9EC24BC57734-
-
-CCreateUniversalBinary /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler normal "i386 x86_64"
-s347675424.192943
-e347675424.200846
-r1
-xCreateUniversalBinary
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler
-xnormal
-xi386 x86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Create universal binary /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfilera5a231201bb9b441^6a6833201bb9b441^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler00f47c6ddfffdf42^656"CreateUniversalBinary ../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler normal "i386 x86_64"    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    /usr/bin/lipo -create /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler -output /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/MacOS/SystemProfiler36"819550D5-227F-4A2C-A20B-469A8F0565E3-
-
-CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler normal i386
-s347675424.101989
-e347675424.185733
-r1
-xLd
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler
-xnormal
-xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler185d1a201bb9b441^158b2f201bb9b441^---0#0#0#--2016"Ld build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler normal i386    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework OpenGL -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/i386/SystemProfiler36"9831D1ED-6D94-4221-953F-B208F93B38E5-
-
-CLd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler normal x86_64
-s347675424.068994
-e347675424.184908
-r1
-xLd
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler
-xnormal
-xx86_64
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection162"Link /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfilerecfa11201bb9b441^e2582f201bb9b441^---0#0#0#--2026"Ld build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler normal x86_64    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -bundle -L/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled -F/Users/nicholas/Desktop/Textual/Frameworks -F/Users/nicholas/Desktop/Textual/Frameworks/Adium -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/Source/Classes -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/Source -F/Users/nicholas/Desktop/Textual/Frameworks/Adium/AutoHyperlinks/Source/xcconfigs -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources -F/Users/nicholas/Desktop/Textual/Frameworks/Blowfish/BlowfishEncryption.framework.dSYM/Contents/Resources/DWARF -filelist /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler.LinkFileList -mmacosx-version-min=10.6 -bundle_loader /Users/nicholas/Desktop/Textual/build/Release/Textual.app/Contents/MacOS/Textual -framework CoreFoundation -framework Cocoa -framework OpenGL -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/build/SystemProfiler.build/Release/SystemProfiler.build/Objects-normal/x86_64/SystemProfiler36"6F2E4030-449E-4FBD-97C5-C0E9BD3F86F2-
-
-CProcessInfoPlistFile /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Info.plist Info.plist
-s347675422.699462
-e347675422.704223
-r1
-xProcessInfoPlistFile
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Info.plist
-xInfo.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist1365b31e1bb9b441^0b47b41e1bb9b441^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/Info.plist0000000000000000^358"ProcessInfoPlistFile ../Compiled/SystemProfiler.bundle/Contents/Info.plist Info.plist    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle/Contents/Info.plist36"9AC355E6-765D-4FFC-A5C1-F13B32B63CEC-
-
-CTouch /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle
-s347675424.208851
-e347675424.215204
-r1
-xTouch
-x/Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Touch /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundled1af35201bb9b441^ad1737201bb9b441^---0#0#0#--233"Touch ../Compiled/SystemProfiler.bundle    cd /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler    /usr/bin/touch -c /Users/nicholas/Desktop/Textual/Resources/Plugins/SystemProfiler/../Compiled/SystemProfiler.bundle36"BF1E117C-07BE-471C-803C-C39C1B568BB1-
-
