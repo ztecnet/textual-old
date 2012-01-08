@@ -19,4 +19,6 @@ Resources/Plugins/Compiled
 CERTIFICATE
 DerivedData
 *.build/
-
+Frameworks/Blowfish/Source/build/*
+Resources/Plugins/Compiled/*
+Frameworks/Blowfish/Source/build/
