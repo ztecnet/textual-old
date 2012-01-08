@@ -6,7 +6,7 @@
 *.pyc
 *.sh
 Rakefile
-build/
+*/build/*
 Signing/
 build.sh
 appcast.xml
