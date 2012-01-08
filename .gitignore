@@ -7,6 +7,7 @@
 *.zip
 *.sh
 Rakefile
+build/*
 */build/*
 Signing/
 build.sh
@@ -17,3 +18,5 @@ Debug.xcconfig
 Resources/Plugins/Compiled
 CERTIFICATE
 DerivedData
+*.build/
+
