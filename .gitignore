@@ -4,6 +4,7 @@
 *.pbxuser
 *.perspectivev3
 *.pyc
+*.zip
 *.sh
 Rakefile
 */build/*
