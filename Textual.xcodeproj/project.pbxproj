@@ -350,8 +350,12 @@
 		77A33938146B3B300003ACD2 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A33937146B3B300003ACD2 /* Growl.framework */; };
 		77A3394E146B47710003ACD2 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77A33937146B3B300003ACD2 /* Growl.framework */; };
 		E128FC3714AEB50300A84CDE /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E128FC3614AEB50300A84CDE /* dsa_pub.pem */; };
+		E164116A14BB9A2F009AD117 /* checksize.sh in Resources */ = {isa = PBXBuildFile; fileRef = E164116914BB9A2F009AD117 /* checksize.sh */; };
 		E16F16DB14AEA8660007C174 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16F16DA14AEA8660007C174 /* Sparkle.framework */; };
 		E16F16DC14AEA8800007C174 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E16F16DA14AEA8660007C174 /* Sparkle.framework */; };
+		E1ABCA9414BCE970004A0E06 /* ShellTask.h in Headers */ = {isa = PBXBuildFile; fileRef = E1ABCA9314BCE970004A0E06 /* ShellTask.h */; };
+		E1AF0A0214BCDC4800574E5C /* checksize.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = E164116914BB9A2F009AD117 /* checksize.sh */; };
+		E1AF0A1C14BCE80B00574E5C /* ShellTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF0A1B14BCE80B00574E5C /* ShellTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -444,6 +448,7 @@
 			files = (
 				77A3394E146B47710003ACD2 /* Growl.framework in CopyFiles */,
 				E16F16DC14AEA8800007C174 /* Sparkle.framework in CopyFiles */,
+				E1AF0A0214BCDC4800574E5C /* checksize.sh in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,7 +769,10 @@
 		78A8C19011737F660044E7A1 /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 		78A8C19711737F660044E7A1 /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
 		E128FC3614AEB50300A84CDE /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		E164116914BB9A2F009AD117 /* checksize.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = checksize.sh; path = Resources/checksize.sh; sourceTree = "<group>"; };
 		E16F16DA14AEA8660007C174 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		E1ABCA9314BCE970004A0E06 /* ShellTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellTask.h; path = Classes/Headers/ShellTask.h; sourceTree = SOURCE_ROOT; };
+		E1AF0A1B14BCE80B00574E5C /* ShellTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -839,6 +847,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E164116914BB9A2F009AD117 /* checksize.sh */,
 				E16F16DA14AEA8660007C174 /* Sparkle.framework */,
 				4C5AF05112D1B77100D6B18C /* System Libraries */,
 				4C5AF05012D1B76A00D6B18C /* System Frameworks */,
@@ -1526,6 +1535,8 @@
 		78A8C18211737F660044E7A1 /* Channel View */ = {
 			isa = PBXGroup;
 			children = (
+				E1ABCA9314BCE970004A0E06 /* ShellTask.h */,
+				E1AF0A1B14BCE80B00574E5C /* ShellTask.m */,
 				4CD0E65812F1B5DE00C8F016 /* ImageURLParser.h */,
 				780C67C711822AFF00CB739F /* ImageURLParser.m */,
 				4CD0E65912F1B5DE00C8F016 /* LogController.h */,
@@ -1679,6 +1690,7 @@
 				4C6C44FE13178C6A00815D4E /* TXRegularExpression.h in Headers */,
 				4C8CFF2B13D24C3C002BD81B /* ListSeparatorCell.h in Headers */,
 				4C70B46713D9A222004D7619 /* TextField.h in Headers */,
+				E1ABCA9414BCE970004A0E06 /* ShellTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1881,6 +1893,7 @@
 				4CD3CA49138B9768002FD1E3 /* ServerCellSelection_Aqua.tif in Resources */,
 				4CFB1055138CE8E0007B8F2E /* HighlightSheet.xib in Resources */,
 				E128FC3714AEB50300A84CDE /* dsa_pub.pem in Resources */,
+				E164116A14BB9A2F009AD117 /* checksize.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2055,6 +2068,7 @@
 				4CA0C741138920B2002689FD /* ListSeparatorCell.m in Sources */,
 				4CFB1059138CEAA3007B8F2E /* HighlightSheet.m in Sources */,
 				4C70B46513D9A14F004D7619 /* TextField.m in Sources */,
+				E1AF0A1C14BCE80B00574E5C /* ShellTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

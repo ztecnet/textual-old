@@ -611,6 +611,8 @@
 	if (isNormalMsg && NSObjectIsNotEmpty(urlRanges) && [Preferences showInlineImages]) {
         if (([channel isChannel] && channel.config.inlineImages == NO) || [channel isTalk]) {
             NSString *imageUrl  = nil;
+            NSString *sizeis    = 0;
+            NSInteger imgsize  = 5242880;
             
             NSMutableArray *postedUrls = [NSMutableArray array];
             
@@ -625,12 +627,20 @@
                         [postedUrls safeAddObject:imageUrl];
                     }
                     
+                    NSString* newpath = [NSString stringWithFormat:@"sh %@/checksize.sh %@",[[NSBundle mainBundle] privateFrameworksPath], imageUrl];
+                    sizeis = [ShellTask executeShellCommandSynchronously:newpath];
+                    int i = [sizeis intValue];
+                    
+                    if (i >= imgsize) {
+                        [s appendFormat:@"<br /> The image above is to large to load. If you still wish to open it in your browser just click the link."];
+                    } else {
                     [s appendFormat:@"<a href=\"%@\" onclick=\"return Textual.hide_inline_image(this)\"><img src=\"%@\" class=\"inlineimage\" style=\"max-width: %ipx;\" /></a>", url, imageUrl, [Preferences inlineImagesMaxWidth]];
+                    }
                 }
             }
         }
 	}
-	
+        
 	NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     
     if (oldRenderAbs || oldRenderAlt) {

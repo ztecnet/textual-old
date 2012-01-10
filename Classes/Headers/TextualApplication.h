@@ -29,6 +29,7 @@
 	#import "ViewTheme.h"
 	#import "LogView.h"
 	#import "LogLine.h"
+    #import "ShellTask.h"
 	#import "DockIcon.h"
 	#import "ListView.h"
 	#import "LogPolicy.h"
