@@ -12,6 +12,7 @@
 
 @interface ShellTask : NSObject {
 }
+
 	//Returns an NSTask that is equvalent to 
 	// sh -c <command>
 	//where <command> is passed directly to sh via argv, and is NOT quoted (so ~ expansion still works).

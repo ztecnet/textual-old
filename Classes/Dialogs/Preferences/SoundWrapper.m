@@ -8,7 +8,7 @@
 	if ((self = [super init])) {
 		eventType = aEventType;
 	}
-
+    
 	return self;
 }
 
@@ -25,7 +25,7 @@
 - (NSString *)sound
 {
 	NSString *sound = [Preferences soundForEvent:eventType];
-	
+    
 	if (NSObjectIsEmpty(sound)) {
 		return EMPTY_SOUND;
 	} else {
@@ -38,11 +38,11 @@
 	if ([value isEqualToString:EMPTY_SOUND]) {
 		value = NSNullObject;
 	}
-	
+    
 	if (NSObjectIsNotEmpty(value)) {
 		[SoundPlayer play:value isMuted:NO];
 	}
-	
+    
 	[Preferences setSound:value forEvent:eventType];
 }
 
@@ -74,6 +74,10 @@
 - (void)setDisableWhileAway:(BOOL)value
 {
 	[Preferences setDisableWhileAway:value forEvent:eventType];
+}
+
+- (GrowlNotificationType)eventType {
+    return eventType;
 }
 
 @end
