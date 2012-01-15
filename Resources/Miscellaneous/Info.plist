@@ -54,9 +54,13 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUEnableAutomaticChecks</key>
+	<string>YES</string>
 	<key>SUFeedURL</key>
 	<string>http://mirror.ztecnet.net/repository/mac/textual/appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
+	<key>SUScheduledCheckInterval</key>
+	<string></string>
 </dict>
 </plist>
