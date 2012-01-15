@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2007-2009 Dave Dribin
- * 
+ *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -8,7 +8,7 @@
  * modify, merge, publish, distribute, sublicense, and/or sell copies
  * of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  *
@@ -42,14 +42,14 @@
 	parentThread = nil;
     waitUntilDone = NO;
     threadType = INVOCATION_BACKGROUND_THREAD;
-    
+
     return self;
 }
 
 - (id)prepareWithInvocationTarget:(id)inTarget
 {
     target = [inTarget retain];
-	
+
     return self;
 }
 
@@ -58,7 +58,7 @@
     [target release];
 	[invocation release];
 	[parentThread release];
-	
+
     [super dealloc];
 }
 
@@ -70,15 +70,15 @@
 - (void)forwardInvocation:(NSInvocation *)ioInvocation
 {
     [ioInvocation setTarget:target];
-	
+
 	invocation = [ioInvocation retain];
-	
+
 	if (waitUntilDone == NO) {
 		[invocation retainArguments];
 	}
-	
+
 	if (parentThread && threadType == INVOCATION_PARENT_THREAD) {
-		[invocation performSelector:@selector(performInvocation:) 
+		[invocation performSelector:@selector(performInvocation:)
 						   onThread:parentThread
 						 withObject:invocation
 					  waitUntilDone:NO];
@@ -98,17 +98,17 @@
 
 @implementation NSInvocation (DDInvocationWrapper)
 
-- (void)performInvocation:(NSInvocation *)anInvocation 
+- (void)performInvocation:(NSInvocation *)anInvocation
 {
 	/* Mac OS does not automatically place background threads in an
 	 autorelease pool like the default application run loop. For that
 	 reason let us invoke the invocation within our autorelease pool. */
-	
+
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
-	
+
 	[anInvocation invoke];
-	
+
 	[pool drain];
 }
 
-@end 
+@end

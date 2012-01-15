@@ -5,7 +5,7 @@
 	padding: 0;
 	font-size: 100%;
     word-wrap: break-word;
-}	
+}
 
 body {
 	color: #fff;
@@ -44,13 +44,13 @@ body[dir=rtl] .sender {
 body[dir=ltr] .time {
 	color: #666;
 	font-size: 90%;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 body[dir=rtl] .time {
 	color: #666;
 	font-size: 90%;
-    white-space: nowrap; 
+    white-space: nowrap;
 	padding-left: 0.4em;
     display: inline-block;
 }
@@ -285,8 +285,8 @@ body[dir=rtl] div[type*=nick] .message:before {
 body .inline_nickname { color: #21DB00; }
 
 body div[type*=privmsg] .sender[type*=myself],
-body div[type*=action] .sender[type*=myself] { 
-	color: #aaa; 
+body div[type*=action] .sender[type*=myself] {
+	color: #aaa;
 }
 
 body .sender[type*=normal] { color: #FFFFFF; }

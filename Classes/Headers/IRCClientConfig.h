@@ -20,46 +20,46 @@ NSComparisonResult channelDataSort(IRCChannel *s1, IRCChannel *s2, void *context
 	NSInteger cuid;
 	NSString *guid;
 	NSString *name;
-	
+
 	NSString *host;
 	NSInteger port;
 	NSString *server;
 	NSString *network;
-    
+
 	BOOL useSSL;
     BOOL useSASL;
-	
+
 	NSString *nick;
 	NSString *password;
 	NSString *username;
 	NSString *realName;
 	NSString *nickPassword;
 	NSMutableArray *altNicks;
-	
+
 	ProxyType proxyType;
 	NSString *proxyHost;
 	NSInteger proxyPort;
 	NSString *proxyUser;
 	NSString *proxyPassword;
-    
+
     NSInteger pongInterval;
     NSInteger timeoutInterval;
-    
+
     BOOL outgoingFloodControl;
     BOOL incomingFloodControl;
     NSInteger floodControlMaximumMessages;
 	NSInteger floodControlDelayTimerInterval;
-    
+
 	BOOL autoConnect;
 	BOOL autoReconnect;
     BOOL prefersIPv6;
 	BOOL bouncerMode;
 	BOOL invisibleMode;
 	BOOL isTrustedConnection;
-	
+
 	NSStringEncoding encoding;
 	NSStringEncoding fallbackEncoding;
-	
+
 	NSString *leavingComment;
 	NSString *sleepQuitMessage;
 

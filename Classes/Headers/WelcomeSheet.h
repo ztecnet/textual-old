@@ -5,12 +5,12 @@
 @interface WelcomeSheet : SheetBase
 {
 	NSMutableArray *channels;
-	
+
 	IBOutlet NSTextField *nickText;
 	IBOutlet NSTextField *hostCombo;
-	
+
 	IBOutlet ListView *channelTable;
-	
+
 	IBOutlet NSButton *autoConnectCheck;
 	IBOutlet NSButton *addChannelButton;
 	IBOutlet NSButton *deleteChannelButton;

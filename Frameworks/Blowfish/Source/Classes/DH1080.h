@@ -2,7 +2,7 @@
 
 #define requiredPublicKeyLength		135
 
-@interface CFDH1080 : NSObject 
+@interface CFDH1080 : NSObject
 - (NSString *)generatePublicKey;
 - (NSString *)secretKeyFromPublicKey:(NSString *)publicKey;
 @end

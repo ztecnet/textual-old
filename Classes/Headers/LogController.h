@@ -11,36 +11,36 @@
 	WebScriptObject *js;
 	LogScriptEventSink *sink;
 	WebViewAutoScroll *autoScroller;
-    
+
 	IRCWorld *world;
 	IRCClient *client;
 	IRCChannel *channel;
-	
+
 	NSMenu *menu;
 	NSMenu *urlMenu;
 	NSMenu *addrMenu;
 	NSMenu *chanMenu;
 	NSMenu *memberMenu;
-	
+
 	ViewTheme *theme;
-	
+
 	BOOL bottom;
 	BOOL loaded;
 	BOOL scrollBottom;
 	BOOL becameVisible;
 	BOOL movingToBottom;
 	BOOL needsLimitNumberOfLines;
-	
+
 	NSInteger count;
 	NSInteger maxLines;
 	NSInteger scrollTop;
 	NSInteger lineNumber;
 	NSInteger loadingImages;
-	
+
 	NSMutableArray *highlightedLineNumbers;
-    
+
 	NSString *html;
-    
+
     dispatch_queue_t messageQueue;
 }
 

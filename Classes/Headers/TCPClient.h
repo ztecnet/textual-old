@@ -7,32 +7,32 @@
 {
 	id conn;
 	id delegate;
-	
+
 	NSString *host;
 	NSString *proxyHost;
 	NSString *proxyUser;
 	NSString *proxyPassword;
-	
+
 	NSInteger port;
 	NSInteger proxyPort;
 	NSInteger sendQueueSize;
 	NSInteger socksVersion;
-	
+
 	BOOL useSSL;
 	BOOL useSocks;
 	BOOL useSystemSocks;
-	
+
 	BOOL active;
 	BOOL connecting;
 	BOOL connected;
-	
+
 	NSMutableData *buffer;
-	
+
 	dispatch_queue_t dispatchQueue;
     dispatch_queue_t socketQueue;
 }
 
-@property (nonatomic, retain) NSMutableData *buffer; 
+@property (nonatomic, retain) NSMutableData *buffer;
 @property (nonatomic, retain) AsyncSocket *conn;
 @property (nonatomic, retain) id delegate;
 @property (nonatomic, retain) NSString *host;

@@ -6,23 +6,23 @@
 
 /*
  Copyright (c) 2008-2010, John Engelhart
- 
+
  All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
- 
+
  * Redistributions of source code must retain the above copyright
  notice, this list of conditions and the following disclaimer.
- 
+
  * Redistributions in binary form must reproduce the above copyright
  notice, this list of conditions and the following disclaimer in the
  documentation and/or other materials provided with the distribution.
- 
+
  * Neither the name of the Zang Industries nor the names of its
  contributors may be used to endorse or promote products derived from
  this software without specific prior written permission.
- 
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -53,35 +53,35 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-	
+
 #ifndef   REGEXKITLITE_VERSION_DEFINED
 #define   REGEXKITLITE_VERSION_DEFINED
-	
+
 #define _RKL__STRINGIFY(b)       #b
 #define _RKL_STRINGIFY(a)        _RKL__STRINGIFY(a)
 #define _RKL_JOIN_VERSION(a,b)   _RKL_STRINGIFY(a##.##b)
 #define _RKL_VERSION_STRING(a,b) _RKL_JOIN_VERSION(a,b)
-	
+
 #define REGEXKITLITE_VERSION_MAJOR 4
 #define REGEXKITLITE_VERSION_MINOR 0
-	
+
 #define REGEXKITLITE_VERSION_CSTRING   _RKL_VERSION_STRING(REGEXKITLITE_VERSION_MAJOR, REGEXKITLITE_VERSION_MINOR)
 #define REGEXKITLITE_VERSION_NSSTRING  @REGEXKITLITE_VERSION_CSTRING
-	
+
 #endif // REGEXKITLITE_VERSION_DEFINED
-	
+
 #if !defined(RKL_BLOCKS) && defined(NS_BLOCKS_AVAILABLE) && (NS_BLOCKS_AVAILABLE == 1)
 #define RKL_BLOCKS 1
 #endif
-	
+
 #if       defined(RKL_BLOCKS) && (RKL_BLOCKS == 1)
 #define _RKL_BLOCKS_ENABLED 1
 #endif // defined(RKL_BLOCKS) && (RKL_BLOCKS == 1)
-	
+
 #if       defined(_RKL_BLOCKS_ENABLED) && !defined(__BLOCKS__)
 #warning RegexKitLite support for Blocks is enabled, but __BLOCKS__ is not defined.  This compiler may not support Blocks, in which case the behavior is undefined.  This will probably cause numerous compiler errors.
 #endif // defined(_RKL_BLOCKS_ENABLED) && !defined(__BLOCKS__)
-	
+
 	// For Mac OS X < 10.5.
 #ifndef   NSINTEGER_DEFINED
 #define   NSINTEGER_DEFINED
@@ -99,10 +99,10 @@ extern "C" {
 #define NSUIntegerMax  UINT_MAX
 #endif // defined(__LP64__) || defined(NS_BUILD_32_LIKE_64)
 #endif // NSINTEGER_DEFINED
-	
+
 #ifndef   RKLREGEXOPTIONS_DEFINED
 #define   RKLREGEXOPTIONS_DEFINED
-	
+
 	// These must be identical to their ICU regex counterparts. See http://www.icu-project.org/userguide/regexp.html
 	enum {
 		RKLNoOptions             = 0,
@@ -113,12 +113,12 @@ extern "C" {
 		RKLUnicodeWordBoundaries = 256
 	};
 	typedef uint32_t RKLRegexOptions; // This must be identical to the ICU 'flags' argument type.
-	
+
 #endif // RKLREGEXOPTIONS_DEFINED
-	
+
 #ifndef   RKLREGEXENUMERATIONOPTIONS_DEFINED
 #define   RKLREGEXENUMERATIONOPTIONS_DEFINED
-	
+
 	enum {
 		RKLRegexEnumerationNoOptions                               = 0UL,
 		RKLRegexEnumerationCapturedStringsNotRequired              = 1UL << 9,
@@ -126,49 +126,49 @@ extern "C" {
 		RKLRegexEnumerationFastCapturedStringsXXX                  = 1UL << 11,
 	};
 	typedef NSUInteger RKLRegexEnumerationOptions;
-	
+
 #endif // RKLREGEXENUMERATIONOPTIONS_DEFINED
-	
+
 #ifndef _REGEXKITLITE_H_
 #define _REGEXKITLITE_H_
-	
+
 #if defined(__GNUC__) && (__GNUC__ >= 4) && defined(__APPLE_CC__) && (__APPLE_CC__ >= 5465)
 #define RKL_DEPRECATED_ATTRIBUTE __attribute__((deprecated))
 #else
 #define RKL_DEPRECATED_ATTRIBUTE
 #endif
-	
+
 #if       defined(NS_REQUIRES_NIL_TERMINATION)
 #define RKL_REQUIRES_NIL_TERMINATION NS_REQUIRES_NIL_TERMINATION
 #else  // defined(NS_REQUIRES_NIL_TERMINATION)
 #define RKL_REQUIRES_NIL_TERMINATION
 #endif // defined(NS_REQUIRES_NIL_TERMINATION)
-	
+
 	// This requires a few levels of rewriting to get the desired results.
 #define _RKL_CONCAT_2(c,d) c ## d
 #define _RKL_CONCAT(a,b) _RKL_CONCAT_2(a,b)
-	
+
 #ifdef    RKL_PREPEND_TO_METHODS
 #define RKL_METHOD_PREPEND(x) _RKL_CONCAT(RKL_PREPEND_TO_METHODS, x)
 #else  // RKL_PREPEND_TO_METHODS
 #define RKL_METHOD_PREPEND(x) x
 #endif // RKL_PREPEND_TO_METHODS
-	
+
 	// If it looks like low memory notifications might be available, add code to register and respond to them.
 	// This is (should be) harmless if it turns out that this isn't the case, since the notification that we register for,
 	// UIApplicationDidReceiveMemoryWarningNotification, is dynamically looked up via dlsym().
 #if ((defined(TARGET_OS_EMBEDDED) && (TARGET_OS_EMBEDDED != 0)) || (defined(TARGET_OS_IPHONE) && (TARGET_OS_IPHONE != 0))) && (!defined(RKL_REGISTER_FOR_IPHONE_LOWMEM_NOTIFICATIONS) || (RKL_REGISTER_FOR_IPHONE_LOWMEM_NOTIFICATIONS != 0))
 #define RKL_REGISTER_FOR_IPHONE_LOWMEM_NOTIFICATIONS 1
 #endif
-	
+
 #ifdef __OBJC__
-	
+
 	// NSException exception name.
 	extern NSString * const RKLICURegexException;
-	
+
 	// NSError error domains and user info keys.
 	extern NSString * const RKLICURegexErrorDomain;
-	
+
 	extern NSString * const RKLICURegexEnumerationOptionsErrorKey;
 	extern NSString * const RKLICURegexErrorCodeErrorKey;
 	extern NSString * const RKLICURegexErrorNameErrorKey;
@@ -183,7 +183,7 @@ extern "C" {
 	extern NSString * const RKLICURegexReplacementStringErrorKey;
 	extern NSString * const RKLICURegexSubjectRangeErrorKey;
 	extern NSString * const RKLICURegexSubjectStringErrorKey;
-	
+
 	@interface NSString (RegexKitLiteAdditions)
 
 + (void)RKL_METHOD_PREPEND(clearStringCache);
@@ -268,7 +268,7 @@ extern "C" {
 #endif // _RKL_BLOCKS_ENABLED
 
 @end
-	
+
 	@interface NSMutableString (RegexKitLiteAdditions)
 
 - (NSInteger)RKL_METHOD_PREPEND(replaceOccurrencesOfRegex):(NSString *)regex withString:(NSString *)replacement;
@@ -285,11 +285,11 @@ extern "C" {
 #endif // _RKL_BLOCKS_ENABLED
 
 @end
-	
+
 #endif // __OBJC__
-	
+
 #endif // _REGEXKITLITE_H_
-	
+
 #ifdef __cplusplus
 }  // extern "C"
 #endif

@@ -1,17 +1,17 @@
 // Created by Codeux Software <support AT codeux DOT com> <https://github.com/codeux/Textual>
 // You can redistribute it and/or modify it under the new BSD license.
 
-@interface InputPromptDialog : NSObject 
+@interface InputPromptDialog : NSObject
 {
 	NSInteger buttonClicked;
-	
+
 	NSString *finalModalValue;
-	
+
 	IBOutlet NSWindow *dialogWindow;
-	
+
 	IBOutlet NSButton *defaultButton;
 	IBOutlet NSButton *alternateButton;
-	
+
 	IBOutlet NSTextField *dialogTitle;
 	IBOutlet NSTextField *userInputField;
 	IBOutlet NSTextField *informationalText;
@@ -31,9 +31,9 @@
 - (NSInteger)buttonClicked;
 - (NSString *)promptValue;
 
-- (void)alertWithMessageText:(NSString *)messageTitle 
-			   defaultButton:(NSString *)defaultButtonTitle 
-			 alternateButton:(NSString *)alternateButtonTitle 
+- (void)alertWithMessageText:(NSString *)messageTitle
+			   defaultButton:(NSString *)defaultButtonTitle
+			 alternateButton:(NSString *)alternateButtonTitle
 			 informativeText:(NSString *)informativeText
 			defaultUserInput:(NSString *)userInputText;
 

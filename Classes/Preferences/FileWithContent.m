@@ -15,7 +15,7 @@
 {
 	[filename drain];
 	[content drain];
-	
+
 	[super dealloc];
 }
 
@@ -30,7 +30,7 @@
 		[filename drain];
 		filename = [value retain];
 	}
-	
+
 	[self reload];
 }
 
@@ -38,7 +38,7 @@
 {
 	[content drain];
 	content = nil;
-	
+
 	content = [NSString stringWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:NULL];
 	[content retain];
 }

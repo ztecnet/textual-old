@@ -5,18 +5,18 @@
 #define THEME_DISABLED_INDENTATION_OFFSET     -99
 
 @interface OtherTheme : NSObject
-{	
+{
 	NSString *path;
-	
+
 	NSColor *underlyingWindowColor;
-	
+
 	NSFont *channelViewFont;
-	
+
 	NSString *nicknameFormat;
 	NSString *timestampFormat;
-	
+
 	BOOL channelViewFontOverrode;
-	
+
     NSDoubleN indentationOffset;
 	NSDoubleN renderingEngineVersion;
 }

@@ -15,14 +15,14 @@
 	if ((self = [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation])) {
 		keyHandler = [KeyEventHandler new];
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc
 {
 	[keyHandler drain];
-	
+
 	[super dealloc];
 }
 
@@ -59,7 +59,7 @@
 	 *
 	 * The documentation then goes to say how you should try setting makeFirstResponder first.
 	 */
-    
+
 	if (![self makeFirstResponder:self]) {
 		[super endEditingFor:object];
 	}

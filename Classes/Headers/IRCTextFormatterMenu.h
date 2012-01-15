@@ -5,12 +5,12 @@
 
 @interface IRCTextFormatterMenu : NSObject {
 	IBOutlet NSMenuItem *formatterMenu;
-	
+
 	IBOutlet NSMenu	*foregroundColorMenu;
 	IBOutlet NSMenu *backgroundColorMenu;
-	
+
 	BOOL sheetOverrideEnabled;
-	
+
 	TextField *textField;
 }
 

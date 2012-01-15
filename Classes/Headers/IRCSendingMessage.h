@@ -5,9 +5,9 @@
 {
 	NSString *string;
 	NSString *command;
-	
+
 	BOOL completeColon;
-	
+
 	NSMutableArray *params;
 }
 

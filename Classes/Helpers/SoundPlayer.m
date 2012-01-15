@@ -6,12 +6,12 @@
 + (void)play:(NSString *)name isMuted:(BOOL)muted
 {
 	if (NSObjectIsEmpty(name) || muted) return;
-	
+
 	if ([name isEqualToString:@"Beep"]) {
 		NSBeep();
 	} else {
 		NSSound *sound = [NSSound soundNamed:name];
-		
+
 		if (sound) {
 			[sound play];
 		}

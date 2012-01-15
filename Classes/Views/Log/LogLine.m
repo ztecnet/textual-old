@@ -23,7 +23,7 @@
 	[keywords drain];
 	[nickInfo drain];
 	[excludeWords drain];
-	
+
 	[super dealloc];
 }
 
@@ -52,7 +52,7 @@
 		case LINE_TYPE_WEBSITE: return @"website";
 		case LINE_TYPE_DEBUG: return @"debug_send";
 	}
-	
+
 	return NSNullObject;
 }
 
@@ -62,7 +62,7 @@
 		case MEMBER_TYPE_NORMAL: return @"normal";
 		case MEMBER_TYPE_MYSELF: return @"myself";
 	}
-	
+
 	return NSNullObject;
 }
 

@@ -7,7 +7,7 @@
 {
 	NSView *leftSide  = [[self subviews] objectAtIndex:0];
 	NSView *rightSide = [[self subviews] objectAtIndex:1];
-	
+
 	return ([self isSubviewCollapsed:leftSide] || [self isSubviewCollapsed:rightSide]);
 }
 

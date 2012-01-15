@@ -18,14 +18,14 @@
 - (void)dealloc
 {
 	[text drain];
-	
+
 	[super dealloc];
 }
 
 - (void)clear
 {
 	self.text = nil;
-	
+
 	range = NSMakeRange(NSNotFound, 0);
 }
 

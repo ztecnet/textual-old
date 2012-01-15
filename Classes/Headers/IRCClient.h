@@ -26,28 +26,28 @@ typedef enum {
 	IRCConnection *conn;
 	IRCClientConfig *config;
 	IRCISupportInfo *isupport;
-	
+
 	IRCChannel *whoisChannel;
 	IRCChannel *lastSelectedChannel;
-	
+
 	NSMutableArray *channels;
 	NSMutableArray *highlights;
 	NSMutableArray *commandQueue;
-	
+
 	NSMutableDictionary *trackedUsers;
-	
+
 	NSInteger connectDelay;
 	NSInteger tryingNickNumber;
-    
+
     NSMutableArray *pendingCaps;
     NSMutableArray *acceptedCaps;
     NSUInteger capPaused;
-	
+
 	BOOL isAway;
 	BOOL hasIRCopAccess;
-	
+
 	BOOL sendLagcheckToChannel;
-	
+
     BOOL isIdentifiedWithSASL;
 	BOOL reconnectEnabled;
 	BOOL rawModeEnabled;
@@ -56,47 +56,47 @@ typedef enum {
 	BOOL isConnected;
 	BOOL isLoggedIn;
 	BOOL isQuitting;
-	
+
 	BOOL serverHasNickServ;
 	BOOL autojoinInitialized;
-	
+
 	BOOL identifyMsg;
 	BOOL identifyCTCP;
 	BOOL inWhoInfoRun;
     BOOL inSASLRequest;
 	BOOL inWhoWasRun;
 	BOOL inFirstISONRun;
-	
+
 	CFAbsoluteTime lastLagCheck;
-	
+
 	NSStringEncoding encoding;
-	
+
 	NSString *logDate;
-	
+
 	NSString *inputNick;
 	NSString *sentNick;
 	NSString *myNick;
 	NSString *myHost;
-	
+
 	NSString *serverHostname;
-	
+
 	Timer *isonTimer;
 	Timer *pongTimer;
 	Timer *retryTimer;
 	Timer *autoJoinTimer;
 	Timer *reconnectTimer;
 	Timer *commandQueueTimer;
-	
+
 	ConnectMode connectType;
 	DisconnectType disconnectType;
-	
+
 	ListDialog *channelListDialog;
 	ChanBanSheet *chanBanListSheet;
 	ChanBanExceptionSheet *banExceptionSheet;
 	ChanInviteExceptionSheet *inviteExceptionSheet;
-	
+
 	FileLogger *logFile;
-	
+
 #ifdef IS_TRIAL_BINARY
 	Timer *trialPeriodTimer;
 #endif

@@ -12,7 +12,7 @@
 			NSLog(@"TPI_PrefsTest: Failed to load view.");
 		}
 	}
-	
+
 	return ourView;
 }
 

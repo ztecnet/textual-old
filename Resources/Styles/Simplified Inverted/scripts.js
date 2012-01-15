@@ -13,8 +13,8 @@
 
 
 // Functions called for contextual menus used within WebView
-// DO NOT change without knowledge of what to do. 
-// Safe to remove from source code if not needed. 
+// DO NOT change without knowledge of what to do.
+// Safe to remove from source code if not needed.
 
 // Textual.on_url = function() { app.setUrl(event.target.innerHTML); }
 // Textual.on_addr = function() { app.setAddr(event.target.innerHTML); }

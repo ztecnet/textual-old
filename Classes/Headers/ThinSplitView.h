@@ -6,7 +6,7 @@
 	NSInteger position;
 	NSInteger fixedViewIndex;
 	NSInteger myDividerThickness;
-	
+
 	BOOL hidden;
 	BOOL inverted;
 }

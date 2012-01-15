@@ -5,11 +5,11 @@
 @interface IRCModeInfo : NSObject
 {
 	unsigned char mode;
-	
+
 	BOOL op;
 	BOOL plus;
 	BOOL simpleMode;
-	
+
 	NSString *param;
 }
 

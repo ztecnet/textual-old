@@ -38,16 +38,16 @@ typedef enum {
 	NSString *time;
 	NSString *nick;
 	NSString *body;
-	
+
 	NSString *nickInfo;
-		
+
 	BOOL identified;
-	
+
 	LogLineType lineType;
 	LogMemberType memberType;
-	
+
 	NSInteger nickColorNumber;
-	
+
 	NSArray *keywords;
 	NSArray *excludeWords;
 }

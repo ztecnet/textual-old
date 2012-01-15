@@ -3,7 +3,7 @@
 @interface WebViewAutoScroll : NSObject
 {
 	WebFrameView *webFrame;
-	
+
 	NSRect lastFrame;
 	NSRect lastVisibleRect;
 }

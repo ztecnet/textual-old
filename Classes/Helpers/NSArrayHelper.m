@@ -8,95 +8,95 @@
 	if (n >= 0 && n < self.count) {
 		return [self objectAtIndex:n];
 	}
-	
+
 	return nil;
 }
 
 - (BOOL)boolAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj respondsToSelector:@selector(boolValue)]) {
 		return [obj boolValue];
 	}
-	
+
 	return 0;
 }
 
 - (NSArray *)arrayAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj isKindOfClass:[NSArray class]]) {
 		return obj;
 	}
-	
+
 	return nil;
 }
 
 - (NSString *)stringAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj isKindOfClass:[NSString class]]) {
 		return obj;
 	}
-	
+
 	return nil;
 }
 
 - (NSDictionary *)dictionaryAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj isKindOfClass:[NSDictionary class]]) {
 		return obj;
 	}
-	
+
 	return nil;
 }
 
 - (NSInteger)integerAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj respondsToSelector:@selector(integerValue)]) {
 		return [obj integerValue];
 	}
-	
+
 	return 0;
 }
 
 - (long long)longLongAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj respondsToSelector:@selector(longLongValue)]) {
 		return [obj longLongValue];
 	}
-	
+
 	return 0;
 }
 
 - (NSDoubleN)doubleAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj respondsToSelector:@selector(doubleValue)]) {
 		return [obj doubleValue];
 	}
-	
+
 	return 0;
 }
 
 - (void *)pointerAtIndex:(NSInteger)n
 {
 	id obj = [self safeObjectAtIndex:n];
-	
+
 	if ([obj isKindOfClass:[NSValue class]]) {
 		return [obj pointerValue];
 	}
-	
+
 	return nil;
 }
 
@@ -107,9 +107,9 @@
 			if ([object isEqualNoCase:anObject]) {
 				return YES;
 			}
-		} 
+		}
 	}
-	
+
 	return [self containsObject:anObject];
 }
 
@@ -177,7 +177,7 @@
 {
 	[self safeAddObject:NSNumberWithLongLong(value)];
 }
-	 
+
 - (void)addDouble:(NSDoubleN)value
 {
 	[self safeAddObject:NSNumberWithDouble(value)];
@@ -195,15 +195,15 @@
 - (NSArray *)arrayFromIndexSet
 {
 	NSMutableArray *ary = [NSMutableArray array];
-	
+
 	NSUInteger current_index = [self lastIndex];
-	
+
 	while (NSDissimilarObjects(current_index, NSNotFound)) {
 		[ary addObject:[NSNumber numberWithUnsignedInteger:current_index]];
-		
+
 		current_index = [self indexLessThanIndex:current_index];
 	}
-	
+
 	return ary;
 }
 

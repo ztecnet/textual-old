@@ -5,7 +5,7 @@
 {
 	IBOutlet NSTextField *hostmask;
 	IBOutlet NSTextField *nickname;
-	
+
 	IBOutlet NSButton *ignorePublicMsg;
 	IBOutlet NSButton *ignorePrivateMsg;
 	IBOutlet NSButton *ignoreHighlights;
@@ -14,12 +14,12 @@
 	IBOutlet NSButton *ignoreJPQE;
 	IBOutlet NSButton *notifyJoins;
 	IBOutlet NSButton *ignorePMHighlights;
-	
+
 	IBOutlet NSWindow *ignoreWindow;
 	IBOutlet NSWindow *notifyWindow;
-	
+
 	BOOL newItem;
-	
+
 	AddressBook *ignore;
 }
 

@@ -14,14 +14,14 @@
 		reqeat = YES;
 		selector = @selector(timerOnTimer:);
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc
 {
 	[self stop];
-	
+
 	[super dealloc];
 }
 
@@ -33,12 +33,12 @@
 - (void)start:(NSTimeInterval)interval
 {
 	[self stop];
-	
-	timer = [[NSTimer scheduledTimerWithTimeInterval:interval 
-											  target:self 
-											selector:@selector(onTimer:) 
+
+	timer = [[NSTimer scheduledTimerWithTimeInterval:interval
+											  target:self
+											selector:@selector(onTimer:)
 											userInfo:nil repeats:reqeat] retain];
-	
+
 	[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSEventTrackingRunLoopMode];
 }
 
@@ -52,11 +52,11 @@
 - (void)onTimer:(id)sender
 {
 	if (self.isActive == NO) return;
-	
+
 	if (reqeat == NO) {
 		[self stop];
 	}
-	
+
 	if ([delegate respondsToSelector:selector]) {
 		[delegate performSelector:selector withObject:self];
 	}

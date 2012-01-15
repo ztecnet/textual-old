@@ -3,7 +3,7 @@
 
 @class IRCWorld;
 
-@interface IRCExtras : NSObject 
+@interface IRCExtras : NSObject
 {
 	IRCWorld *world;
 }

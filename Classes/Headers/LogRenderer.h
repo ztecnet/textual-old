@@ -15,7 +15,7 @@ TEXTUAL_EXTERN NSColor *mapColorCode(NSInteger colorChar);
 
 @interface LogRenderer : NSObject
 
-+ (NSString *)renderBody:(NSString *)body 
++ (NSString *)renderBody:(NSString *)body
 			  controller:(LogController *)log
 			  renderType:(LogRendererType)drawingType
 			  properties:(NSDictionary *)inputDictionary

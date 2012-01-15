@@ -8,13 +8,13 @@
 
 @class KeyEventHandler;
 
-@interface TextField : NSTextView 
+@interface TextField : NSTextView
 {
     BOOL _fontResetRequired;
     BOOL _lastChangeWasPaste;
-    
+
 	KeyEventHandler *_keyHandler;
-    
+
     dispatch_queue_t _formattingQueue;
 }
 

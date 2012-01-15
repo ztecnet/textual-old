@@ -12,31 +12,31 @@
 
 + (NSString *)getPasswordFromSecKeychainItemRef:(SecKeychainItemRef)item;
 
-+ (BOOL)checkForExistanceOfKeychainItem:(NSString *)keychainItemName 
-						   withItemKind:(NSString *)keychainItemKind 
++ (BOOL)checkForExistanceOfKeychainItem:(NSString *)keychainItemName
+						   withItemKind:(NSString *)keychainItemKind
 							forUsername:(NSString *)username
 							serviceName:(NSString *)service;
 
-+ (BOOL)deleteKeychainItem:(NSString *)keychainItemName 
-			  withItemKind:(NSString *)keychainItemKind 
++ (BOOL)deleteKeychainItem:(NSString *)keychainItemName
+			  withItemKind:(NSString *)keychainItemKind
 			   forUsername:(NSString *)username
 			   serviceName:(NSString *)service;
 
-+ (BOOL)modifyOrAddKeychainItem:(NSString *)keychainItemName 
-				   withItemKind:(NSString *)keychainItemKind 
-					forUsername:(NSString *)username 
++ (BOOL)modifyOrAddKeychainItem:(NSString *)keychainItemName
+				   withItemKind:(NSString *)keychainItemKind
+					forUsername:(NSString *)username
 				withNewPassword:(NSString *)newPassword
 					withComment:(NSString *)comment
 					serviceName:(NSString *)service;
 
-+ (BOOL)addKeychainItem:(NSString *)keychainItemName 
-		   withItemKind:(NSString *)keychainItemKind 
-			forUsername:(NSString *)username 
++ (BOOL)addKeychainItem:(NSString *)keychainItemName
+		   withItemKind:(NSString *)keychainItemKind
+			forUsername:(NSString *)username
 		   withPassword:(NSString *)password
 			serviceName:(NSString *)service;
 
-+ (NSString *)getPasswordFromKeychainItem:(NSString *)keychainItemName 
-							 withItemKind:(NSString *)keychainItemKind 
++ (NSString *)getPasswordFromKeychainItem:(NSString *)keychainItemName
+							 withItemKind:(NSString *)keychainItemKind
 							  forUsername:(NSString *)username
 							  serviceName:(NSString *)service
 						withLegacySupport:(BOOL)legacy;

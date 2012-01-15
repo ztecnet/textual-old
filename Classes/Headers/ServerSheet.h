@@ -5,13 +5,13 @@
 @interface ServerSheet : SheetBase
 {
 	NSInteger uid;
-	
+
 	IRCClient *client;
 	IRCClientConfig *config;
-	
+
 	NSDictionary *serverList;
 	NSMutableArray *tabViewList;
-	
+
 	IBOutlet NSView *contentView;
 	IBOutlet NSView *generalView;
 	IBOutlet NSView *identityView;
@@ -24,61 +24,61 @@
     IBOutlet NSView *floodControlView;
     IBOutlet NSView *floodControlToolView;
 	IBOutlet NSView *proxyServerView;
-    
+
     IBOutlet NSButton *incomingFloodControl;
     IBOutlet NSButton *outgoingFloodControl;
     IBOutlet NSSlider *floodControlMessageCount;
     IBOutlet NSSlider *floodControlDelayTimer;
-	
+
 	IBOutlet ListView *tabView;
-	
+
 	IBOutlet NSTextField *nameText;
 	IBOutlet NSButton *autoReconnectCheck;
 	IBOutlet NSButton *autoConnectCheck;
 	IBOutlet NSButton *bouncerModeCheck;
     IBOutlet NSButton *prefersIPv6Check;
-	
+
 	IBOutlet NSComboBox *hostCombo;
 	IBOutlet NSTextField *portText;
 	IBOutlet NSButton *sslCheck;
     IBOutlet NSButton *saslCheck;
-	
+
 	IBOutlet NSTextField *nickText;
 	IBOutlet NSTextField *passwordText;
 	IBOutlet NSTextField *usernameText;
 	IBOutlet NSTextField *realNameText;
 	IBOutlet NSTextField *nickPasswordText;
 	IBOutlet NSTextField *altNicksText;
-	
+
 	IBOutlet NSTextView *sleepQuitMessageText;
 	IBOutlet NSTextView *leavingCommentText;
-	
+
 	IBOutlet NSPopUpButton *encodingCombo;
 	IBOutlet NSPopUpButton *fallbackEncodingCombo;
-	
+
 	IBOutlet NSPopUpButton *proxyCombo;
 	IBOutlet NSTextField *proxyHostText;
 	IBOutlet NSTextField *proxyPortText;
 	IBOutlet NSTextField *proxyUserText;
 	IBOutlet NSTextField *proxyPasswordText;
-    
+
     IBOutlet NSTextField *pongInterval;
     IBOutlet NSTextField *timeoutInterval;
-	
+
 	IBOutlet ListView *channelTable;
 	IBOutlet NSButton *addChannelButton;
 	IBOutlet NSButton *editChannelButton;
 	IBOutlet NSButton *deleteChannelButton;
-	
+
 	IBOutlet NSTextView *loginCommandsText;
 	IBOutlet NSButton *invisibleCheck;
-	
+
 	IBOutlet ListView *ignoreTable;
 	IBOutlet NSButton *addIgnoreButton;
 	IBOutlet NSButton *editIgnoreButton;
 	IBOutlet NSButton *deleteIgnoreButton;
 	IBOutlet NSMenu *addIgnoreMenu;
-	
+
 	ChannelSheet *channelSheet;
 	AddressBookSheet *ignoreSheet;
 }

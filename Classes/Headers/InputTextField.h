@@ -6,7 +6,7 @@
 @interface InputTextField : TextField <NSTextViewDelegate>
 {
     NSAttributedString *_placeholderString;
-    
+
     id _actionTarget;
     SEL _actonSelector;
 }
@@ -15,5 +15,5 @@
 - (void)setReturnActionWithSelector:(SEL)selector owner:(id)owner;
 @end
 
-@interface InputTextFieldScroller : NSScrollView 
+@interface InputTextFieldScroller : NSScrollView
 @end

@@ -10,13 +10,13 @@
 	const char *message = [input cStringUsingEncoding:local];
 	const char *key = [phrase cStringUsingEncoding:local];
 	size_t keylen = [phrase length];
-	
+
 	char *resultString = fish_encrypt(key, keylen, message);
-	
+
 	NSString *cypher = [NSString stringWithCString:resultString encoding:local];
-	
+
 	free(resultString);
-	
+
 	return [@"+OK " stringByAppendingString:cypher];
 }
 
@@ -25,17 +25,17 @@
 	if ([input hasPrefix:@"+OK "] && [input length] > 4) {
 		input = [input substringFromIndex:4];
 	}
-	
+
 	const char *message = [input cStringUsingEncoding:local];
 	const char *key = [phrase cStringUsingEncoding:local];
 	size_t keylen = [phrase length];
-	
+
 	char *resultString = fish_decrypt(key, keylen, message);
-	
+
 	NSString *cypher = [NSString stringWithCString:resultString encoding:local];
-	
+
 	free(resultString);
-	
+
 	return cypher;
 }
 

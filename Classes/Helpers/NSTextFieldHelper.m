@@ -13,7 +13,7 @@
     if ([self isFocused]) {
         return;
     }
-    
+
     [self.window makeFirstResponder:self];
 }
 

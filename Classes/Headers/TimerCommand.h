@@ -4,9 +4,9 @@
 @interface TimerCommand : NSObject
 {
 	NSInteger cid;
-	
+
 	NSString *input;
-	
+
 	CFAbsoluteTime time;
 }
 

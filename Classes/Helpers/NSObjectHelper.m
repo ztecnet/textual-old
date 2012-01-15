@@ -3,7 +3,7 @@
 
 @implementation NSObject (NSObjectHelper)
 
-+ (id)newad 
++ (id)newad
 {
 	return [[[self alloc] init] autodrain];
 }
@@ -18,10 +18,10 @@
 	if ([_NSUserDefaults() boolForKey:@"DisableMemoryDeallocation"] == NO) {
 		if (self) {
 			NSUInteger retainTotal = [self retainCount];
-			
+
 			if (retainTotal >= 1) {
 				[self release];
-			} 
+			}
 		}
 	}
 }
@@ -33,7 +33,7 @@
 			return [self autorelease];
 		}
 	}
-	
+
 	return self;
 }
 

@@ -16,9 +16,9 @@
 + (id)socketWithDelegate:(id)delegate;
 
 - (void)useSystemSocksProxy;
-- (void)useSocksProxyVersion:(NSInteger)version 
-						host:(NSString *)host 
-						port:(NSInteger)port 
-						user:(NSString *)user 
+- (void)useSocksProxyVersion:(NSInteger)version
+						host:(NSString *)host
+						port:(NSInteger)port
+						user:(NSString *)user
 					password:(NSString *)password;
 @end

@@ -14,8 +14,8 @@
 				  message:(NSString *)messageString
 				  command:(NSString *)commandString;
 
-- (void)messageReceivedByServer:(IRCClient *)client 
-						 sender:(NSDictionary *)senderDict 
+- (void)messageReceivedByServer:(IRCClient *)client
+						 sender:(NSDictionary *)senderDict
 						message:(NSDictionary *)messageDict;
 
 /* Output Rules */

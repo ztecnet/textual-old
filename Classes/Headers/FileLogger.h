@@ -8,7 +8,7 @@
 {
 	IRCClient *client;
 	IRCChannel *channel;
-	
+
 	NSString *filename;
 	NSFileHandle *file;
 }

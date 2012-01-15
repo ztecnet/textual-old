@@ -29,7 +29,7 @@
 {
 	if ((self = [super init])) {
 		colorNumber = -1;
-		
+
 		lastFadedWeights = CFAbsoluteTimeGetCurrent();
 	}
 
@@ -41,7 +41,7 @@
 	[nick drain];
 	[address drain];
 	[username drain];
-	
+
 	[super dealloc];
 }
 
@@ -51,15 +51,15 @@
 		return [NSString stringWithFormat:@"%@!*@*", nick];
 	} else {
 		NSString *ident = ((username) ?: @"*");
-		
+
 		switch ([Preferences banFormat]) {
-			case HMBAN_FORMAT_WHNIN:  return [NSString stringWithFormat:@"*!*@%@", address];	
+			case HMBAN_FORMAT_WHNIN:  return [NSString stringWithFormat:@"*!*@%@", address];
 			case HMBAN_FORMAT_WHAINN: return [NSString stringWithFormat:@"*!%@@%@", ident, address];
 			case HMBAN_FORMAT_WHANNI: return [NSString stringWithFormat:@"%@!*%@", nick, address];
 			case HMBAN_FORMAT_EXACT:  return [NSString stringWithFormat:@"%@!%@@%@", nick, ident, address];
 		}
 	}
-	
+
 	return nil;
 }
 
@@ -71,7 +71,7 @@
 	if (o) return [supportInfo.userModeOPrefix safeCharacterAtIndex:0];
 	if (h) return [supportInfo.userModeHPrefix safeCharacterAtIndex:0];
 	if (v) return [supportInfo.userModeVPrefix safeCharacterAtIndex:0];
-	
+
 	return ' ';
 }
 
@@ -80,7 +80,7 @@
 	return (o || a || q || y);
 }
 
-- (BOOL)isHalfOp 
+- (BOOL)isHalfOp
 {
 	return (h || [self isOp]);
 }
@@ -90,7 +90,7 @@
 	if (colorNumber < 0) {
 		colorNumber = (CFHash([nick lowercaseString]) % COLOR_NUMBER_MAX);
 	}
-	
+
 	return colorNumber;
 }
 
@@ -104,35 +104,35 @@
 		case 'h': return h;
 		case 'v': return v;
 	}
-	
+
 	return NO;
 }
 
 - (CGFloat)totalWeight
 {
 	[self decayConversation];
-	
+
 	return (incomingWeight + outgoingWeight);
 }
 
 - (void)outgoingConversation
 {
 	CGFloat change = ((outgoingWeight == 0) ? 20 : 5);
-	
+
 	outgoingWeight += change;
 }
 
 - (void)incomingConversation
 {
 	CGFloat change = ((incomingWeight == 0) ? 100 : 20);
-	
+
 	incomingWeight += change;
 }
 
 - (void)conversation
 {
 	CGFloat change = ((outgoingWeight == 0) ? 4 : 1);
-	
+
 	outgoingWeight += change;
 }
 
@@ -140,14 +140,14 @@
 {
 	CFAbsoluteTime now = CFAbsoluteTimeGetCurrent();
 	CGFloat minutes = ((now - lastFadedWeights) / 60);
-	
+
 	if (minutes > 1) {
 		lastFadedWeights = now;
-		
+
 		if (incomingWeight > 0) {
 			incomingWeight /= pow(2, minutes);
 		}
-		
+
 		if (outgoingWeight > 0) {
 			outgoingWeight /= pow(2, minutes);
 		}
@@ -157,7 +157,7 @@
 - (BOOL)isEqual:(id)other
 {
 	if ([other isKindOfClass:[IRCUser class]] == NO) return NO;
-	
+
 	return ([nick caseInsensitiveCompare:[(id)other nick]] == NSOrderedSame);
 }
 
@@ -193,7 +193,7 @@
 
 	if (mine > others) return NSOrderedAscending;
 	if (mine < others) return NSOrderedDescending;
-	
+
 	return [[nick lowercaseString] compare:[other.nick lowercaseString]];
 }
 

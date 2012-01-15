@@ -18,7 +18,7 @@
 {
 	[log drain];
 	[inputHistory drain];
-	
+
 	[super dealloc];
 }
 

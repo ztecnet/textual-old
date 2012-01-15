@@ -5,7 +5,7 @@
 
 #import "TextualApplication.h"
 
-@interface TPI_BlowfishCommands : NSObject 
+@interface TPI_BlowfishCommands : NSObject
 
 - (NSDictionary *)pluginOutputDisplayRules;
 

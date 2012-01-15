@@ -3,7 +3,7 @@
 
 #define PopupPromptSuppressionPrefix	@"Preferences.prompts."
 
-@interface PopupPrompts : NSObject 
+@interface PopupPrompts : NSObject
 {
 	id  _targetClass;
 	id  _suppressionKey;
@@ -16,14 +16,14 @@
 
 + (void)popupPromptNULLSelector:(NSInteger)returnCode;
 
-+ (BOOL)dialogWindowWithQuestion:(NSString *)bodyText 
++ (BOOL)dialogWindowWithQuestion:(NSString *)bodyText
 						   title:(NSString *)titleText
 				   defaultButton:(NSString *)buttonDefault
 				 alternateButton:(NSString *)buttonAlternate
 				  suppressionKey:(NSString *)suppressKey
 				 suppressionText:(NSString *)suppressText;
 
-+ (NSString *)dialogWindowWithInput:(NSString *)bodyText 
++ (NSString *)dialogWindowWithInput:(NSString *)bodyText
 							  title:(NSString *)titleText
 					  defaultButton:(NSString *)buttonDefault
 					alternateButton:(NSString *)buttonAlternate
@@ -32,7 +32,7 @@
 + (void)sheetWindowWithQuestion:(NSWindow *)window
 						 target:(id)targetClass
 						 action:(SEL)actionSelector
-						   body:(NSString *)bodyText 
+						   body:(NSString *)bodyText
 						  title:(NSString *)titleText
 				  defaultButton:(NSString *)buttonDefault
 				alternateButton:(NSString *)buttonAlternate

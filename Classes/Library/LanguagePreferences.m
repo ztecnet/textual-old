@@ -9,14 +9,14 @@ static NSDictionary *themeLocalizations = nil;
 {
 	[themeLocalizations drain];
 	themeLocalizations = nil;
-	
+
 	NSString *filepath = [path stringByAppendingPathComponent:@"/BasicLanguage.plist"];
-	
+
 	if ([_NSFileManager() fileExistsAtPath:filepath]) {
 		NSDictionary *localkeys = [NSDictionary dictionaryWithContentsOfFile:filepath];
-	
+
 		[localkeys retain];
-			
+
 		if (localkeys) {
 			themeLocalizations = localkeys;
 		}
@@ -29,11 +29,11 @@ static NSDictionary *themeLocalizations = nil;
 		return NSLocalizedStringFromTable(key, @"BasicLanguage", nil);
 	} else {
 		NSString *localstring = [themeLocalizations objectForKey:key];
-		
+
 		if (localstring) {
 			return [localstring reservedCharactersToIRCFormatting];
 		}
-		
+
 		return NSLocalizedStringFromTable(key, @"BasicLanguage", nil);
 	}
 }

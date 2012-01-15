@@ -3,7 +3,7 @@
 
 #include "SystemProfiler.h"
 
-@interface TPI_SP_SysInfo : NSObject 
+@interface TPI_SP_SysInfo : NSObject
 + (NSString *)compiledOutput;
 + (NSString *)model;
 + (NSString *)processor;

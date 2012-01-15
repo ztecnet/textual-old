@@ -23,7 +23,7 @@ typedef enum {
 @interface GrowlController : NSObject <GrowlApplicationBridgeDelegate>
 {
 	IRCWorld		*owner;
-	
+
 	id				lastClickedContext;
 	CFAbsoluteTime	lastClickedTime;
 }

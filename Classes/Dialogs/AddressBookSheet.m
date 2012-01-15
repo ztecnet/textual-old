@@ -35,7 +35,7 @@
 - (void)dealloc
 {
 	[ignore drain];
-	
+
 	[super dealloc];
 }
 
@@ -43,18 +43,18 @@
 {
 	if (ignore.entryType == ADDRESS_BOOK_IGNORE_ENTRY) {
 		self.sheet = ignoreWindow;
-		
+
 		if (NSObjectIsNotEmpty(ignore.hostmask)) {
 			[hostmask setStringValue:ignore.hostmask];
-		} 
+		}
 	} else {
 		self.sheet = notifyWindow;
-		
+
 		if (NSObjectIsNotEmpty(ignore.hostmask)) {
 			[nickname setStringValue:ignore.hostmask];
-		} 
+		}
 	}
-	
+
 	[ignorePublicMsg	setState:ignore.ignorePublicMsg];
 	[ignorePrivateMsg	setState:ignore.ignorePrivateMsg];
 	[ignoreHighlights	setState:ignore.ignoreHighlights];
@@ -63,7 +63,7 @@
 	[ignoreJPQE			setState:ignore.ignoreJPQE];
 	[notifyJoins		setState:ignore.notifyJoins];
 	[ignorePMHighlights setState:ignore.ignorePMHighlights];
-	
+
 	[self startSheet];
 }
 
@@ -74,7 +74,7 @@
 	} else {
 		ignore.hostmask = [nickname stringValue];
 	}
-	
+
 	ignore.ignorePublicMsg		= [ignorePublicMsg state];
 	ignore.ignorePrivateMsg		= [ignorePrivateMsg state];
 	ignore.ignoreHighlights		= [ignoreHighlights state];
@@ -83,13 +83,13 @@
 	ignore.ignoreJPQE			= [ignoreJPQE state];
 	ignore.notifyJoins			= [notifyJoins state];
 	ignore.ignorePMHighlights	= [ignorePMHighlights state];
-    
+
 	[ignore processHostMaskRegex];
-	
+
 	if ([delegate respondsToSelector:@selector(ignoreItemSheetOnOK:)]) {
 		[delegate ignoreItemSheetOnOK:self];
 	}
-	
+
 	[super ok:sender];
 }
 
