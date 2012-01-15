@@ -16,18 +16,18 @@
 				  command:(NSString *)commandString
 {
 	IRCChannel *c = [client.world selectedChannelOn:client];
-	
+
 	if (c.isChannel || c.isTalk) {
 		messageString = [messageString trim];
-		
+
 		if ([messageString contains:NSWhitespaceCharacter]) {
 			messageString = [messageString substringToIndex:[messageString stringPosition:NSWhitespaceCharacter]];
 		}
-		
+
 		if ([commandString isEqualToString:@"SETKEY"]) {
 			if (NSObjectIsEmpty(messageString)) {
 				c.config.encryptionKey = nil;
-				
+
 				[[client iomt] printDebugInformation:TXTLS(@"BLOWFISH_ENCRYPTION_STOPPED") channel:c];
 			} else {
 				if (NSObjectIsNotEmpty(c.config.encryptionKey)) {
@@ -41,17 +41,17 @@
 						[[client iomt] printDebugInformation:TXTLS(@"BLOWFISH_ENCRYPTION_STARTED") channel:c];
 					}
 				}
-				
+
 				c.config.encryptionKey = messageString;
 			}
 		} else if ([commandString isEqualToString:@"DELKEY"]) {
 			c.config.encryptionKey = nil;
-			
+
 			[[client iomt] printDebugInformation:TXTLS(@"BLOWFISH_ENCRYPTION_STOPPED") channel:c];
 		} else if ([commandString isEqualToString:@"KEY"]) {
 			if (NSObjectIsNotEmpty(c.config.encryptionKey)) {
 				[[client iomt] printDebugInformation:TXTFLS(@"BLOWFISH_ENCRYPTION_KEY", c.config.encryptionKey) channel:c];
-			} else {	
+			} else {
 				[[client iomt] printDebugInformation:TXTLS(@"BLOWFISH_ENCRYPTION_NO_KEY") channel:c];
 			}
 		} else if ([commandString isEqualToString:@"KEYX"]) {
@@ -68,17 +68,17 @@
 - (NSDictionary *)pluginOutputDisplayRules
 {
 	/* This is an undocumented plugin call to suppress certain messages. */
-	
+
 	NSMutableDictionary *rules = [NSMutableDictionary dictionary];
-	
-	NSArray *privmsgRule_1 = [NSArray arrayWithObjects:[@"^" stringByAppendingString:exchangeRequestPrefix], 
+
+	NSArray *privmsgRule_1 = [NSArray arrayWithObjects:[@"^" stringByAppendingString:exchangeRequestPrefix],
 							  NSNumberWithBOOL(YES), NSNumberWithBOOL(YES), NSNumberWithBOOL(YES), nil];
-	
-	NSArray *privmsgRule_2 = [NSArray arrayWithObjects:[@"^" stringByAppendingString:exchangeResponsePrefix], 
+
+	NSArray *privmsgRule_2 = [NSArray arrayWithObjects:[@"^" stringByAppendingString:exchangeResponsePrefix],
 							  NSNumberWithBOOL(YES), NSNumberWithBOOL(YES), NSNumberWithBOOL(YES), nil];
-	
+
 	[rules setObject:[NSArray arrayWithObjects:privmsgRule_1, privmsgRule_2, nil] forKey:IRCCommandFromLineType(LINE_TYPE_NOTICE)];
-	
+
 	return rules;
 }
 

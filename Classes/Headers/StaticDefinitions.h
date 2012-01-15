@@ -3,10 +3,10 @@
 //#define _USES_MODERN_REGULAR_EXPRESSION
 
 #if _LOAD_MAC_OS_LION_LIBRARIES
-	#if defined(MAC_OS_X_VERSION_10_7) 
+	#if defined(MAC_OS_X_VERSION_10_7)
 		#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7
 			#define _RUNNING_MAC_OS_LION
-		#endif	
+		#endif
 	#endif
 #endif
 

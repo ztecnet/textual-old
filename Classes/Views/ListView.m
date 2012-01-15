@@ -14,13 +14,13 @@
 - (NSArray *)selectedRows
 {
     NSMutableArray *allRows = [NSMutableArray array];
-    
+
     NSIndexSet *indexes = [self selectedRowIndexes];
-	
+
 	for (NSNumber *index in [indexes arrayFromIndexSet]) {
 		[allRows safeAddObject:index];
 	}
-    
+
     return allRows;
 }
 
@@ -38,11 +38,11 @@
 - (void)selectRows:(NSArray *)indices extendSelection:(BOOL)extend
 {
 	NSMutableIndexSet *set = [NSMutableIndexSet indexSet];
-	
+
 	for (NSNumber *n in indices) {
 		[set addIndex:[n integerValue]];
 	}
-	
+
 	[self selectRowIndexes:set byExtendingSelection:extend];
 }
 
@@ -50,13 +50,13 @@
 {
 	NSPoint p = [self convertPoint:[e locationInWindow] fromView:nil];
 	NSInteger i = [self rowAtPoint:p];
-	
+
 	if (i >= 0) {
 		if ([[self selectedRowIndexes] containsIndex:i] == NO) {
 			[self selectItemAtIndex:i];
 		}
 	}
-	
+
 	[super rightMouseDown:e];
 }
 
@@ -65,13 +65,13 @@
 	for (NSTableColumn *column in [self tableColumns]) {
 		[[column dataCell] setFont:font];
 	}
-	
+
 	NSRect f = [self frame];
-	
+
 	f.size.height = 1e+37;
-	
+
 	CGFloat height = ceil([[[[self tableColumns] safeObjectAtIndex:0] dataCell] cellSizeForBounds:f].height);
-	
+
 	[self setRowHeight:height];
 	[self setNeedsDisplay:YES];
 }
@@ -86,23 +86,23 @@
 	if (keyDelegate) {
 		switch ([e keyCode]) {
 			case 51:
-			case 117:	
+			case 117:
 				if ([self countSelectedRows] > 0) {
 					if ([keyDelegate respondsToSelector:@selector(listViewDelete)]) {
 						[keyDelegate listViewDelete];
-						
+
 						return;
 					}
 				}
 				break;
-			case 126:	
+			case 126:
 			{
 				NSIndexSet *set = [self selectedRowIndexes];
-				
+
 				if (NSObjectIsNotEmpty(set) && [set containsIndex:0]) {
 					if ([keyDelegate respondsToSelector:@selector(listViewMoveUp)]) {
 						[keyDelegate listViewMoveUp];
-						
+
 						return;
 					}
 				}
@@ -110,17 +110,17 @@
 			}
 			case 116:
 			case 121:
-			case 123 ... 125:	
+			case 123 ... 125:
 				break;
 			default:
 				if ([keyDelegate respondsToSelector:@selector(listViewKeyDown:)]) {
 					[keyDelegate listViewKeyDown:e];
 				}
-				
+
 				break;
 		}
 	}
-	
+
 	[super keyDown:e];
 }
 

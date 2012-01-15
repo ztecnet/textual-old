@@ -5,30 +5,30 @@
 @interface IRCConnection : NSObject
 {
 	id delegate;
-	
+
 	NSString *host;
-	
+
 	NSInteger port;
 	NSInteger proxyPort;
 	NSInteger socksVersion;
 	NSInteger maxMsgCount;
-	
+
 	NSStringEncoding encoding;
-	
+
 	NSString *proxyHost;
 	NSString *proxyUser;
 	NSString *proxyPassword;
-	
+
 	TCPClient *conn;
-	
+
 	Timer *timer;
-	
+
 	BOOL useSystemSocks;
 	BOOL loggedIn;
 	BOOL useSocks;
 	BOOL sending;
 	BOOL useSSL;
-	
+
 	NSMutableArray *sendQueue;
 }
 

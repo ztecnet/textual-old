@@ -6,22 +6,22 @@
 {
 	NSInteger uid;
 	NSInteger cid;
-	
+
 	IRCChannelConfig *config;
-	
+
 	IBOutlet NSView *contentView;
 	IBOutlet NSView *generalView;
 	IBOutlet NSView *encryptView;
     IBOutlet NSView *defaultsView;
- 	
+
 	IBOutlet NSTextField *nameText;
 	IBOutlet NSTextField *passwordText;
 	IBOutlet NSTextField *modeText;
 	IBOutlet NSTextField *topicText;
 	IBOutlet NSTextField *encryptKeyText;
-	
+
 	IBOutlet NSSegmentedControl *tabView;
-	
+
     IBOutlet NSButton *ihighlights;
 	IBOutlet NSButton *autoJoinCheck;
 	IBOutlet NSButton *growlCheck;

@@ -10,16 +10,16 @@ typedef enum {
 @interface IRCChannelConfig : NSObject <NSMutableCopying>
 {
 	ChannelType type;
-	
+
 	NSString *name;
 	NSString *password;
-	
+
 	BOOL growl;
 	BOOL autoJoin;
     BOOL ihighlights;
     BOOL inlineImages;
     BOOL iJPQActivity;
-	
+
 	NSString *mode;
 	NSString *topic;
 	NSString *encryptionKey;

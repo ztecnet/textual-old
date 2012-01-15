@@ -17,7 +17,7 @@ static NSDictionary *systemVersionPlist = nil;
 	return textualPlist;
 }
 
-+ (NSDictionary *)systemInfoPlist 
++ (NSDictionary *)systemInfoPlist
 {
 	return systemVersionPlist;
 }
@@ -28,7 +28,7 @@ static NSDictionary *systemVersionPlist = nil;
 + (void)validateStoreReceipt
 {
 	NSString *receipt = [self whereAppStoreReceipt];
-	
+
 	if (validateReceiptAtPath(receipt) == NO) {
 		exit(173);
 	} else {
@@ -49,7 +49,7 @@ static NSMutableDictionary *commandIndex = nil;
 + (void)populateCommandIndex
 {
 	commandIndex = [NSMutableDictionary new];
-	
+
 	[commandIndex setObject:@"3"   forKey:IRCCI_AWAY];
 	[commandIndex setObject:@"4"   forKey:IRCCI_ERROR];
 	[commandIndex setObject:@"5"   forKey:IRCCI_INVITE];
@@ -117,21 +117,21 @@ static NSMutableDictionary *commandIndex = nil;
 	[commandIndex setObject:@"71"  forKey:IRCCI_CLEARALL];
 	[commandIndex setObject:@"72"  forKey:IRCCI_AMSG];
 	[commandIndex setObject:@"73"  forKey:IRCCI_AME];
-	[commandIndex setObject:@"74"  forKey:IRCCI_MUTE]; 
-	[commandIndex setObject:@"75"  forKey:IRCCI_UNMUTE]; 
-	[commandIndex setObject:@"76"  forKey:IRCCI_UNLOAD_PLUGINS]; 
-	[commandIndex setObject:@"77"  forKey:IRCCI_REMOVE];  
-	[commandIndex setObject:@"79"  forKey:IRCCI_KICKBAN]; 
-	[commandIndex setObject:@"80"  forKey:IRCCI_WALLOPS]; 
+	[commandIndex setObject:@"74"  forKey:IRCCI_MUTE];
+	[commandIndex setObject:@"75"  forKey:IRCCI_UNMUTE];
+	[commandIndex setObject:@"76"  forKey:IRCCI_UNLOAD_PLUGINS];
+	[commandIndex setObject:@"77"  forKey:IRCCI_REMOVE];
+	[commandIndex setObject:@"79"  forKey:IRCCI_KICKBAN];
+	[commandIndex setObject:@"80"  forKey:IRCCI_WALLOPS];
 	[commandIndex setObject:@"81"  forKey:IRCCI_ICBADGE];
 	[commandIndex setObject:@"82"  forKey:IRCCI_SERVER];
-	[commandIndex setObject:@"83"  forKey:IRCCI_CONN]; 
-	[commandIndex setObject:@"84"  forKey:IRCCI_MYVERSION]; 
-	[commandIndex setObject:@"85"  forKey:IRCCI_CHATOPS]; 
-	[commandIndex setObject:@"86"  forKey:IRCCI_GLOBOPS]; 
-	[commandIndex setObject:@"87"  forKey:IRCCI_LOCOPS]; 
-	[commandIndex setObject:@"88"  forKey:IRCCI_NACHAT]; 
-	[commandIndex setObject:@"89"  forKey:IRCCI_ADCHAT]; 
+	[commandIndex setObject:@"83"  forKey:IRCCI_CONN];
+	[commandIndex setObject:@"84"  forKey:IRCCI_MYVERSION];
+	[commandIndex setObject:@"85"  forKey:IRCCI_CHATOPS];
+	[commandIndex setObject:@"86"  forKey:IRCCI_GLOBOPS];
+	[commandIndex setObject:@"87"  forKey:IRCCI_LOCOPS];
+	[commandIndex setObject:@"88"  forKey:IRCCI_NACHAT];
+	[commandIndex setObject:@"89"  forKey:IRCCI_ADCHAT];
 	[commandIndex setObject:@"91"  forKey:IRCCI_LOAD_PLUGINS];
 	[commandIndex setObject:@"92"  forKey:IRCCI_SME];
 	[commandIndex setObject:@"93"  forKey:IRCCI_SMSG];
@@ -146,7 +146,7 @@ static NSMutableDictionary *commandIndex = nil;
 	[commandIndex setObject:@"102" forKey:IRCCI_CAP];
 }
 
-+ (NSInteger)commandUIndex:(NSString *)command 
++ (NSInteger)commandUIndex:(NSString *)command
 {
 	return [commandIndex integerForKey:[command uppercaseString]];
 }
@@ -204,12 +204,12 @@ static NSMutableDictionary *commandIndex = nil;
 
 + (NSString *)whereThemesLocalPath
 {
-	return [[self whereResourcePath] stringByAppendingPathComponent:@"Styles"];	
+	return [[self whereResourcePath] stringByAppendingPathComponent:@"Styles"];
 }
 
 + (NSString *)wherePluginsLocalPath
 {
-	return [[self whereResourcePath] stringByAppendingPathComponent:@"Extensions"];	
+	return [[self whereResourcePath] stringByAppendingPathComponent:@"Extensions"];
 }
 
 + (NSString *)whereAppStoreReceipt
@@ -217,7 +217,7 @@ static NSMutableDictionary *commandIndex = nil;
 	return [[self whereMainApplicationBundle] stringByAppendingPathComponent:@"/Contents/_MASReceipt/receipt"];
 }
 
-+ (NSString *)whereResourcePath 
++ (NSString *)whereResourcePath
 {
 	return [[NSBundle mainBundle] resourcePath];
 }
@@ -245,7 +245,7 @@ static NSMutableDictionary *commandIndex = nil;
 	return [_NSUserDefaults() objectForKey:@"Preferences.Identity.realname"];
 }
 
-#pragma mark - 
+#pragma mark -
 #pragma mark General Preferences
 
 /* There is no real logic to how the following preferences are ordered. */
@@ -604,7 +604,7 @@ static NSMutableDictionary *commandIndex = nil;
 		case GROWL_ADDRESS_BOOK_MATCH:	return TXTLS(@"GROWL_ADDRESS_BOOK_MATCH");
 		default: return nil;
 	}
-	
+
 	return nil;
 }
 
@@ -624,111 +624,111 @@ static NSMutableDictionary *commandIndex = nil;
 		case GROWL_ADDRESS_BOOK_MATCH:	return @"eventAddressBookMatch";
 		default: return nil;
 	}
-	
+
 	return nil;
 }
 
 + (NSString *)soundForEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return nil;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"Sound"];
-	
+
 	return [_NSUserDefaults() objectForKey:key];
 }
 
 + (void)setSound:(NSString *)value forEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"Sound"];
-	
+
 	[_NSUserDefaults() setObject:value forKey:key];
 }
 
 + (BOOL)growlEnabledForEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return NO;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"Growl"];
-	
+
 	return [_NSUserDefaults() boolForKey:key];
 }
 
 + (void)setGrowlEnabled:(BOOL)value forEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"Growl"];
-	
+
 	[_NSUserDefaults() setBool:value forKey:key];
 }
 
 + (BOOL)growlStickyForEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return NO;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"GrowlSticky"];
-	
+
 	return [_NSUserDefaults() boolForKey:key];
 }
 
 + (void)setGrowlSticky:(BOOL)value forEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"GrowlSticky"];
-	
+
 	[_NSUserDefaults() setBool:value forKey:key];
 }
 
 + (BOOL)disableWhileAwayForEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return NO;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"DisableWhileAway"];
-	
+
 	return [_NSUserDefaults() boolForKey:key];
 }
 
 + (void)setDisableWhileAway:(BOOL)value forEvent:(GrowlNotificationType)event
 {
 	NSString *okey = [self keyForEvent:event];
-	
+
 	if (NSObjectIsEmpty(okey)) {
 		return;
 	}
-	
+
 	NSString *key = [okey stringByAppendingString:@"DisableWhileAway"];
-	
+
 	[_NSUserDefaults() setBool:value forKey:key];
 }
 
@@ -784,12 +784,12 @@ static NSMutableArray *excludeWords = nil;
 	} else {
 		keywords = [NSMutableArray new];
 	}
-	
+
 	NSArray *ary = [_NSUserDefaults() objectForKey:@"keywords"];
-	
+
 	for (NSDictionary *e in ary) {
 		NSString *s = [e objectForKey:@"string"];
-		
+
 		if (NSObjectIsNotEmpty(s)) {
 			[keywords safeAddObject:s];
 		}
@@ -803,12 +803,12 @@ static NSMutableArray *excludeWords = nil;
 	} else {
 		excludeWords = [NSMutableArray new];
 	}
-	
+
 	NSArray *ary = [_NSUserDefaults() objectForKey:@"excludeWords"];
-	
+
 	for (NSDictionary *e in ary) {
 		NSString *s = [e objectForKey:@"string"];
-		
+
 		if (s) [excludeWords safeAddObject:s];
 	}
 }
@@ -816,29 +816,29 @@ static NSMutableArray *excludeWords = nil;
 + (void)cleanUpWords:(NSString *)key
 {
 	NSArray *src = [_NSUserDefaults() objectForKey:key];
-	
+
 	NSMutableArray *ary = [NSMutableArray array];
-	
+
 	for (NSDictionary *e in src) {
 		NSString *s = [e objectForKey:@"string"];
-		
+
 		if (NSObjectIsNotEmpty(s)) {
 			[ary safeAddObject:s];
 		}
 	}
-	
+
 	[ary sortUsingSelector:@selector(caseInsensitiveCompare:)];
-	
+
 	NSMutableArray *saveAry = [NSMutableArray array];
-	
+
 	for (NSString *s in ary) {
 		NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-		
+
 		[dic setObject:s forKey:@"string"];
-		
+
 		[saveAry safeAddObject:dic];
 	}
-	
+
 	[_NSUserDefaults() setObject:saveAry forKey:key];
 	[_NSUserDefaults() synchronize];
 }
@@ -874,7 +874,7 @@ static NSInteger totalRunTime = 0;
 {
 	totalRunTime  = [_NSUserDefaults() integerForKey:@"TXRunTime"];
 	totalRunTime += [NSDate secondsSinceUnixTimestamp:startUpTime];
-	
+
 	return totalRunTime;
 }
 
@@ -898,14 +898,14 @@ static NSInteger totalRunTime = 0;
 #pragma mark -
 #pragma mark Initialization
 
-+ (void)defaultIRCClientSheetCallback:(NSNumber *)returnCode 
-{	
++ (void)defaultIRCClientSheetCallback:(NSNumber *)returnCode
+{
     NSInteger _returnCode = [returnCode integerValue];
-    
+
 	if (_returnCode == NSAlertFirstButtonReturn) {
 		NSString *bundleID    = [[NSBundle mainBundle] bundleIdentifier];
 		OSStatus changeResult = LSSetDefaultHandlerForURLScheme((CFStringRef)@"irc", (CFStringRef)bundleID);
-		
+
 		if (changeResult == noErr) return;
 	}
 }
@@ -913,27 +913,27 @@ static NSInteger totalRunTime = 0;
 + (void)defaultIRCClientPrompt
 {
 	[NSThread sleepForTimeInterval:1.5];
-	
+
     CFURLRef ircAppURL = NULL;
     OSStatus status    = LSGetApplicationForURL((CFURLRef)[NSURL URLWithString:@"irc:"], kLSRolesAll, NULL, &ircAppURL);
 
 	if (status == noErr) {
 		NSBundle *mainBundle		  = [NSBundle mainBundle];
 		NSBundle *defaultClientBundle = [NSBundle bundleWithURL:CFItemRefToID(ircAppURL)];
-		
+
 		if ([[defaultClientBundle bundleIdentifier] isNotEqualTo:[mainBundle bundleIdentifier]]) {
 			[PopupPrompts sheetWindowWithQuestion:[NSApp keyWindow]
 										   target:self
 										   action:@selector(defaultIRCClientSheetCallback:)
 											 body:TXTLS(@"DEFAULT_IRC_CLIENT_PROMPT_MESSAGE")
 											title:TXTLS(@"DEFAULT_IRC_CLIENT_PROMPT_TITLE")
-									defaultButton:TXTLS(@"YES_BUTTON") 
-								  alternateButton:TXTLS(@"NO_BUTTON") 
-								   suppressionKey:@"default_irc_client" 
+									defaultButton:TXTLS(@"YES_BUTTON")
+								  alternateButton:TXTLS(@"NO_BUTTON")
+								   suppressionKey:@"default_irc_client"
 								  suppressionText:nil];
 		}
 	}
-	
+
 	if (ircAppURL) CFRelease(ircAppURL);
 }
 
@@ -942,17 +942,17 @@ static NSInteger totalRunTime = 0;
 	NSInteger numberOfRuns = ([_NSUserDefaults() integerForKey:@"TXRunCount"] + 1);
 
 	[_NSUserDefaults() setInteger:numberOfRuns forKey:@"TXRunCount"];
-	
+
 	if (numberOfRuns >= 2) {
 		[[self invokeInBackgroundThread] defaultIRCClientPrompt];
-	} 
-	
+	}
+
 	startUpTime = [NSDate epochTime];
-	
+
 	// ====================================================== //
-	
+
 	NSMutableDictionary *d = [NSMutableDictionary dictionary];
-	
+
 	[d setBool:YES forKey:@"SpellChecking"];
 	[d setBool:YES forKey:@"eventHighlightGrowl"];
 	[d setBool:YES forKey:@"eventNewtalkGrowl"];
@@ -996,7 +996,7 @@ static NSInteger totalRunTime = 0;
 	[d setBool:NO  forKey:@"Preferences.Theme.inputhistory_per_channel"];
 	[d setBool:NO  forKey:@"Preferences.General.dockbadge_countpub"];
 	[d setBool:NO  forKey:@"Preferences.General.disable_nickname_colors"];
-	
+
 	[d setObject:@"Glass"						forKey:@"eventHighlightSound"];
 	[d setObject:@"ircop alert"					forKey:@"Preferences.General.ircop_alert_match"];
 	[d setObject:@"Guest"						forKey:@"Preferences.Identity.nickname"];
@@ -1011,7 +1011,7 @@ static NSInteger totalRunTime = 0;
 	[d setObject:@"<%@%n>"						forKey:@"Preferences.Theme.nick_format"];
 	[d setObject:@"[%H:%M:%S]"					forKey:@"Preferences.Theme.timestamp_format"];
 	[d setObject:@"~/Documents/Textual Logs"	forKey:@"Preferences.General.transcript_folder"];
-	
+
 	[d setInteger:5							forKey:@"Preferences.General.autojoin_maxchans"];
 	[d setInteger:300						forKey:@"Preferences.General.max_log_lines"];
 	[d setInteger:300						forKey:@"Preferences.General.inline_image_width"];
@@ -1021,48 +1021,48 @@ static NSInteger totalRunTime = 0;
 	[d setInteger:NOTICES_SENDTO_CONSOLE	forKey:@"Preferences.General.notices_sendto_location"];
 	[d setInteger:USERDC_ACTION_QUERY		forKey:@"Preferences.General.user_doubleclick_action"];
 	[d setInteger:CMDWKEY_SHORTCUT_CLOSE	forKey:@"Preferences.General.keyboard_cmdw_response"];
-	
+
 	[d setDouble:12.0 forKey:@"Preferences.Theme.log_font_size"];
 	[d setDouble:1.0  forKey:@"Preferences.Theme.transparency"];
-	
+
 	// ====================================================== //
-    
+
 	[_NSUserDefaults() registerDefaults:d];
-	
+
 	[_NSUserDefaults() addObserver:(id)self forKeyPath:@"keywords"     options:NSKeyValueObservingOptionNew context:NULL];
 	[_NSUserDefaults() addObserver:(id)self forKeyPath:@"excludeWords" options:NSKeyValueObservingOptionNew context:NULL];
-	
+
 	systemVersionPlist = [NSDictionary dictionaryWithContentsOfFile:@"/System/Library/CoreServices/ServerVersion.plist"];
 	if (NSObjectIsEmpty(systemVersionPlist)) systemVersionPlist = [NSDictionary dictionaryWithContentsOfFile:@"/System/Library/CoreServices/SystemVersion.plist"];
 	if (NSObjectIsEmpty(systemVersionPlist)) exit(10);
-	
+
 	[systemVersionPlist retain];
-	
+
 	textualPlist = [[NSBundle mainBundle] infoDictionary];
-	
+
 	[self loadKeywords];
 	[self loadExcludeWords];
 	[self populateCommandIndex];
-	
+
 	/* Font Check */
-	
+
 	if ([NSFont fontIsAvailable:[Preferences themeChannelViewFontName]] == NO) {
 		[_NSUserDefaults() setObject:DEFAULT_TEXTUAL_FONT forKey:@"Preferences.Theme.log_font_name"];
 	}
-	
+
 	/* Theme Check */
 
 	NSString *themeName = [ViewTheme extractThemeName:[Preferences themeName]];
 	NSString *themePath = [[Preferences whereThemesPath] stringByAppendingPathComponent:themeName];
-	
+
 	if ([_NSFileManager() fileExistsAtPath:themePath] == NO) {
         themePath = [[Preferences whereThemesLocalPath] stringByAppendingPathComponent:themeName];
-        
+
         if ([_NSFileManager() fileExistsAtPath:themePath] == NO) {
             [_NSUserDefaults() setObject:DEFAULT_TEXTUAL_STYLE forKey:@"Preferences.Theme.name"];
         } else {
             NSString *newName = [NSString stringWithFormat:@"resource:%@", themeName];
-            
+
             [_NSUserDefaults() setObject:newName forKey:@"Preferences.Theme.name"];
         }
 	}

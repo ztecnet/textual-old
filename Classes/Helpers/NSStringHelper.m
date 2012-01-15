@@ -31,7 +31,7 @@ NSInteger ctoi(unsigned char c);
 	if (range.location == NSNotFound) return nil;
 	if (range.length > [self length]) return nil;
 	if (range.location > [self length]) return nil;
-	
+
 	return [self substringWithRange:range];
 }
 
@@ -48,25 +48,25 @@ NSInteger ctoi(unsigned char c);
 - (NSString *)safeSubstringFromIndex:(NSInteger)anIndex
 {
 	if ([self length] < anIndex || anIndex < 0) return nil;
-	
+
 	return [self substringFromIndex:anIndex];
 }
 
 - (NSString *)safeSubstringToIndex:(NSInteger)anIndex
 {
 	if ([self length] < anIndex || anIndex < 0) return nil;
-	
+
 	return [self substringToIndex:anIndex];
 }
 
 - (UniChar)safeCharacterAtIndex:(NSInteger)index
 {
 	if ([self length] < index || index < 0) return 0;
-	
+
 	if (NSObjectIsNotEmpty(self)) {
 		return [self characterAtIndex:index];
 	}
-	
+
 	return 0;
 }
 
@@ -74,10 +74,10 @@ NSInteger ctoi(unsigned char c);
 {
 	if (NSObjectIsNotEmpty(self)) {
 		UniChar charValue = [self safeCharacterAtIndex:index];
-		
+
 		return [NSString stringWithUniChar:charValue];
 	}
-	
+
 	return nil;
 }
 
@@ -85,44 +85,44 @@ NSInteger ctoi(unsigned char c);
 {
 	NSInteger chopMnt = 0;
 	NSInteger slnt	  = [self length];
-	
+
 	NSString *slchar	 = nil;
 	NSString *strChopper = self;
-	
+
 	for (NSInteger i = 1; i < slnt; i++) {
 		slchar     = [strChopper safeSubstringFromIndex:([strChopper length] - 1)];
 		strChopper = [strChopper safeSubstringToIndex:([strChopper length] - 1)];
-		
+
 		if ([chars containsObject:slchar] == NO) {
 			break;
 		}
-		
+
 		chopMnt++;
 	}
-	
+
 	if (chopMnt > 0) {
 		return [self safeSubstringToIndex:(slnt - chopMnt)];
 	}
-	
+
 	return self;
 }
 
 - (const UniChar*)getCharactersBuffer
 {
 	NSUInteger len = self.length;
-	
+
 	const UniChar* buffer = CFStringGetCharactersPtr((CFStringRef)self);
-	
+
 	if (buffer == NULL) {
 		NSMutableData *data = [NSMutableData dataWithLength:(len * sizeof(UniChar))];
 		if (NSObjectIsEmpty(data)) return NULL;
-		
+
 		[self getCharacters:[data mutableBytes]];
 		buffer = [data bytes];
-		
+
 		if (buffer == NULL) return NULL;
 	}
-	
+
 	return buffer;
 }
 
@@ -134,14 +134,14 @@ NSInteger ctoi(unsigned char c);
 - (BOOL)contains:(NSString *)str
 {
 	NSRange r = [self rangeOfString:str];
-	
+
 	return BOOLReverseValue(r.location == NSNotFound);
 }
 
 - (BOOL)containsIgnoringCase:(NSString *)str
 {
 	NSRange r = [self rangeOfString:str options:NSCaseInsensitiveSearch];
-	
+
 	return BOOLReverseValue(r.location == NSNotFound);
 }
 
@@ -152,9 +152,9 @@ NSInteger ctoi(unsigned char c);
 
 - (NSInteger)findCharacter:(UniChar)c start:(NSInteger)start
 {
-	NSRange r = [self rangeOfCharacterFromSet:[NSCharacterSet characterSetWithRange:NSMakeRange(c, 1)] 
+	NSRange r = [self rangeOfCharacterFromSet:[NSCharacterSet characterSetWithRange:NSMakeRange(c, 1)]
 									  options:0 range:NSMakeRange(start, ([self length] - start))];
-	
+
 	return ((r.location == NSNotFound) ? -1 : r.location);
 }
 
@@ -172,18 +172,18 @@ NSInteger ctoi(unsigned char c);
 {
 	NSUInteger len = self.length;
 	if (len == 0) return NO;
-	
+
 	const UniChar* buffer = [self getCharactersBuffer];
 	if (buffer == NULL) return NO;
-	
+
 	for (NSInteger i = 0; i < len; ++i) {
 		UniChar c = buffer[i];
-		
+
 		if (IsNumeric(c) == NO) {
 			return NO;
 		}
 	}
-	
+
 	return YES;
 }
 
@@ -191,18 +191,18 @@ NSInteger ctoi(unsigned char c);
 {
 	NSUInteger len = self.length;
 	if (len == 0) return NO;
-	
+
 	const UniChar* buffer = [self getCharactersBuffer];
 	if (buffer == NULL) return NO;
-	
+
 	for (NSInteger i = 0; i < len; ++i) {
 		UniChar c = buffer[i];
-		
+
 		if (IsAlphaNum(c) == NO) {
 			return NO;
 		}
 	}
-	
+
 	return YES;
 }
 
@@ -225,21 +225,21 @@ BOOL isLowSurrogate(UniChar c)
 {
 	NSInteger len = self.length;
 	if (len == 0) return -1;
-	
+
 	NSInteger c = [self characterAtIndex:0];
-	
+
 	if (isHighSurrogate(c)) {
 		if (len <= 1) return c;
-		
+
 		NSInteger d = [self characterAtIndex:1];
-		
+
 		if (isLowSurrogate(d)) {
 			return (((((c - 0xd800) * 0x400) + (d - 0xdc00)) + 0x10000));
 		} else {
 			return -1;
 		}
 	}
-	
+
 	return c;
 }
 
@@ -247,21 +247,21 @@ BOOL isLowSurrogate(UniChar c)
 {
 	NSInteger len = self.length;
 	if (len == 0) return -1;
-	
+
 	NSInteger c = [self characterAtIndex:(len - 1)];
-	
+
 	if (isLowSurrogate(c)) {
 		if (len <= 1) return c;
-		
+
 		NSInteger d = [self characterAtIndex:(len - 2)];
-		
+
 		if (isHighSurrogate(d)) {
 			return (((((c - 0xd800) * 0x400) + (d - 0xdc00)) + 0x10000));
 		} else {
 			return -1;
 		}
 	}
-	
+
 	return c;
 }
 
@@ -287,21 +287,21 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSInteger n = 0;
 	NSInteger len = self.length;
-	
+
 	const UniChar* buf = [self getCharactersBuffer];
-	
+
 	UniChar dest[len];
-	
+
 	for (NSInteger i = 0; i < len; ++i) {
 		UniChar c = buf[i];
-		
+
 		if (IsWordLetter(c)) {
 			dest[n++] = c;
 		} else {
 			dest[n++] = '_';
 		}
 	}
-	
+
 	return [NSString stringWithCharacters:dest length:n];
 }
 
@@ -315,7 +315,7 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSRange r = [self rangeOfString:needle];
 	if (r.location == NSNotFound) return -1;
-	
+
 	return r.location;
 }
 
@@ -323,7 +323,7 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSRange r = [self rangeOfString:needle options:NSCaseInsensitiveSearch];
 	if (r.location == NSNotFound) return -1;
-	
+
 	return r.location;
 }
 
@@ -332,12 +332,12 @@ BOOL isUnicharDigit(unichar c)
 	if ([Preferences removeAllFormatting]) {
 		return [self stripEffects];
 	}
-    
+
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:defaultFont, @"attributedStringFont", nil];
-	
-	return [LogRenderer renderBody:self 
-                        controller:nil 
-                        renderType:ASCII_TO_ATTRIBUTED_STRING 
+
+	return [LogRenderer renderBody:self
+                        controller:nil
+                        renderType:ASCII_TO_ATTRIBUTED_STRING
                         properties:input resultInfo:NULL];
 }
 
@@ -345,19 +345,19 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSInteger pos = 0;
 	NSInteger len = self.length;
-	
+
 	if (len == 0) return self;
-	
+
 	NSInteger buflen = (len * sizeof(unichar));
-	
+
 	unichar* src = alloca(buflen);
 	unichar* buf = alloca(buflen);
-	
+
 	[self getCharacters:src];
-	
+
 	for (NSInteger i = 0; i < len; ++i) {
 		unichar c = src[i];
-		
+
 		if (c < 0x20) {
 			switch (c) {
 				case 0x2:
@@ -370,19 +370,19 @@ BOOL isUnicharDigit(unichar c)
 					unichar d = src[i+1];
 					if (isUnicharDigit(d) == NO) continue;
 					i++;
-					
+
 					if ((i + 1) >= len) continue;
 					unichar e = src[i+1];
 					if (IsIRCColor(e, (d - '0')) == NO && NSDissimilarObjects(e, ',')) continue;
 					i++;
-					
+
 					if ((e == ',') == NO) {
 						if ((i + 1) >= len) continue;
 						unichar f = src[i+1];
 						if (NSDissimilarObjects(f, ',')) continue;
 						i++;
 					}
-					
+
 					if ((i + 1) >= len) continue;
 					unichar g = src[i+1];
 					if (isUnicharDigit(g) == NO) {
@@ -390,12 +390,12 @@ BOOL isUnicharDigit(unichar c)
 						continue;
 					}
 					i++;
-					
+
 					if ((i + 1) >= len) continue;
 					unichar h = src[i+1];
 					if (IsIRCColor(h, (g - '0')) == NO) continue;
 					i++;
-					
+
 					break;
 				default:
 					buf[pos++] = c;
@@ -405,32 +405,32 @@ BOOL isUnicharDigit(unichar c)
 			buf[pos++] = c;
 		}
 	}
-	
+
 	return [NSString stringWithCharacters:buf length:pos];
 }
 
 - (BOOL)isNickname
 {
 	if (NSObjectIsEmpty(self)) return NO;
-	
+
 	return ([self isNotEqualTo:@"*"] && [self contains:@"."] == NO);
 }
 
 - (BOOL)isChannelName
 {
 	if (NSObjectIsEmpty(self)) return NO;
-	
+
 	UniChar c = [self characterAtIndex:0];
-	
+
 	return (c == '#' || c == '&' || c == '+' || c == '!' || c == '~' || c == '?');
 }
 
 - (BOOL)isModeChannelName
 {
 	if (NSObjectIsEmpty(self)) return NO;
-	
+
 	UniChar c = [self characterAtIndex:0];
-	
+
 	return (c == '#' || c == '&' || c == '!' || c == '~' || c == '?');
 }
 
@@ -448,33 +448,33 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSInteger len = self.length;
 	if (len <= start) return NSMakeRange(NSNotFound, 0);
-	
+
 	NSString *shortstring = [self safeSubstringFromIndex:start];
-	
+
 	NSRange rs = [TXRegularExpression string:shortstring rangeOfRegex:@"([a-zA-Z0-9]([-a-zA-Z0-9]*[a-zA-Z0-9])?\\.)([a-zA-Z0-9]([-a-zA-Z0-9]*[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,6}|([a-f0-9]{0,4}:){7}[a-f0-9]{0,4}|([0-9]{1,3}\\.){3}[0-9]{1,3}"];
 	if (rs.location == NSNotFound) return NSMakeRange(NSNotFound, 0);
 	NSRange r = NSMakeRange((rs.location + start), rs.length);
-	
+
 	NSInteger prev = (r.location - 1);
-	
+
 	if (0 <= prev && prev < len) {
 		UniChar c = [self characterAtIndex:prev];
-		
+
 		if (IsWordLetter(c)) {
 			return [self rangeOfAddressStart:NSMaxRange(r)];
 		}
 	}
-	
+
 	NSInteger next = NSMaxRange(r);
-	
+
 	if (next < len) {
 		UniChar c = [self characterAtIndex:next];
-		
+
 		if (IsWordLetter(c)) {
 			return [self rangeOfAddressStart:NSMaxRange(r)];
 		}
 	}
-	
+
 	return r;
 }
 
@@ -487,53 +487,53 @@ BOOL isUnicharDigit(unichar c)
 {
 	NSInteger len = self.length;
 	if (len <= start) return NSMakeRange(NSNotFound, 0);
-	
+
 	NSString *shortstring = [self safeSubstringFromIndex:start];
-	
+
 	NSRange rs = [TXRegularExpression string:shortstring rangeOfRegex:@"#([a-zA-Z0-9\\#\\-]+)"];
 	if (rs.location == NSNotFound) return NSMakeRange(NSNotFound, 0);
 	NSRange r = NSMakeRange((rs.location + start), rs.length);
-	
+
 	NSInteger prev = (r.location - 1);
-	
+
 	if (0 <= prev && prev < len) {
 		UniChar c = [self characterAtIndex:prev];
-		
+
 		if (IsWordLetter(c)) {
 			return [self rangeOfAddressStart:NSMaxRange(r)];
 		}
 	}
-	
+
 	NSInteger next = NSMaxRange(r);
-	
+
 	if (next < len) {
 		UniChar c = [self characterAtIndex:next];
-		
+
 		if (IsWordLetter(c)) {
 			return [self rangeOfAddressStart:NSMaxRange(r)];
 		}
 	}
-	
+
 	return r;
 }
 
 - (NSString *)encodeURIComponent
 {
 	if (NSObjectIsEmpty(self)) return NSNullObject;
-	
+
 	const char* src		   = [self UTF8String];
 	const char* characters = "0123456789ABCDEF";
-	
+
 	if (src == NULL) return NSNullObject;
-	
+
 	NSUInteger len = [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
-	
+
 	char buf[len*4];
 	char* dest = buf;
-	
+
 	for (NSInteger i = (len - 1); i >= 0; --i) {
 		unsigned char c = *src++;
-		
+
 		if (IsWordLetter(c) || c == '-' || c == '.' || c == '~') {
 			*dest++ = c;
 		} else {
@@ -542,27 +542,27 @@ BOOL isUnicharDigit(unichar c)
 			*dest++ = characters[c % 16];
 		}
 	}
-	
+
 	return [NSString stringWithBytes:buf length:(dest - buf) encoding:NSASCIIStringEncoding];
 }
 
 - (NSString *)encodeURIFragment
 {
 	if (NSObjectIsEmpty(self)) return NSNullObject;
-	
+
 	const char* src		   = [self UTF8String];
 	const char* characters = "0123456789ABCDEF";
-	
+
 	if (src == NULL) return NSNullObject;
-	
+
 	NSUInteger len = [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
-	
+
 	char buf[len*4];
 	char* dest = buf;
-	
+
 	for (NSInteger i = (len - 1); i >= 0; --i) {
 		unsigned char c = *src++;
-		
+
 		if (IsWordLetter(c)
 			|| c == '#' || c == '%'
 			|| c == '&' || c == '+'
@@ -571,7 +571,7 @@ BOOL isUnicharDigit(unichar c)
 			|| c == ':' || c == ';'
 			|| c == '=' || c == '?'
 			|| c == '@' || c == '~') {
-			
+
 			*dest++ = c;
 		} else {
 			*dest++ = '%';
@@ -579,7 +579,7 @@ BOOL isUnicharDigit(unichar c)
 			*dest++ = characters[c % 16];
 		}
 	}
-	
+
 	return [NSString stringWithBytes:buf length:(dest - buf) encoding:NSASCIIStringEncoding];
 }
 
@@ -588,38 +588,38 @@ BOOL isUnicharDigit(unichar c)
 	return [self stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
 }
 
-+ (NSString *)stringWithUUID 
++ (NSString *)stringWithUUID
 {
 	CFUUIDRef uuidObj = CFUUIDCreate(nil);
 	NSString *uuidString = CFItemRefToID(CFUUIDCreateString(nil, uuidObj));
 	CFRelease(uuidObj);
-	
+
 	return [uuidString autodrain];
 }
 
 - (NSString *)hostmaskFromRawString
 {
 	if ([self contains:@"!"] == NO || [self contains:@"@"] == NO) return self;
-	
+
 	return [self safeSubstringAfterIndex:[self stringPosition:@"!"]];
 }
 
 - (NSString *)nicknameFromHostmask
 {
 	if ([self contains:@"!"] == NO) return self;
-	
-	return [self safeSubstringToIndex:[self stringPosition:@"!"]];	
+
+	return [self safeSubstringToIndex:[self stringPosition:@"!"]];
 }
 
 - (NSString *)reservedCharactersToIRCFormatting
 {
 	NSString *s = self;
-	
+
 	s = [s stringByReplacingOccurrencesOfString:[NSString stringWithUniChar:0x03] withString:@"▤"]; // color
 	s = [s stringByReplacingOccurrencesOfString:[NSString stringWithUniChar:0x02] withString:@"▥"]; // bold
 	s = [s stringByReplacingOccurrencesOfString:[NSString stringWithUniChar:0x16] withString:@"▧"]; // italics
 	s = [s stringByReplacingOccurrencesOfString:[NSString stringWithUniChar:0x1F] withString:@"▨"]; // underline
-	
+
 	return s;
 }
 
@@ -627,17 +627,17 @@ BOOL isUnicharDigit(unichar c)
 {
     /* We do not want ports in server address. */
     self = [self trim];
-    
+
     if ([TXRegularExpression string:self isMatchedByRegex:@"^([^:]+):([0-9]{2,7})$"] ||
         [TXRegularExpression string:self isMatchedByRegex:@"^\\[([0-9a-f:]+)\\]:([0-9]{2,7})$"]) {
-        
+
         NSInteger stringPos = [self rangeOfString:@":" options:NSBackwardsSearch range:NSMakeRange(0, self.length)].location;
-        
+
         if (stringPos > 0) {
             self = [self safeSubstringToIndex:stringPos];
         }
     }
-	
+
 	return self;
 }
 
@@ -645,7 +645,7 @@ BOOL isUnicharDigit(unichar c)
 {
 	/* Basic matching. No need to overcomplicate it ... yet. */
 	NSArray *matches = [self componentsSeparatedByString:@":"];
-	
+
 	return ([matches count] >= 2 && [matches count] <= 7);
 }
 
@@ -654,17 +654,17 @@ BOOL isUnicharDigit(unichar c)
     NSTextStorage *textStorage = [NSTextStorage alloc];
 	NSLayoutManager *layoutManager = [NSLayoutManager new];
 	NSTextContainer *textContainer = [NSTextContainer alloc];
-	
+
     [textStorage initWithString:self];
     [textContainer initWithContainerSize:NSMakeSize(width, FLT_MAX)];
-    
+
 	[layoutManager addTextContainer:textContainer];
 	[textStorage addLayoutManager:layoutManager];
 	[textContainer setLineFragmentPadding:0.0];
 	[layoutManager glyphRangeForTextContainer:textContainer];
-	
+
 	NSInteger cellHeight = [layoutManager usedRectForTextContainer:textContainer].size.height;
-    
+
     return cellHeight;
 }
 
@@ -702,33 +702,33 @@ BOOL isUnicharDigit(unichar c)
 	if (range.location == NSNotFound) return;
 	if (range.length > [self length]) return;
 	if (range.location > [self length]) return;
-	
+
 	[self deleteCharactersInRange:range];
 }
 
 - (NSString *)getToken
 {
 	NSRange r = [self rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:NSWhitespaceCharacter]];
-	
+
 	if (NSDissimilarObjects(r.location, NSNotFound)) {
 		NSString *result = [self safeSubstringToIndex:r.location];
-		
+
 		NSInteger len = [self length];
 		NSInteger pos = (r.location + 1);
-		
+
 		while (pos < len && [self characterAtIndex:pos] == ' ') {
 			pos++;
 		}
-		
+
 		[self safeDeleteCharactersInRange:NSMakeRange(0, pos)];
-		
+
 		return result;
 	}
-	
+
 	NSString *result = [[self copy] autodrain];
-	
+
 	[self setString:NSNullObject];
-	
+
 	return result;
 }
 
@@ -744,7 +744,7 @@ BOOL isUnicharDigit(unichar c)
 - (id)safeAttribute:(NSString *)attrName atIndex:(NSUInteger)location effectiveRange:(NSRangePointer)range
 {
 	if (location > [self length]) return nil;
-	
+
 	return [self attribute:attrName atIndex:location effectiveRange:range];
 }
 
@@ -754,17 +754,17 @@ BOOL isUnicharDigit(unichar c)
 	if (rangeLimit.location == NSNotFound) return nil;
 	if (rangeLimit.length > [self length]) return nil;
 	if (rangeLimit.location > [self length]) return nil;
-	
+
 	return [self attributesAtIndex:location longestEffectiveRange:range inRange:rangeLimit];
 }
 
 - (id)safeAttribute:(NSString *)attrName atIndex:(NSUInteger)location longestEffectiveRange:(NSRangePointer)range inRange:(NSRange)rangeLimit
-{	
+{
 	if (location > [self length]) return nil;
 	if (rangeLimit.location == NSNotFound) return nil;
 	if (rangeLimit.length > [self length]) return nil;
 	if (rangeLimit.location > [self length]) return nil;
-	
+
 	return [self attribute:attrName atIndex:location longestEffectiveRange:range inRange:rangeLimit];
 }
 
@@ -776,11 +776,11 @@ BOOL isUnicharDigit(unichar c)
 + (NSAttributedString *)emptyStringWithBase:(NSString *)base
 {
 	NSAttributedString *newstr;
-    
+
     newstr = [NSAttributedString alloc];
     newstr = [newstr initWithString:base];
     newstr = [newstr autodrain];
-    
+
 	return newstr;
 }
 
@@ -792,56 +792,56 @@ BOOL isUnicharDigit(unichar c)
 - (NSAttributedString *)attributedStringByTrimmingCharactersInSet:(NSCharacterSet *)set frontChop:(NSRangePointer)front
 {
 	NSString *str = [self string];
-	
+
 	NSRange range;
-	
+
 	NSUInteger loc = 0;
 	NSUInteger len = 0;
-	
+
 	NSCharacterSet *invertedSet = [set invertedSet];
-	
+
 	range = [str rangeOfCharacterFromSet:invertedSet];
 	loc   = ((range.length >= 1) ? range.location : 0);
-	
+
 	if (PointerIsEmpty(front) == NO) {
 		*front = range;
 	}
-	
+
 	range = [str rangeOfCharacterFromSet:invertedSet options:NSBackwardsSearch];
 	len   = ((range.length >= 1) ? (NSMaxRange(range) - loc) : ([str length] - loc));
-	
+
 	return [self attributedSubstringFromRange:NSMakeRange(loc, len)];
 }
 
 - (NSArray *)splitIntoLines
 {
     NSMutableArray *lines = [NSMutableArray array];
-    
+
     NSInteger len   = self.string.length;
     NSInteger start = 0;
-    
+
     NSMutableAttributedString *copyd = [self.mutableCopy autodrain];
-    
+
     while (start < len) {
-        NSRange r = [self.string rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet] 
-                                                 options:NSCaseInsensitiveSearch 
+        NSRange r = [self.string rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet]
+                                                 options:NSCaseInsensitiveSearch
                                                    range:NSMakeRange(start, (len - start))];
-        
+
         if (r.location == NSNotFound) {
             break;
         }
-        
+
         NSRange delRange = NSMakeRange(0, ((r.location - start) + 1));
         NSRange cutRange = NSMakeRange(start, (r.location - start));
-        
+
         NSAttributedString *line = [self attributedSubstringFromRange:cutRange];
-        
+
         [lines safeAddObject:line];
         [copyd deleteCharactersInRange:delRange];
-        
+
         start = NSMaxRange(r);
     }
-    
+
     if (NSObjectIsEmpty(lines)) {
         [lines safeAddObject:self];
     } else {
@@ -849,7 +849,7 @@ BOOL isUnicharDigit(unichar c)
             [lines safeAddObject:copyd];
         }
     }
-    
+
     return lines;
 }
 
@@ -858,17 +858,17 @@ BOOL isUnicharDigit(unichar c)
     NSTextStorage *textStorage = [NSTextStorage alloc];
 	NSLayoutManager *layoutManager = [NSLayoutManager new];
 	NSTextContainer *textContainer = [NSTextContainer alloc];
-	
+
     [textStorage initWithAttributedString:self];
     [textContainer initWithContainerSize:NSMakeSize(width, FLT_MAX)];
-    
+
 	[layoutManager addTextContainer:textContainer];
 	[textStorage addLayoutManager:layoutManager];
 	[textContainer setLineFragmentPadding:0.0];
 	[layoutManager glyphRangeForTextContainer:textContainer];
-	
+
 	NSInteger cellHeight = [layoutManager usedRectForTextContainer:textContainer].size.height;
-    
+
     return cellHeight;
 }
 
@@ -879,28 +879,28 @@ BOOL isUnicharDigit(unichar c)
 - (NSAttributedString *)getToken
 {
 	NSRange r = [self.string rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]];
-	
+
 	if (NSDissimilarObjects(r.location, NSNotFound)) {
         NSRange sr = NSMakeRange(0, r.location);
-        
+
         NSAttributedString *result = [self attributedSubstringFromRange:sr];
-		
+
 		NSInteger len = [self length];
 		NSInteger pos = (r.location + 1);
-		
+
 		while (pos < len && [self.string characterAtIndex:pos] == ' ') {
 			pos++;
 		}
-		
+
         [self deleteCharactersInRange:NSMakeRange(0, pos)];
-		
+
 		return result;
 	}
-	
+
 	NSAttributedString *result = [self.copy autodrain];
-	
+
     [self setAttributedString:[NSAttributedString emptyString]];
-	
+
 	return result;
 }
 

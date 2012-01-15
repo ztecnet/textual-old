@@ -8,14 +8,14 @@
 + (NSArray *)locatedLinksForString:(NSString *)body
 {
 	NSArray *result;
-	
+
 	AHHyperlinkScanner *scanner = [AHHyperlinkScanner new];
-	
+
 	result = [scanner matchesForString:body];
-	
+
 	[scanner drain];
 	scanner = nil;
-	
+
 	return result;
 }
 

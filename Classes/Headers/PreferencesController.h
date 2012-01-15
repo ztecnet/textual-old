@@ -9,9 +9,9 @@
 @interface PreferencesController : NSWindowController
 {
 	id delegate;
-	
+
 	IRCWorld *world;
-	
+
 	IBOutlet NSView *contentView;
 	IBOutlet NSView *highlightView;
 	IBOutlet NSView *interfaceView;
@@ -27,32 +27,32 @@
 	IBOutlet NSView *IRCopServicesView;
 	IBOutlet NSView *channelManagementView;
     IBOutlet NSView *experimentalSettingsView;
-    
+
     IBOutlet NSButton *highlightNicknameButton;
     IBOutlet NSButton *addExcludeWordButton;
-	
+
 	IBOutlet NSTableView *keywordsTable;
 	IBOutlet NSTableView *excludeWordsTable;
 	IBOutlet NSTableView *installedScriptsTable;
-	
+
 	IBOutlet NSArrayController *keywordsArrayController;
 	IBOutlet NSArrayController *excludeWordsArrayController;
-	
+
 	IBOutlet NSPopUpButton *transcriptFolderButton;
 	IBOutlet NSPopUpButton *themeButton;
     IBOutlet NSPopUpButton *alertButton;
     IBOutlet NSPopUpButton *alertSoundButton;
-    
+
     IBOutlet NSButton *useGrowlButton;
     IBOutlet NSButton *disableAlertWhenAwayButton;
-	
+
 	IBOutlet NSTextField *scriptLocationField;
-	
+
 	IBOutlet NSMenu *installedScriptsMenu;
 	IBOutlet NSToolbar *preferenceSelectToolbar;
-	
+
 	ScriptsWrapper *scriptsController;
-	
+
 	NSMutableArray *sounds;
 }
 

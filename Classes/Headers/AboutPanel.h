@@ -4,7 +4,7 @@
 @interface AboutPanel : NSWindowController
 {
 	id delegate;
-	
+
 	IBOutlet NSTextField *versionInfo;
 }
 

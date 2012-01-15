@@ -9,11 +9,11 @@ typedef enum {
 @interface AddressBook : NSObject
 {
 	NSInteger cid;
-	
+
 	AddressBookEntryType entryType;
-	 
+
 	NSString *hostmask;
-	
+
 	BOOL ignorePublicMsg;
 	BOOL ignorePrivateMsg;
 	BOOL ignoreHighlights;
@@ -22,7 +22,7 @@ typedef enum {
 	BOOL ignoreJPQE;
 	BOOL notifyJoins;
 	BOOL ignorePMHighlights;
-	
+
 	NSString *hostmaskRegex;
 }
 

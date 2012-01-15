@@ -9,11 +9,11 @@
 {
 	IRCClient *u = [world selectedClient];
 	if (PointerIsEmpty(u)) return;
-	
+
 	for (IRCUser* m in [self selectedMembers:sender]) {
 		[[u invokeOnMainThread] sendPrivmsgToSelectedChannel:[NSString stringWithFormat:@"%@, the Textual IRC Client can be downloaded from http://www.codeux.com/textual/", m.nick]];
 	}
-	
+
 	[self deselectMembers:sender];
 }
 

@@ -4,7 +4,7 @@
 @interface InputHistory : NSObject
 {
 	id lastHistoryItem;
-	
+
 	NSMutableArray *buf;
 	NSInteger pos;
 }

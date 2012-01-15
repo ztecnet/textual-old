@@ -47,14 +47,14 @@
 	[config drain];
 	[generalView drain];
 	[encryptView drain];
-	
+
 	[super dealloc];
 }
 
 #pragma mark -
 #pragma mark NSToolbar Delegates
 
-- (void)onMenuBarItemChanged:(id)sender 
+- (void)onMenuBarItemChanged:(id)sender
 {
 	switch ([sender indexOfSelectedItem]) {
 		case 0:
@@ -70,25 +70,25 @@
 			[self firstPane:generalView];
 			break;
 	}
-} 
+}
 
-- (void)firstPane:(NSView *)view 
+- (void)firstPane:(NSView *)view
 {
 	NSRect windowFrame = [sheet frame];
-	
+
 	windowFrame.size.width = [view frame].size.width;
 	windowFrame.size.height = ([view frame].size.height + WINDOW_TOOLBAR_HEIGHT);
 	windowFrame.origin.y = (NSMaxY([sheet frame]) - ([view frame].size.height + WINDOW_TOOLBAR_HEIGHT));
-	
+
 	if (NSObjectIsNotEmpty([contentView subviews])) {
 		[[[contentView subviews] safeObjectAtIndex:0] removeFromSuperview];
 	}
-	
+
 	[sheet setFrame:windowFrame display:YES animate:YES];
-	
+
 	[contentView setFrame:[view frame]];
-	[contentView addSubview:view];	
-	
+	[contentView addSubview:view];
+
 	[sheet recalculateKeyViewLoop];
 }
 
@@ -101,7 +101,7 @@
 	[self update];
 	[self startSheet];
 	[self firstPane:generalView];
-	
+
 	[tabView setSelectedSegment:0];
 }
 
@@ -113,7 +113,7 @@
 - (void)close
 {
 	delegate = nil;
-	
+
 	[self endSheet];
 }
 
@@ -124,7 +124,7 @@
 	topicText.stringValue = config.topic;
 	passwordText.stringValue = config.password;
 	encryptKeyText.stringValue = config.encryptionKey;
-	
+
 	growlCheck.state = config.growl;
 	autoJoinCheck.state = config.autoJoin;
 	ihighlights.state = config.ihighlights;
@@ -139,13 +139,13 @@
 	config.topic = topicText.stringValue;
 	config.password = passwordText.stringValue;
 	config.encryptionKey = encryptKeyText.stringValue;
-    
+
 	config.growl = growlCheck.state;
 	config.autoJoin = autoJoinCheck.state;
     config.ihighlights = ihighlights.state;
     config.iJPQActivity = JPQActivityCheck.state;
     config.inlineImages = inlineImagesCheck.state;
-	
+
 	if ([config.name isChannelName] == NO) {
 		config.name = [@"#" stringByAppendingString:config.name];
 	}
@@ -156,9 +156,9 @@
 	if (cid > 0) {
 		[nameText setEditable:NO];
 	}
-	
+
 	NSString *s = nameText.stringValue;
-	
+
 	[okButton setEnabled:NSObjectIsNotEmpty(s)];
 }
 
@@ -173,11 +173,11 @@
 - (void)ok:(id)sender
 {
 	[self save];
-	
+
 	if ([delegate respondsToSelector:@selector(ChannelSheetOnOK:)]) {
 		[delegate ChannelSheetOnOK:self];
 	}
-	
+
 	[self cancel:nil];
 }
 

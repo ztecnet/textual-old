@@ -19,35 +19,35 @@
 #pragma mark -
 #pragma mark Drawing
 
-- (id)initWithCoder:(NSCoder *)coder 
+- (id)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
-	
+
 	if (self) {
-            
+
         self.delegate = self;
-        
+
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-        
+
         /* Default Value */
         if ([Preferences handleIRCopAlerts]) {
         [attrs setObject:DefaultTextFieldFont forKey:NSFontAttributeName];
         [attrs setObject:[NSColor grayColor]  forKey:NSForegroundColorAttributeName];
-        
+
         _placeholderString = [NSAttributedString alloc];
         _placeholderString = [_placeholderString initWithString:TXTLS(@"INPUT_TEXT_FIELD_PLACE_HOLDER") attributes:attrs];
-        
+
         /* Set Text Color */
         [attrs setObject:DefaultTextFieldFontColor forKey:NSForegroundColorAttributeName];
-        
+
         NSAttributedString *temps;
-        
+
         temps = [NSAttributedString alloc];
         temps = [temps initWithString:@"-" attributes:attrs];
-        
+
         [self setAttributedStringValue:temps];
         [self setStringValue:NSNullObject];
-        
+
         [temps drain];
      }
             }
@@ -57,7 +57,7 @@
 - (void)dealloc
 {
     [_placeholderString drain];
-    
+
     [super dealloc];
 }
 
@@ -71,41 +71,41 @@
 	NSWindow     *mainWindow = [self window];
 	NSView       *superView	 = [self splitterView];
     NSScrollView *scroller   = [self scrollView];
-	
+
 	NSRect textBoxFrame		= [scroller frame];
 	NSRect superViewFrame	= [superView frame];
 	NSRect mainWindowFrame	= [mainWindow frame];
-	
+
 	if (NSObjectIsEmpty([self string])) {
 		textBoxFrame.size.height = InputBoxDefaultHeight;
 	} else {
         NSAttributedString *value = [self attributedStringValue];
-        
+
         NSInteger cellHeight = [value pixelHeightInWidth:(textBoxFrame.size.width - 12)];
 		CGFloat totalLines = ceil(cellHeight / 14.0f);
-		
+
 		if (totalLines <= 1) {
 			textBoxFrame.size.height = InputBoxDefaultHeight;
 		} else {
 			textBoxFrame.size.height = (InputBoxDefaultHeight + ((totalLines - 1) * InputBoxReszieHeightMultiplier));
 		}
-		
+
 		if (textBoxFrame.size.height > InputTextFiedMaxHeight) {
 			textBoxFrame.size.height = InputTextFiedMaxHeight;
 		}
-	}	
-    
+	}
+
 	NSInteger contentBorder = (textBoxFrame.size.height + 13);
-	
+
 	superViewFrame.origin.y	   = contentBorder;
 	superViewFrame.size.height = (mainWindowFrame.size.height - contentBorder - 22);
-	
+
 	[mainWindow setContentBorderThickness:contentBorder forEdge:NSMinYEdge];
-    
+
 	[scroller	setFrame:textBoxFrame];
 	//this messes up fullscreen mode
     [superView	setFrame:superViewFrame];
-   
+
     [scroller setNeedsDisplay:YES];
 }
 
@@ -113,22 +113,22 @@
 {
     if (_lastChangeWasPaste) {
         _lastChangeWasPaste = NO;
-        
+
         return;
     }
-    
+
     [super textDidChange:self pasted:NO range:[self fullSelectionRange]];
-    
+
     //[self resetTextFieldCellSize];
 }
 
 - (void)drawRect:(NSRect)dirtyRect
 {
     NSScrollView *scroller = [self scrollView];
-    
+
     if (scroller.frame.size.height == InputTextFiedMaxHeight) {
         BOOL cleanSubview = NO;
-        
+
         if ([scroller hasVerticalScroller]) {
             if (self.frame.size.height > scroller.frame.size.height) {
                 if (NSDissimilarObjects(1.0f, scroller.verticalScroller.floatValue)) {
@@ -136,16 +136,16 @@
                 }
             }
         }
-        
+
         if (cleanSubview) {
             dirtyRect.size.height -= 4;
         }
     }
-    
+
     [super drawRect:dirtyRect];
-    
+
     NSString *value = [self stringValue];
-            
+
     if (NSObjectIsEmpty(value) && NSDissimilarObjects([self baseWritingDirection], NSWritingDirectionRightToLeft)) {
         [_placeholderString drawAtPoint:NSMakePoint(6, 5)];
     }
@@ -154,9 +154,9 @@
 - (void)paste:(id)sender
 {
     _lastChangeWasPaste = YES;
-    
+
     [super paste:self];
-    
+
     //[self resetTextFieldCellSize];
 }
 
@@ -170,13 +170,13 @@
 {
     if (aSelector == @selector(insertNewline:)) {
         [_actionTarget performSelector:_actonSelector];
-        
+
         [self toggleFontResetStatus:YES];
         //[self resetTextFieldCellSize];
-        
+
         return YES;
     }
-    
+
     return NO;
 }
 
@@ -187,54 +187,54 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
 	NSWindow *parentWindow = [self window];
-	
+
 	NSRect cellBounds		= [self bounds];
 	NSRect hightlightFrame	= NSMakeRect(0.0, 10.0, cellBounds.size.width, (cellBounds.size.height - 10.0));
-	
+
 	NSBezierPath *highlightPath  = [NSBezierPath bezierPathWithRoundedRect:hightlightFrame xRadius:3.6 yRadius:3.6];
 	NSColor		 *highlightColor = [NSColor colorWithCalibratedWhite:1.0 alpha:0.394];
-	
+
 	[highlightColor set];
 	[highlightPath fill];
-	
+
 	NSRect blackOutlineFrame = NSMakeRect(0.0, 0.0, cellBounds.size.width, (cellBounds.size.height - 1.0));
-	
+
 	NSGradient   *gradient;
 	NSBezierPath *gradientPath = [NSBezierPath bezierPathWithRoundedRect:blackOutlineFrame xRadius:3.6 yRadius:3.6];
-	
+
 	if ([parentWindow isOnCurrentWorkspace]) {
 		gradient = [[NSGradient alloc] initWithStartingColor:LION_ACTIVE_START_GRADIENT endingColor:LION_ACTIVE_STOP_GRADIENT];
 	} else {
 		gradient = [[NSGradient alloc] initWithStartingColor:LION_INACTIVE_START_GRADIENT endingColor:LION_INACTIVE_STOP_GRADIENT];
 	}
-	
+
 	[gradient drawInBezierPath:gradientPath angle:90];
-	
+
 	NSRect shadowFrame = NSMakeRect(1, 1, (cellBounds.size.width - 2.0), 10.0);
-	
+
 	NSColor		 *shadowColor = [NSColor colorWithCalibratedWhite:0.88 alpha:1.0];
 	NSBezierPath *shadowPath  = [NSBezierPath bezierPathWithRoundedRect:shadowFrame xRadius:2.9 yRadius:2.9];
-	
+
 	[shadowColor set];
 	[shadowPath fill];
-	
+
 	NSRect whiteFrame = NSMakeRect(1, 2, (cellBounds.size.width - 2.0), (cellBounds.size.height - 4.0));
-	
+
 	NSColor		 *frameColor    = [NSColor whiteColor];
 	NSBezierPath *framePath     = [NSBezierPath bezierPathWithRoundedRect:whiteFrame xRadius:2.6 yRadius:2.6];
 	NSGradient   *frameGradient = [[NSGradient alloc] initWithStartingColor:LION_BODY_GRADIENT_START endingColor:LION_BODY_GRADIENT_STOP];
-	
+
 	[frameColor set];
 	[framePath fill];
-	
+
 	if (dirtyRect.size.height > 198.0) {
-		whiteFrame.size.height = 198.0; 
+		whiteFrame.size.height = 198.0;
 	}
-	
+
 	framePath = [NSBezierPath bezierPathWithRoundedRect:whiteFrame xRadius:2.6 yRadius:2.6];
-    
+
 	[frameGradient drawInBezierPath:framePath angle:90];
-    
+
 	[gradient      drain];
 	[frameGradient drain];
 

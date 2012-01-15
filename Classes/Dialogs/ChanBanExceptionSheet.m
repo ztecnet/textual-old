@@ -16,11 +16,11 @@
 {
     if ((self = [super init])) {
 		[NSBundle loadNibNamed:@"ChanBanExceptionSheet" owner:self];
-		
+
 		list  = [NSMutableArray new];
         modes = [NSMutableArray new];
     }
-    
+
     return self;
 }
 
@@ -28,7 +28,7 @@
 {
     [list drain];
     [modes drain];
-	
+
     [super dealloc];
 }
 
@@ -36,21 +36,21 @@
 {
 	IRCClient  *u = delegate;
 	IRCChannel *c = [u.world selectedChannel];
-	
+
 	NSString *nheader;
-	
+
 	nheader = [header stringValue];
 	nheader = [NSString stringWithFormat:nheader, c.name];
-	
+
 	[header setStringValue:nheader];
-	
+
     [self startSheet];
 }
 
 - (void)ok:(id)sender
 {
 	[self endSheet];
-	
+
 	if ([delegate respondsToSelector:@selector(chanBanExceptionDialogWillClose:)]) {
 		[delegate chanBanExceptionDialogWillClose:self];
 	}
@@ -59,14 +59,14 @@
 - (void)clear
 {
     [list removeAllObjects];
-	
+
     [self reloadTable];
 }
 
 - (void)addException:(NSString *)host tset:(NSString *)time setby:(NSString *)owner
 {
     [list safeAddObject:[NSArray arrayWithObjects:host, [owner nicknameFromHostmask], time, nil]];
-    
+
     [self reloadTable];
 }
 
@@ -88,42 +88,42 @@
 - (void)onRemoveExceptions:(id)sender
 {
     NSString *modeString;
-    
+
 	NSMutableString *str   = [NSMutableString stringWithString:@"-"];
 	NSMutableString *trail = [NSMutableString string];
-	
+
 	NSIndexSet *indexes = [table selectedRowIndexes];
-	
+
     NSInteger indexTotal = 0;
-    
+
 	for (NSNumber *index in [indexes arrayFromIndexSet]) {
         indexTotal++;
-        
+
 		NSArray *iteml = [list safeObjectAtIndex:[index unsignedIntegerValue]];
-		
+
 		if (NSObjectIsNotEmpty(iteml)) {
 			[str   appendString:@"e"];
 			[trail appendFormat:@" %@", [iteml safeObjectAtIndex:0]];
 		}
-    
+
 		if (indexTotal == MAXIMUM_SETS_PER_MODE) {
             modeString = (id)[str stringByAppendingString:trail];
-            
+
             [modes safeAddObject:modeString];
-            
+
             [str   setString:@"-"];
             [trail setString:NSNullObject];
-            
+
             indexTotal = 0;
         }
 	}
-	
+
     if (NSObjectIsNotEmpty(trail)) {
         modeString = (id)[str stringByAppendingString:trail];
-        
+
         [modes safeAddObject:modeString];
     }
-    
+
 	[self ok:sender];
 }
 
@@ -139,7 +139,7 @@
 {
     NSArray *item = [list safeObjectAtIndex:row];
     NSString *col = [column identifier];
-    
+
     if ([col isEqualToString:@"mask"]) {
 		return [item safeObjectAtIndex:0];
     } else if ([col isEqualToString:@"setby"]) {

@@ -5,7 +5,7 @@
 {
 	IBOutlet ListView *table;
 	IBOutlet NSTextField *header;
-	
+
 	NSMutableArray *list;
 }
 

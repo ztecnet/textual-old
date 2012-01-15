@@ -44,19 +44,19 @@
 {
     /* Pick which font size best aligns with badge heights. */
 	NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-	
+
 	NSColor *textColor = BADGE_TEXT_COLOR_NS;
-    
+
     if (selected) {
         textColor = BADGE_TEXT_COLOR_TS;
     }
-	
+
     [attributes setObject:BADGE_FONT forKey:NSFontAttributeName];
 	[attributes setObject:textColor  forKey:NSForegroundColorAttributeName];
-	
+
 	NSAttributedString *mcstring = [[NSAttributedString alloc] initWithString:badgeString
 																   attributes:attributes];
-    
+
 	return [mcstring autodrain];
 }
 
@@ -65,24 +65,24 @@
     badgeFrame = NSMakeRect((badgeFrame.origin.x + BADGE_MARGIN),
                             (NSMidY(badgeFrame) - (BADGE_HEIGHT / 2.0)),
                             BADGE_WIDTH, BADGE_HEIGHT);
-    
+
     NSBezierPath *badgePath = nil;
-    
+
 	if (selected == NO) {
         NSRect shadowFrame;
-        
+
         shadowFrame = badgeFrame;
         shadowFrame.origin.y += 1;
-        
+
         badgePath = [NSBezierPath bezierPathWithRoundedRect:shadowFrame
                                                     xRadius:4.0
                                                     yRadius:4.0];
-        
+
         NSColor *shadow = BADGE_SHADOW_COLOR;
-        
+
         if (shadow) {
             [shadow set];
-            
+
             if (badgePath) {
                 [badgePath fill];
             }
@@ -90,9 +90,9 @@
 	} else {
         badgeFrame.size.width += 1;
     }
-    
+
     NSColor *backgroundColor = [NSColor whiteColor];
-    
+
     if (selected == NO) {
         if (mcstring == '~') {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_Q;
@@ -109,39 +109,39 @@
         } else {
             backgroundColor = BADGE_MESSAGE_BACKGROUND_COLOR_MODE_X;
         }
-    } 
-    
+    }
+
     if (mcstring == ' ' && [_NSUserDefaults() boolForKey:@"Preferences.General.use_nomode_symbol"]) {
         mcstring = 'x';
     }
-    
+
 	badgePath = [NSBezierPath bezierPathWithRoundedRect:badgeFrame
 												xRadius:4.0
 												yRadius:4.0];
-	
+
     if (backgroundColor) {
         [backgroundColor set];
-        
+
         if (badgePath) {
             [badgePath fill];
         }
     }
-    
+
     NSAttributedString *modeString;
-    
+
 	NSPoint badgeTextPoint;
 	NSSize  badgeTextSize;
-    
+
     modeString = [self modeBadgeText:[NSString stringWithChar:mcstring] isSelected:selected];
-    
+
 	badgeTextSize  = modeString.size;
 	badgeTextPoint = NSMakePoint( (NSMidX(badgeFrame) - (badgeTextSize.width / 2.0)),
 								 ((NSMidY(badgeFrame) - (badgeTextSize.height / 2.0)) + 1));
-    
+
     if (mcstring == '+' || mcstring == '~' || mcstring == 'x') {
         badgeTextPoint.y -= 1;
     }
-    
+
     [modeString drawAtPoint:badgeTextPoint];
 }
 
@@ -161,76 +161,76 @@
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)view
 {
     NSArray *selectedRows = [parent selectedRows];
-    
+
     if (cellItem) {
 		IRCChannel *channel = (id)[parent dataSource];
         IRCClient  *client  = [channel client];
-        
+
         NSInteger rowIndex = [parent rowAtPoint:cellFrame.origin];
-		
+
 		NSWindow *parentWindow = [client.world window];
-        
+
 		BOOL isKeyWindow = [parentWindow isOnCurrentWorkspace];
         BOOL isGraphite  = ([NSColor currentControlTint] == NSGraphiteControlTint);
         BOOL isSelected  = [selectedRows containsObject:[NSNumber numberWithUnsignedInteger:rowIndex]];
-		
+
 		/* Draw Background */
-        
+
 		if (isSelected && isKeyWindow) {
 			/* We draw selected cells using images because the color
 			 that Apple uses for cells when the table is not in focus
 			 looks ugly in this developer's opinion. */
-			
+
 			NSRect backgroundRect = cellFrame;
 			NSRect parentRect	  = [client.world.master.memberSplitView frame];
-			
+
 			backgroundRect.origin.x   = cellFrame.origin.x;
             backgroundRect.origin.y  -= 1;
 			backgroundRect.size.width = parentRect.size.width;
             backgroundRect.size.height = 18;
-			
+
 			NSString *backgroundImage;
-			
+
 			if (channel.isChannel || channel.isTalk) {
 				backgroundImage = @"ChannelCellSelection";
 			} else {
 				backgroundImage = @"ServerCellSelection";
 			}
-			
+
 			if (isGraphite) {
 				backgroundImage = [backgroundImage stringByAppendingString:@"_Graphite.tif"];
 			} else {
 				backgroundImage = [backgroundImage stringByAppendingString:@"_Aqua.tif"];
 			}
-			
+
 			NSImage *origBackgroundImage = [NSImage imageNamed:backgroundImage];
-			
+
 			[origBackgroundImage drawInRect:backgroundRect
 								   fromRect:NSZeroRect
 								  operation:NSCompositeSourceOver
 								   fraction:1
 							 respectFlipped:YES hints:nil];
 		}
-		
+
 		/* Draw Badges, Text, and Status Icon */
-        
+
         [self drawModeBadge:member.mark inCell:cellFrame isSelected:isSelected];
-		
-		NSAttributedString			*stringValue	= [self attributedStringValue];	
+
+		NSAttributedString			*stringValue	= [self attributedStringValue];
 		NSMutableAttributedString	*newValue		= nil;
-        
+
         newValue = [NSMutableAttributedString alloc];
         newValue = [newValue initWithString:member.nick attributes:[stringValue attributes]];
-		
+
 		NSShadow *itemShadow = [NSShadow new];
-		
+
         if (isSelected == NO) {
             [itemShadow setShadowOffset:NSMakeSize(0, -1)];
             [itemShadow setShadowColor:USER_CELL_SHADOW_COLOR];
         } else {
             [itemShadow setShadowBlurRadius:2.0];
             [itemShadow setShadowOffset:NSMakeSize(1, -1)];
-            
+
             if (isKeyWindow) {
                 if (isGraphite) {
                     [itemShadow setShadowColor:GRAPHITE_SELECTION_COLOR_AW];
@@ -241,13 +241,13 @@
                 [itemShadow setShadowColor:USER_CELL_SELECTION_SHADOW_COLOR_IA];
             }
         }
-        
+
         cellFrame.origin.y += 1;
         cellFrame.origin.x += 29;
         cellFrame.size.width -= 29;
-        
+
         NSRange textRange = NSMakeRange(0, [newValue length]);
-        
+
         if (isSelected) {
             [newValue addAttribute:NSFontAttributeName              value:USER_CELL_SELECTION_FONT       range:textRange];
             [newValue addAttribute:NSForegroundColorAttributeName	value:USER_CELL_SELECTION_FONT_COLOR range:textRange];
@@ -255,14 +255,14 @@
             [newValue addAttribute:NSFontAttributeName              value:USER_CELL_FONT        range:textRange];
             [newValue addAttribute:NSForegroundColorAttributeName   value:USER_CELL_FONT_COLOR  range:textRange];
         }
-        
+
         [newValue addAttribute:NSShadowAttributeName value:itemShadow range:textRange];
         [newValue drawInRect:cellFrame];
-		
+
 		[newValue drain];
 		[itemShadow drain];
 	}
-    
+
 }
 
 @end

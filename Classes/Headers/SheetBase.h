@@ -4,7 +4,7 @@
 @interface SheetBase : NSObject
 {
 	id delegate;
-	
+
 	NSWindow *window;
 
 	IBOutlet NSWindow *sheet;

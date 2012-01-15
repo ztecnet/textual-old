@@ -3,7 +3,7 @@
 
 #import "TextualApplication.h"
 
-@interface TPIBragSpam : NSObject 
+@interface TPIBragSpam : NSObject
 
 - (void)messageSentByUser:(IRCClient*)client
 				  message:(NSString*)messageString

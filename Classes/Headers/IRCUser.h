@@ -7,25 +7,25 @@
 @interface IRCUser : NSObject
 {
 	IRCISupportInfo *supportInfo;
-	
+
 	NSString *nick;
 	NSString *username;
 	NSString *address;
-	
+
 	BOOL q;
 	BOOL a;
     BOOL y;
 	BOOL o;
 	BOOL h;
 	BOOL v;
-    
+
 	BOOL isMyself;
-	
+
 	NSInteger colorNumber;
-	
+
 	CGFloat incomingWeight;
 	CGFloat outgoingWeight;
-	
+
 	CFAbsoluteTime lastFadedWeights;
 }
 
@@ -42,7 +42,7 @@
 @property (nonatomic, assign) BOOL isMyself;
 @property (nonatomic, readonly) char mark;
 @property (nonatomic, readonly) BOOL isOp;
-@property (nonatomic, readonly) BOOL isHalfOp; 
+@property (nonatomic, readonly) BOOL isHalfOp;
 @property (nonatomic, readonly) NSInteger colorNumber;
 @property (nonatomic, readonly) CGFloat totalWeight;
 @property (nonatomic, readonly) CGFloat incomingWeight;

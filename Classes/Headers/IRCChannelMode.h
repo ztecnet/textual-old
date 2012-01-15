@@ -7,7 +7,7 @@
 @interface IRCChannelMode : NSObject <NSMutableCopying>
 {
 	IRCISupportInfo *isupport;
-	
+
 	NSMutableArray		*allModes;
 	NSMutableDictionary *modeIndexes;
 }

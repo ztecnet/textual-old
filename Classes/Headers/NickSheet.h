@@ -5,7 +5,7 @@
 @interface NickSheet : SheetBase
 {
 	NSInteger uid;
-	
+
 	IBOutlet NSTextField *currentText;
 	IBOutlet NSTextField *nicknameNewInfo;
 }

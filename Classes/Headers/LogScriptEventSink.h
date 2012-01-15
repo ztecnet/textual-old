@@ -7,10 +7,10 @@
 {
 	LogController *owner;
 	LogPolicy *policy;
-	
+
 	NSInteger x;
 	NSInteger y;
-    
+
 	CFAbsoluteTime lastClickTime;
 }
 

@@ -15,22 +15,22 @@ typedef enum {
 	IRCClient *client;
 	IRCChannelMode *mode;
 	IRCChannelConfig *config;
-	
+
 	NSMutableArray *members;
-	
+
 	NSString *topic;
 	NSString *storedTopic;
-	
+
 	NSString *logDate;
-	
+
 	BOOL isOp;
 	BOOL isHalfOp;
 	BOOL isModeInit;
 	BOOL isActive;
 	BOOL errLastJoin;
-	
+
 	ChannelStatus status;
-	
+
 	FileLogger *logFile;
 }
 

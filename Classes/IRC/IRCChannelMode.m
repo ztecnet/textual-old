@@ -25,7 +25,7 @@
 	isupport = other.isupport;
 	allModes = other.allModes;
 	modeIndexes = other.modeIndexes;
-	
+
 	return self;
 }
 
@@ -33,7 +33,7 @@
 {
 	[allModes drain];
 	[modeIndexes drain];
-	
+
 	[super dealloc];
 }
 
@@ -43,7 +43,7 @@
 	[modeIndexes removeAllObjects];
 }
 
-- (NSArray *)badModes 
+- (NSArray *)badModes
 {
 	return [NSArray arrayWithObjects:@"q", @"a", @"o", @"h", @"v", @"b", @"e", @"I", @"y", nil];
 }
@@ -51,26 +51,26 @@
 - (NSArray *)update:(NSString *)str
 {
 	NSArray *ary = [isupport parseMode:str];
-	
+
 	for (IRCModeInfo *h in ary) {
 		if (h.op) continue;
-		    
+
 		NSString *modec = [NSString stringWithChar:h.mode];
-		
+
 		if ([[self badModes] containsObject:modec]) continue;
-		
+
 		if ([modeIndexes containsKey:modec]) {
 			NSInteger moindex = [modeIndexes integerForKey:modec];
-			
+
 			[allModes safeRemoveObjectAtIndex:moindex];
 			[allModes safeInsertObject:h atIndex:moindex];
 		} else {
 			[allModes safeAddObject:h];
-			
+
 			[modeIndexes setInteger:[allModes indexOfObject:h] forKey:modec];
 		}
 	}
-	
+
 	return ary;
 }
 
@@ -78,21 +78,21 @@
 {
 	NSMutableString *str   = [NSMutableString string];
 	NSMutableString *trail = [NSMutableString string];
-	
+
 	for (IRCModeInfo *h in mode.allModes) {
 		if (h.plus == YES) {
 			if (h.param) {
 				[trail appendFormat:@" %@", h.param];
 			}
-			
+
 			[str appendFormat:@"+%c", h.mode];
 		} else {
 			if (h.param) {
 				[trail appendFormat:@" %@", h.param];
 			}
-		
+
 			[str appendFormat:@"-%c", h.mode];
-			
+
 			if (h.mode == 'k') {
 				h.param = NSNullObject;
 			} else {
@@ -102,7 +102,7 @@
 			}
 		}
 	}
-	
+
 	return [[str stringByAppendingString:trail] trim];
 }
 
@@ -114,14 +114,14 @@
 - (IRCModeInfo *)modeInfoFor:(NSString *)mode
 {
 	BOOL objk = [self modeIsDefined:mode];
-	
+
 	if (objk == NO) {
 		IRCModeInfo *m = [isupport createMode:mode];
-		
+
 		[allModes safeAddObject:m];
 		[modeIndexes setInteger:[allModes indexOfObject:m] forKey:mode];
 	}
-	
+
 	return [allModes safeObjectAtIndex:[modeIndexes integerForKey:mode]];
 }
 
@@ -129,23 +129,23 @@
 {
 	NSMutableString *str   = [NSMutableString string];
 	NSMutableString *trail = [NSMutableString string];
-	
+
 	[str appendString:@"+"];
-	
+
 	for (IRCModeInfo *h in allModes) {
 		if (maskK == YES) {
 			if (h.mode == 'k') continue;
 		}
-		
+
 		if (h.plus) {
 			if (h.param) {
 				[trail appendFormat:@" %@", h.param];
 			}
-			
+
 			[str appendFormat:@"%c", h.mode];
 		}
 	}
-	
+
 	return [[str stringByAppendingString:trail] trim];
 }
 

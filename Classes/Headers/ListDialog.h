@@ -5,18 +5,18 @@
 @interface ListDialog : NSWindowController
 {
 	id delegate;
-	
+
 	IBOutlet ListView *table;
-	
+
 	NSMutableArray *list;
 	NSMutableArray *filteredList;
-	
+
 	NSInteger sortKey;
-	
+
 	NSComparisonResult sortOrder;
-	
+
 	IBOutlet NSButton *updateButton;
-	
+
 	IBOutlet NSTextField *channelCount;
 	IBOutlet NSTextField *networkName;
 	IBOutlet NSSearchField *filterText;

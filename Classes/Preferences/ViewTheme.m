@@ -18,11 +18,11 @@
 {
 	if ((self = [super init])) {
 		other = [OtherTheme new];
-		
+
 		core_js = [FileWithContent new];
 		core_js.filename = [[Preferences whereResourcePath] stringByAppendingPathComponent:@"/JavaScript/API/core.js"];
 	}
-	
+
 	return self;
 }
 
@@ -32,7 +32,7 @@
 	[path drain];
 	[other drain];
 	[core_js drain];
-	
+
 	[super dealloc];
 }
 
@@ -47,7 +47,7 @@
 		[name drain];
 		name = [value retain];
 	}
-	
+
 	[self load];
 }
 
@@ -56,35 +56,35 @@
 	if (name) {
 		NSString *kind = [ViewTheme extractThemeSource:[Preferences themeName]];
 		NSString *filename = [ViewTheme extractThemeName:[Preferences themeName]];
-		
+
 		if (NSObjectIsNotEmpty(kind) && NSObjectIsNotEmpty(filename)) {
 			if ([kind isEqualToString:@"resource"]) {
 				path = [[Preferences whereThemesLocalPath] stringByAppendingPathComponent:filename];
 			} else {
 				path = [[Preferences whereThemesPath] stringByAppendingPathComponent:filename];
 			}
-			
+
 			if ([_NSFileManager() fileExistsAtPath:path] == NO) {
 				if ([kind isEqualToString:@"resource"] == NO) {
 					path = [[Preferences whereThemesLocalPath] stringByAppendingPathComponent:filename];
-					
+
 					if (reload) [self reload];
 				}
 			}
-			
+
 			if ([_NSFileManager() fileExistsAtPath:path] == NO) {
 				NSLog(@"Error: No path to local resources.");
 				exit(0);
 			}
-			
+
 			self.baseUrl = [NSURL fileURLWithPath:path];
-			
+
 			other.path = path;
-			
+
 			return;
 		}
 	}
-	
+
 	other.path = nil;
 }
 
@@ -98,7 +98,7 @@
 	[other reload];
 }
 
-+ (void)createDirectoryAtLocation:(NSString *)dest 
++ (void)createDirectoryAtLocation:(NSString *)dest
 {
 	if ([_NSFileManager() fileExistsAtPath:dest] == NO) {
 		[_NSFileManager() createDirectoryAtPath:dest withIntermediateDirectories:YES attributes:nil error:NULL];
@@ -124,18 +124,18 @@
 
 + (NSString *)extractThemeSource:(NSString *)source
 {
-	if ([source hasPrefix:@"user:"] == NO && 
+	if ([source hasPrefix:@"user:"] == NO &&
 		[source hasPrefix:@"resource:"] == NO) return nil;
-	
+
 	return [source safeSubstringToIndex:[source stringPosition:@":"]];
 }
 
 + (NSString *)extractThemeName:(NSString *)source
 {
-	if ([source hasPrefix:@"user:"] == NO && 
+	if ([source hasPrefix:@"user:"] == NO &&
 		[source hasPrefix:@"resource:"] == NO) return nil;
-    
-	return [source safeSubstringAfterIndex:[source stringPosition:@":"]];	
+
+	return [source safeSubstringAfterIndex:[source stringPosition:@":"]];
 }
 
 @end

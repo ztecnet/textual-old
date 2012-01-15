@@ -7,14 +7,14 @@
 {
 	if (IsNumeric(c) && firstNumber < 2) {
 		NSInteger ci = (c - '0');
-		
-		if ((firstNumber == 0 && ((ci >= 1 && ci <= 9) || ci == 0)) || 
+
+		if ((firstNumber == 0 && ((ci >= 1 && ci <= 9) || ci == 0)) ||
 			(firstNumber == 1 && ((ci >= 1 && ci <= 5) || ci == 0))) {
-			
+
 			return YES;
 		}
 	}
-	
+
 	return NO;
 }
 
@@ -22,7 +22,7 @@
 {
 	NSString *bleh1 = [NSString stringWithFormat:@"%.2f", num1];
 	NSString *bleh2 = [NSString stringWithFormat:@"%.2f", num2];
-	
+
 	return [bleh1 isEqualToString:bleh2];
 }
 
@@ -30,11 +30,11 @@
 {
 	NSString *ints = [self stringValue];
 	NSInteger intv = [self integerValue];
-	
+
 	if (intv >= 0 && intv <= 9) {
 		return [@"0" stringByAppendingString:ints];
 	}
-	
+
 	return ints;
 }
 

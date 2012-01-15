@@ -15,14 +15,14 @@
 	if ((self = [super init])) {
         [GrowlApplicationBridge setGrowlDelegate:self];
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc
 {
 	[lastClickedContext drain];
-	
+
 	[super dealloc];
 }
 
@@ -48,12 +48,12 @@
 - (void)notify:(GrowlNotificationType)type title:(NSString *)title desc:(NSString *)desc context:(id)context
 {
 	if ([Preferences growlEnabledForEvent:type] == NO) return;
-	
+
 	NSString *kind = nil;
 	NSInteger priority = 0;
-	
+
 	BOOL sticky = [Preferences growlStickyForEvent:type];
-	
+
 	switch (type) {
 		case GROWL_HIGHLIGHT:
 		{
@@ -116,28 +116,28 @@
 			title = TXTFLS(@"GROWL_MSG_DISCONNECT_TITLE", title);
 			break;
 		}
-		case GROWL_ADDRESS_BOOK_MATCH: 
+		case GROWL_ADDRESS_BOOK_MATCH:
 		{
 			kind = TXTLS(@"GROWL_ADDRESS_BOOK_MATCH");
 			title = TXTLS(@"GROWL_MSG_ADDRESS_BOOK_MATCH_TITLE");
 			break;
 		}
 	}
-	
+
 	[GrowlApplicationBridge notifyWithTitle:title description:desc notificationName:kind iconData:nil priority:priority isSticky:sticky clickContext:context];
 }
 
 - (void)growlNotificationWasClicked:(id)context {
 	CFAbsoluteTime now = CFAbsoluteTimeGetCurrent();
-	
+
 	if ((now - lastClickedTime) < CLICK_INTERVAL) {
 		if (lastClickedContext && [lastClickedContext isEqual:context]) {
 			return;
 		}
 	}
-	
+
 	lastClickedTime = now;
-	
+
 	[lastClickedContext drain];
 	lastClickedContext = [context retain];
 
@@ -151,10 +151,10 @@
 		if (ary.count >= 2) {
 			NSInteger uid = [ary integerAtIndex:0];
 			NSInteger cid = [ary integerAtIndex:1];
-			
+
 			IRCClient  *u = [owner findClientById:uid];
 			IRCChannel *c = [owner findChannelByClientId:uid channelId:cid];
-			
+
 			if (c) {
 				[owner select:c];
 			} else if (u) {
@@ -162,9 +162,9 @@
 			}
 		} else if (ary.count == 1) {
 			NSInteger uid = [ary integerAtIndex:0];
-			
+
 			IRCClient *u = [owner findClientById:uid];
-			
+
 			if (u) {
 				[owner select:u];
 			}

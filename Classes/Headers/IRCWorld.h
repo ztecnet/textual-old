@@ -14,12 +14,12 @@
 	LogController		*dummyLog;
 	MasterController	*master;
 	MenuController		*menuController;
-	
+
 	ServerList *serverList;
 	MemberList *memberList;
-	
+
 	NSBox *logBase;
-	
+
 	NSMenu *logMenu;
 	NSMenu *urlMenu;
 	NSMenu *addrMenu;
@@ -28,32 +28,32 @@
 	NSMenu *memberMenu;
 	NSMenu *serverMenu;
 	NSMenu *channelMenu;
-	
+
 	NSInteger messagesSent;
 	NSInteger messagesReceived;
-	
+
 	TXFSLongInt bandwidthIn;
 	TXFSLongInt bandwidthOut;
-	
+
 	IRCWorldConfig *config;
-	
+
 	NSMutableArray *clients;
-	
+
 	NSInteger itemId;
-	
+
 	BOOL soundMuted;
 	BOOL reloadingTree;
-	
+
 	IRCExtras *extrac;
-	
+
 	IRCTreeItem *selected;
-	
+
 	NSInteger previousSelectedClientId;
 	NSInteger previousSelectedChannelId;
-	
+
 	NSArray *allLoadedBundles;
 	NSArray *bundlesWithPreferences;
-	
+
 	NSDictionary *bundlesForUserInput;
 	NSDictionary *bundlesForServerInput;
 	NSDictionary *bundlesWithOutputRules;

@@ -6,30 +6,30 @@
 {
 	IBOutlet ThinSplitView *serverSplitView;
 	IBOutlet ThinSplitView *memberSplitView;
-	
+
 	IBOutlet MainWindow *window;
 	IBOutlet MenuController *menu;
 	IBOutlet InputTextField *text;
-	
+
 	IBOutlet MemberList *memberList;
 	IBOutlet ServerList *serverList;
-	
+
 	IBOutlet NSBox *logBase;
-	
+
 	IBOutlet NSMenuItem *serverMenu;
 	IBOutlet NSMenuItem *channelMenu;
-	
+
 	IBOutlet NSMenu *logMenu;
 	IBOutlet NSMenu *urlMenu;
 	IBOutlet NSMenu *treeMenu;
 	IBOutlet NSMenu *addrMenu;
 	IBOutlet NSMenu *chanMenu;
 	IBOutlet NSMenu *memberMenu;
-	
+
 	IBOutlet NSButton *addServerButton;
-	
+
 	IBOutlet IRCTextFormatterMenu *formattingMenu;
-	
+
 	IRCWorld *world;
 	IRCExtras *extrac;
 	ViewTheme *viewTheme;
@@ -37,10 +37,10 @@
 	WelcomeSheet *welcomeSheet;
 	InputHistory *inputHistory;
 	NickCompletionStatus *completionStatus;
-	
+
 	BOOL ghostMode;
 	BOOL terminating;
-	
+
 	NSInteger memberSplitViewOldPosition;
 }
 

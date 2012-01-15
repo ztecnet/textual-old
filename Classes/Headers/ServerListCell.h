@@ -3,7 +3,7 @@
 
 @class IRCTreeItem;
 
-@interface ServerListCell : NSTextFieldCell 
+@interface ServerListCell : NSTextFieldCell
 {
 	ServerList *parent;
 	IRCTreeItem *cellItem;

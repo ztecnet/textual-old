@@ -6,30 +6,30 @@
 - (void)dealloc
 {
 	[_keyHandler drain];
-	
+
 	[super dealloc];
 }
 
-- (id)initWithCoder:(NSCoder *)coder 
+- (id)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
-	
+
 	if (self) {
 		if ([Preferences rightToLeftFormatting]) {
 			[self setBaseWritingDirection:NSWritingDirectionRightToLeft];
 		} else {
             [self setBaseWritingDirection:NSWritingDirectionLeftToRight];
 		}
-        
+
         [super setTextContainerInset:NSMakeSize(DefaultTextFieldWidthPadding, DefaultTextFieldHeightPadding)];
-        
+
         if (PointerIsEmpty(_keyHandler)) {
             _keyHandler = [KeyEventHandler new];
         }
-        
+
         _formattingQueue = dispatch_queue_create("formattingQueue", NULL);
     }
-	
+
     return self;
 }
 
@@ -53,7 +53,7 @@
 	if ([_keyHandler processKeyEvent:e]) {
 		return;
 	}
-	
+
 	[super keyDown:e];
 }
 
@@ -70,7 +70,7 @@
 - (void)setAttributedStringValue:(NSAttributedString *)string
 {
 	NSData *stringData = [string RTFFromRange:NSMakeRange(0, [string length]) documentAttributes:nil];
-    
+
     [self replaceCharactersInRange:[self fullSelectionRange] withRTF:stringData];
 }
 
@@ -97,21 +97,21 @@
 - (void)paste:(id)sender
 {
     NSRange selectedRange = [self selectedRange];
-    
+
     [self setRichText:NO];
     [super paste:self];
     [self setRichText:YES];
-    
+
     NSString *pasteboard = [_NSPasteboard() stringContent];
-    
+
     [self toggleFontResetStatus:NO];
-    
+
     if (selectedRange.length == 0) {
         NSRange newRange;
-        
+
         newRange.location = selectedRange.location;
         newRange.length   = [pasteboard length];
-        
+
         [self textDidChange:sender pasted:YES range:newRange];
     } else {
         [self textDidChange:sender pasted:YES range:selectedRange];
@@ -121,19 +121,19 @@
 - (void)textDidChange:(id)sender pasted:(BOOL)paste range:(NSRange)erange
 {
     NSAttributedString *string = [self attributedStringValue];
-    
+
     if (NSObjectIsEmpty(string) && paste == NO) {
         _fontResetRequired = YES;
     }
-    
+
     if (_fontResetRequired && paste == NO) {
         if ([string length] >= 1) {
             [self resetTextFieldFont:DefaultTextFieldFont color:DefaultTextFieldFontColor];
         }
     } else {
         dispatch_sync([self formattingQueue], ^{
-            [self sanitizeIRCCompatibleAttributedString:DefaultTextFieldFont 
-                                                  color:DefaultTextFieldFontColor 
+            [self sanitizeIRCCompatibleAttributedString:DefaultTextFieldFont
+                                                  color:DefaultTextFieldFontColor
                                                   range:erange];
         });
     }
@@ -148,16 +148,16 @@
 {
     dispatch_sync([self formattingQueue], ^{
         NSRange local = [self fullSelectionRange];
-        
+
         [self removeAttribute:NSForegroundColorAttributeName inRange:local];
         [self removeAttribute:NSBackgroundColorAttributeName inRange:local];
         [self removeAttribute:NSUnderlineStyleAttributeName  inRange:local];
-        
+
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-        
+
         [attrs setObject:defaultFont  forKey:NSFontAttributeName];
         [attrs setObject:defaultColor forKey:NSForegroundColorAttributeName];
-        
+
         [self setAttributes:attrs inRange:local];
     });
 }

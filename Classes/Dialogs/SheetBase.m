@@ -12,7 +12,7 @@
 - (void)dealloc
 {
 	[sheet drain];
-	
+
 	[super dealloc];
 }
 
@@ -24,7 +24,7 @@
 - (void)startSheetWithWindow:(NSWindow *)awindow
 {
 	[[window fieldEditor:NO forObject:nil] setFieldEditor:NO];
-	
+
 	[NSApp beginSheet:sheet modalForWindow:awindow modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 

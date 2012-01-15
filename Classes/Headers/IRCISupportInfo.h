@@ -8,9 +8,9 @@
 {
 	NSInteger nickLen;
 	NSInteger modesCount;
-	
+
 	NSString *networkName;
-	
+
     NSString *userModeYPrefix;
     NSString *userModeQPrefix;
 	NSString *userModeAPrefix;
@@ -18,7 +18,7 @@
 	NSString *userModeHPrefix;
 	NSString *userModeVPrefix;
 
-	
+
 	unsigned char modes[MODES_SIZE];
 }
 

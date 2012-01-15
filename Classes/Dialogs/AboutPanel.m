@@ -16,10 +16,10 @@
 }
 
 - (void)show
-{	
-	[versionInfo setStringValue:[NSString stringWithFormat:TXTLS(@"ABOUT_WINDOW_BUILD_NUMBER"), 
-								 [[Preferences textualInfoPlist] objectForKey:@"CFBundleVersion"]]];	
-	
+{
+	[versionInfo setStringValue:[NSString stringWithFormat:TXTLS(@"ABOUT_WINDOW_BUILD_NUMBER"),
+								 [[Preferences textualInfoPlist] objectForKey:@"CFBundleVersion"]]];
+
 	[self.window center];
 	[self.window makeKeyAndOrderFront:nil];
 }

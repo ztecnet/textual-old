@@ -8,7 +8,7 @@
 
 - (NSArray*)pluginSupportsUserInputCommands
 {
-	return [NSArray arrayWithObjects:@"sysinfo", @"memory", @"uptime", @"netstats", 
+	return [NSArray arrayWithObjects:@"sysinfo", @"memory", @"uptime", @"netstats",
 			@"msgcount", @"diskspace", @"theme", @"screens", @"runcount", @"loadavg", @"sysmem", nil];
 }
 
@@ -18,13 +18,13 @@
 {
 	if ([client isConnected]) {
 		NSString *channelName = [[client.world selectedChannel] name];
-		
+
 		if ([channelName length] >= 1) {
 			if ([commandString isEqualToString:@"SYSINFO"]) {
 				[[client iomt] sendPrivmsgToSelectedChannel:[TPI_SP_SysInfo compiledOutput]];
 			} else if ([commandString isEqualToString:@"MEMORY"]) {
 				[[client iomt] sendPrivmsgToSelectedChannel:[TPI_SP_SysInfo applicationMemoryUsage]];
-				
+
 				if ([_NSUserDefaults() boolForKey:@"HideMemoryCommandExtraInfo"] == NO) {
 					[[client iomt] printDebugInformation:@"Information about memory use: http://is.gd/j0a9s"];
 				}

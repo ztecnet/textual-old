@@ -62,11 +62,11 @@
 {
 	if ((self = [super init])) {
 		[NSBundle loadNibNamed:@"Preferences" owner:self];
-		
+
 		world				= word;
 		scriptsController	= [ScriptsWrapper new];
 	}
-	
+
 	return self;
 }
 
@@ -86,8 +86,8 @@
 	[sounds drain];
 	[stylesView drain];
 	[transfersView drain];
-	[updatesView drain];	
-	
+	[updatesView drain];
+
 	[super dealloc];
 }
 
@@ -98,22 +98,22 @@
 {
 	scriptsController.world = world;
 	[scriptsController populateData];
-	
+
 	installedScriptsTable.dataSource = scriptsController;
 	[installedScriptsTable reloadData];
-	
+
 	[self updateTranscriptFolder];
 	[self updateTheme];
     [self updateAlert];
-	
+
 	[scriptLocationField setStringValue:[Preferences whereApplicationSupportPath]];
-	
+
 	if ([self.window isVisible] == NO) {
 		[self.window center];
 	}
-	
+
 	[self.window makeKeyAndOrderFront:nil];
-	
+
 	[self setUpToolbarItemsAndMenus];
     [self onHighlightTypeChanged:nil];
 	[self firstPane:generalView selectedItem:0];
@@ -123,10 +123,10 @@
 #pragma mark NSToolbar Delegates
 
 - (NSArray *)toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar
-{		
+{
 	NSString *addonID = ((NSObjectIsNotEmpty(world.bundlesWithPreferences)) ? @"13" : @"10");
-	
-	return [NSArray arrayWithObjects:@"0", NSToolbarFlexibleSpaceItemIdentifier, @"1", @"2", 
+
+	return [NSArray arrayWithObjects:@"0", NSToolbarFlexibleSpaceItemIdentifier, @"1", @"2",
 			@"3", @"4", @"9", NSToolbarFlexibleSpaceItemIdentifier, addonID, @"11", nil];
 }
 
@@ -135,22 +135,22 @@
 	if (NSObjectIsNotEmpty(world.bundlesWithPreferences)) {
 		for (TextualPluginItem *plugin in world.bundlesWithPreferences) {
 			NSInteger tagIndex = ([world.bundlesWithPreferences indexOfObject:plugin] + 20);
-			
+
 			NSMenuItem *pluginMenu = [NSMenuItem new];
-			
+
 			[pluginMenu setAction:@selector(onPrefPaneSelected:)];
 			[pluginMenu setTarget:self];
-			
+
 			[pluginMenu setTitle:[plugin.pluginPrimaryClass preferencesMenuItemName]];
 			[pluginMenu setTag:tagIndex];
 			[pluginMenu autodrain];
-			
+
 			[installedScriptsMenu addItem:pluginMenu];
 		}
 	}
 }
 
-- (void)onPrefPaneSelected:(id)sender 
+- (void)onPrefPaneSelected:(id)sender
 {
 	switch ([sender tag]) {
 		case 0: [self firstPane:generalView selectedItem:0]; break;
@@ -168,41 +168,41 @@
 		default:
 		{
 			TextualPluginItem *plugin = [world.bundlesWithPreferences safeObjectAtIndex:([sender tag] - 20)];
-			
+
 			if (plugin) {
 				NSView *prefsView = [plugin.pluginPrimaryClass preferencesView];
-				
+
 				if (prefsView) {
 					[self firstPane:prefsView selectedItem:13];
 				}
 			} else {
 				[self firstPane:generalView selectedItem:0];
 			}
-			
+
 			break;
 		}
 	}
-} 
+}
 
 - (void)firstPane:(NSView *)view selectedItem:(NSInteger)key
-{							   
+{
 	NSRect windowFrame = [self.window frame];
-	
+
 	windowFrame.size.width	= [view frame].size.width;
 	windowFrame.size.height = ([view frame].size.height + WINDOW_TOOLBAR_HEIGHT);
 	windowFrame.origin.y	= NSMaxY([self.window frame]) - ([view frame].size.height + WINDOW_TOOLBAR_HEIGHT);
-	
+
 	if (NSObjectIsNotEmpty([contentView subviews])) {
 		[[[contentView subviews] safeObjectAtIndex:0] removeFromSuperview];
 	}
-	
+
 	[self.window setFrame:windowFrame display:YES animate:YES];
-	
+
 	[contentView setFrame:[view frame]];
-	[contentView addSubview:view];	
-	
+	[contentView addSubview:view];
+
 	[self.window recalculateKeyViewLoop];
-	
+
 	[preferenceSelectToolbar setSelectedItemIdentifier:[NSString stringWithInteger:key]];
 }
 
@@ -256,7 +256,7 @@
 {
 	if ([key isEqualToString:@"maxLogLines"]) {
 		NSInteger n = [*value integerValue];
-		
+
 		if (n < LINES_MIN) {
 			*value = NSNumberWithInteger(LINES_MIN);
 		} else if (n > LINES_MAX) {
@@ -264,14 +264,14 @@
 		}
 	} else if ([key isEqualToString:@"inlineImageMaxWidth"]) {
 		NSInteger n = [*value integerValue];
-		
+
 		if (n < INLINE_IMAGE_MIN) {
 			*value = NSNumberWithInteger(INLINE_IMAGE_MIN);
 		} else if (INLINE_IMAGE_MAX < n) {
 			*value = NSNumberWithInteger(INLINE_IMAGE_MAX);
 		}
 	}
-	
+
 	return YES;
 }
 
@@ -280,34 +280,34 @@
 
 - (void)updateAlert {
 	[alertSoundButton removeAllItems];
-    
+
 	NSArray *alertSounds = [self availableSounds];
     for (NSString *alertSound in alertSounds) {
         NSMenuItem *item = [[[NSMenuItem alloc] initWithTitle:alertSound action:nil keyEquivalent:NSNullObject] autodrain];
         [alertSoundButton.menu addItem:item];
     }
-    
+
     [alertSoundButton selectItemAtIndex:0];
-    
+
     [alertButton removeAllItems];
-    
-    
+
+
     NSMutableArray *alerts = [self sounds];
     for (SoundWrapper *alert in alerts) {
         NSMenuItem *item = [[[NSMenuItem alloc] initWithTitle:[alert displayName] action:nil keyEquivalent:NSNullObject] autodrain];
 		[item setTag:[alert eventType]];
         [alertButton.menu addItem:item];
     }
-    
+
     [alertButton selectItemAtIndex:0];
 }
 
 - (void)onChangeAlert:(id)sender {
     SoundWrapper *alert = [SoundWrapper soundWrapperWithEventType:[[alertButton selectedItem] tag]];
-    
+
     [useGrowlButton setState:[alert growl]];
     [disableAlertWhenAwayButton setState:[alert disableWhileAway]];
-    
+
     [alertSoundButton selectItemAtIndex:[[self availableSounds] indexOfObject:[alert sound]]];
 }
 
@@ -328,31 +328,31 @@
 - (NSArray *)availableSounds
 {
 	NSMutableArray *sound_list = [NSMutableArray array];
-	
+
 	NSArray *directoryContents		= [_NSFileManager() contentsOfDirectoryAtPath:@"/System/Library/Sounds"								error:NULL];
 	NSArray *homeDirectoryContents	= [_NSFileManager() contentsOfDirectoryAtPath:[@"~/Library/Sounds/" stringByExpandingTildeInPath]	error:NULL];
-	
+
 	[sound_list safeAddObject:EMPTY_SOUND];
     [sound_list safeAddObject:@"Beep"];
-	
+
 	if (NSObjectIsNotEmpty(directoryContents)) {
-		for (NSString *s in directoryContents) {	
+		for (NSString *s in directoryContents) {
 			if ([s contains:@"."]) {
 				[sound_list safeAddObject:[s safeSubstringToIndex:[s stringPosition:@"."]]];
 			}
 		}
 	}
-	
+
 	if (NSObjectIsNotEmpty(homeDirectoryContents)) {
 		[sound_list safeAddObject:EMPTY_SOUND];
-		
-		for (NSString *s in homeDirectoryContents) {	
+
+		for (NSString *s in homeDirectoryContents) {
 			if ([s contains:@"."]) {
 				[sound_list safeAddObject:[s safeSubstringToIndex:[s stringPosition:@"."]]];
 			}
-		}		
+		}
 	}
-	
+
 	return sound_list;
 }
 
@@ -360,7 +360,7 @@
 {
 	if (NSObjectIsEmpty(sounds)) {
 		NSMutableArray *ary = [NSMutableArray new];
-		
+
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_LOGIN]];
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_DISCONNECT]];
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_HIGHLIGHT]];
@@ -371,10 +371,10 @@
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_CHANNEL_NOTICE]];
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_TALK_MSG]];
 		[ary safeAddObject:[SoundWrapper soundWrapperWithEventType:GROWL_TALK_NOTICE]];
-		
+
 		sounds = ary;
 	}
-	
+
 	return sounds;
 }
 
@@ -384,12 +384,12 @@
 - (void)updateTranscriptFolder
 {
 	NSString *path = [[Preferences transcriptFolder] stringByExpandingTildeInPath];
-	
+
 	NSImage *icon = [_NSWorkspace() iconForFile:path];
 	[icon setSize:NSMakeSize(16, 16)];
-	
+
 	NSMenuItem *item = [transcriptFolderButton itemAtIndex:0];
-	
+
 	[item setTitle:[[path lastPathComponent] decodeURIFragement]];
 	[item setImage:icon];
 }
@@ -398,22 +398,22 @@
 {
 	if ([transcriptFolderButton selectedTag] == 2) {
 		NSOpenPanel *d = [NSOpenPanel openPanel];
-		
+
 		[d setCanChooseFiles:NO];
 		[d setCanChooseDirectories:YES];
 		[d setResolvesAliases:YES];
 		[d setAllowsMultipleSelection:NO];
 		[d setCanCreateDirectories:YES];
-		
+
 		[d beginSheetModalForWindow:[NSApp keyWindow] completionHandler:^(NSInteger returnCode) {
 			[transcriptFolderButton selectItem:[transcriptFolderButton itemAtIndex:0]];
-			
+
 			if (returnCode == NSOKButton) {
 				NSURL *pathURL = [[d URLs] safeObjectAtIndex:0];
 				NSString *path = [pathURL path];
-				
+
 				[Preferences setTranscriptFolder:[path stringByAbbreviatingWithTildeInPath]];
-				
+
 				[self updateTranscriptFolder];
 			}
 		}];
@@ -426,63 +426,63 @@
 - (void)updateTheme
 {
 	[themeButton removeAllItems];
-	
+
 	NSInteger tag = 0;
-	
+
 	NSArray *ary = [NSArray arrayWithObjects:[Preferences whereThemesLocalPath], [Preferences whereThemesPath], nil];
-	
+
 	for (NSString *path in ary) {
 		NSMutableSet *set = [NSMutableSet set];
-		
+
 		NSArray *files = [_NSFileManager() contentsOfDirectoryAtPath:path error:NULL];
-		
+
 		for (NSString *file in files) {
 			if ([path isEqualToString:[Preferences whereThemesLocalPath]]) {
 				if ([_NSFileManager() fileExistsAtPath:[[Preferences whereThemesPath] stringByAppendingPathComponent:[file lastPathComponent]]]) {
 					continue;
 				}
 			}
-			
+
 			if ([_NSFileManager() fileExistsAtPath:[path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/design.css", file]]]) {
 				[set addObject:[file stringByDeletingPathExtension]];
 			}
 		}
-		
+
 		files = [[set allObjects] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-		
+
 		if (files.count) {
 			NSInteger i = 0;
-			
+
 			for (NSString *f in files) {
 				NSMenuItem *item = [[[NSMenuItem alloc] initWithTitle:f action:nil keyEquivalent:NSNullObject] autodrain];
-				
+
 				[item setTag:tag];
 				[themeButton.menu addItem:item];
-				
+
 				++i;
 			}
 		}
-		
+
 		++tag;
 	}
-	
+
 	NSString *kind = [ViewTheme extractThemeSource:[Preferences themeName]];
 	NSString *name = [ViewTheme extractThemeName:[Preferences themeName]];
-	
+
 	NSInteger targetTag = 0;
-	
+
 	if ([kind isEqualToString:@"resource"] == NO) {
 		targetTag = 1;
 	}
-	
+
 	NSInteger count = [themeButton numberOfItems];
-	
+
 	for (NSInteger i = 0; i < count; i++) {
 		NSMenuItem *item = [themeButton itemAtIndex:i];
-		
+
 		if ([item tag] == targetTag && [[item title] isEqualToString:name]) {
 			[themeButton selectItemAtIndex:i];
-			
+
 			break;
 		}
 	}
@@ -492,28 +492,28 @@
 {
     NSDoubleN oldRenderVersion = world.viewTheme.other.renderingEngineVersion;
     NSDoubleN newRenderVersion = 0;
-    
+
 	NSMenuItem *item = [themeButton selectedItem];
-	
+
 	NSString *newThemeName = nil;
 	NSString *name = [item title];
-	
+
 	if (item.tag == 0) {
 		newThemeName = [ViewTheme buildResourceFilename:name];
 	} else {
 		newThemeName = [ViewTheme buildUserFilename:name];
 	}
-	
+
 	if ([[Preferences themeName] isEqual:newThemeName]) {
 		return;
 	}
-	
+
 	[Preferences setThemeName:newThemeName];
-	
+
 	[self onStyleChanged:nil];
-    
+
     newRenderVersion = world.viewTheme.other.renderingEngineVersion;
-    
+
     if (NSDissimilarObjects(oldRenderVersion, newRenderVersion)) {
         for (IRCClient *u in world.clients) {
             [u sendCommand:@"CLEARALL"];
@@ -524,7 +524,7 @@
 - (void)onSelectFont:(id)sender
 {
 	NSFont *logfont = world.viewTheme.other.channelViewFont;
-		
+
 	[_NSFontManager() setSelectedFont:logfont isMultiple:NO];
 	[_NSFontManager() orderFrontFontPanel:self];
 	[_NSFontManager() setAction:@selector(changeItemFont:)];
@@ -533,15 +533,15 @@
 - (void)changeItemFont:(NSFontManager *)sender
 {
 	OtherTheme *theme = world.viewTheme.other;
-	
+
 	NSFont *newFont = [sender convertFont:theme.channelViewFont];
-			
+
 	[Preferences setThemeChannelViewFontName:[newFont fontName]];
 	[Preferences setThemeChannelViewFontSize:[newFont pointSize]];
-			
+
 	[self setValue:[newFont fontName]						forKey:@"themeChannelViewFontName"];
 	[self setValue:NSNumberWithDouble([newFont pointSize])	forKey:@"themeChannelViewFontSize"];
-	
+
 	[self onStyleChanged:nil];
 }
 
@@ -553,7 +553,7 @@
 #pragma mark -
 #pragma mark Actions
 
-- (void)onHighlightTypeChanged:(id)sender 
+- (void)onHighlightTypeChanged:(id)sender
 {
     if ([Preferences keywordMatchingMethod] == KEYWORD_MATCH_REGEX) {
         [highlightNicknameButton setEnabled:NO];
@@ -561,7 +561,7 @@
         [excludeWordsTable setEnabled:YES];
     } else {
         [highlightNicknameButton setEnabled:YES];
-        
+
         if ([Preferences keywordMatchingMethod] == KEYWORD_MATCH_PARTIAL) {
             [addExcludeWordButton setEnabled:YES];
             [excludeWordsTable setEnabled:YES];
@@ -575,7 +575,7 @@
 - (void)editTable:(NSTableView *)table
 {
 	NSInteger row = ([table numberOfRows] - 1);
-	
+
 	[table scrollRowToVisible:row];
 	[table editColumn:0 row:row withEvent:nil select:YES];
 }
@@ -583,14 +583,14 @@
 - (void)onAddKeyword:(id)sender
 {
 	[keywordsArrayController add:nil];
-	
+
 	[self performSelector:@selector(editTable:) withObject:keywordsTable afterDelay:0.3];
 }
 
 - (void)onAddExcludeWord:(id)sender
 {
 	[excludeWordsArrayController add:nil];
-	
+
 	[self performSelector:@selector(editTable:) withObject:excludeWordsTable afterDelay:0.3];
 }
 
@@ -609,13 +609,13 @@
 	NSString *kind = [ViewTheme extractThemeSource:[Preferences themeName]];
 	NSString *name = [ViewTheme extractThemeName:[Preferences themeName]];
     NSString *path = nil;
-    
+
     if ([kind isEqualNoCase:@"resource"]) {
         path = [[Preferences whereThemesLocalPath] stringByAppendingPathComponent:name];
     } else {
         path = [[Preferences whereThemesPath] stringByAppendingPathComponent:name];
     }
-    
+
 	[_NSWorkspace() openFile:path];
 }
 
@@ -640,9 +640,9 @@
 {
 	[Preferences cleanUpWords];
     [Preferences sync];
-	
+
 	[_NSUserDefaults() synchronize];
-	
+
 	if ([delegate respondsToSelector:@selector(preferencesDialogWillClose:)]) {
 		[delegate preferencesDialogWillClose:self];
 	}

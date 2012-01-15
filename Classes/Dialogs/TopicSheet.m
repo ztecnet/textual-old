@@ -20,30 +20,30 @@
 - (void)start:(NSString *)topic
 {
 	MenuController *menu = delegate;
-	
+
 	IRCChannel *c = [menu.world selectedChannel];
-	
+
 	NSString *nheader;
-	
+
 	nheader = [header stringValue];
 	nheader = [NSString stringWithFormat:nheader, c.name];
-	
+
 	[menu.master.formattingMenu enableSheetField:text];
-    
+
 	[header setStringValue:nheader];
 	[text setAttributedStringValue:[topic attributedStringWithIRCFormatting:DefaultTextFieldFont]];
-    
+
 	[self startSheet];
 }
 
 - (void)ok:(id)sender
 {
-	if ([delegate respondsToSelector:@selector(topicSheet:onOK:)]) {  
+	if ([delegate respondsToSelector:@selector(topicSheet:onOK:)]) {
 		NSString *topic = [text.attributedStringValue attributedStringToASCIIFormatting];
-		
+
 		[delegate topicSheet:self onOK:topic];
 	}
-	
+
 	[super ok:nil];
 }
 
@@ -53,7 +53,7 @@
 - (void)windowWillClose:(NSNotification *)note
 {
 	[[[delegate master] formattingMenu] enableWindowField:[[delegate master] text]];
-	
+
 	if ([delegate respondsToSelector:@selector(topicSheetWillClose:)]) {
 		[delegate topicSheetWillClose:self];
 	}

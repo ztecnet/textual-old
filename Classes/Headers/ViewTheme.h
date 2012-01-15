@@ -5,10 +5,10 @@
 @interface ViewTheme : NSObject
 {
 	NSURL *baseUrl;
-	
+
 	NSString *path;
 	NSString *name;
-	
+
 	OtherTheme *other;
 	FileWithContent *core_js;
 }

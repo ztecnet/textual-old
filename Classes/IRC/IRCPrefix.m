@@ -27,7 +27,7 @@
 	[nick drain];
 	[user drain];
 	[address drain];
-	
+
 	[super dealloc];
 }
 

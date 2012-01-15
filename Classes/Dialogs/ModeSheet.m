@@ -35,7 +35,7 @@
 - (void)dealloc
 {
 	[channelName drain];
-	
+
 	[super dealloc];
 }
 
@@ -47,28 +47,28 @@
 	[tCheck setState:[mode modeInfoFor:@"t"].plus];
 	[iCheck setState:[mode modeInfoFor:@"i"].plus];
 	[mCheck setState:[mode modeInfoFor:@"m"].plus];
-	
+
 	[kCheck setState:NSObjectIsNotEmpty([mode modeInfoFor:@"k"].param)];
 	[lCheck setState:([[mode modeInfoFor:@"s"].param integerValue] > 0)];
-	
+
 	if ([mode modeInfoFor:@"k"].plus) {
 		[kText setStringValue:[mode modeInfoFor:@"k"].param];
 	} else {
 		[kText setStringValue:NSNullObject];
 	}
-	
+
 	NSInteger lCount = [[mode modeInfoFor:@"l"].param integerValue];
-	
+
 	if (lCount < 0) {
 		lCount = 0;
 	}
-	
+
 	if (lCount > 0) {
 		[lCheck setState:NSOnState];
 	}
-	
+
 	[lText setStringValue:[NSString stringWithDouble:lCount]];
-	
+
 	[self updateTextFields];
 	[self startSheet];
 }
@@ -82,7 +82,7 @@
 - (void)onChangeCheck:(id)sender
 {
 	[self updateTextFields];
-	
+
 	if ([sCheck state] == NSOnState && [pCheck state] == NSOnState) {
 		if (sender == sCheck) {
 			[pCheck setState:NSOffState];
@@ -100,14 +100,14 @@
 	[mode modeInfoFor:@"t"].plus = [tCheck state];
 	[mode modeInfoFor:@"i"].plus = [iCheck state];
 	[mode modeInfoFor:@"m"].plus = [mCheck state];
-	
+
 	if ([kCheck state] == NSOnState) {
 		[mode modeInfoFor:@"k"].plus = YES;
 		[mode modeInfoFor:@"k"].param = [kText stringValue];
 	} else {
 		[mode modeInfoFor:@"k"].plus = NO;
 	}
-	
+
 	if ([lCheck state] == NSOnState) {
 		[mode modeInfoFor:@"l"].plus = YES;
 		[mode modeInfoFor:@"l"].param = [lText stringValue];
@@ -115,11 +115,11 @@
 		[mode modeInfoFor:@"l"].plus = NO;
 		[mode modeInfoFor:@"l"].param = @"0";
 	}
-	
+
 	if ([delegate respondsToSelector:@selector(modeSheetOnOK:)]) {
 		[delegate modeSheetOnOK:self];
 	}
-	
+
 	[super ok:sender];
 }
 

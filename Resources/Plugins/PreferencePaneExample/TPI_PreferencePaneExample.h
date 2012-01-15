@@ -3,10 +3,10 @@
 
 #import "TextualApplication.h"
 
-@interface TPI_PreferencePaneExample : NSObject 
+@interface TPI_PreferencePaneExample : NSObject
 {
 	IBOutlet NSView *ourView;
-} 
+}
 
 - (NSView *)preferencesView;
 - (NSString *)preferencesMenuItemName;

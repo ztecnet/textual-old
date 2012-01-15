@@ -2,7 +2,7 @@
 // You can redistribute it and/or modify it under the new BSD license.
 
 @implementation NSDate (NSDateHelper)
- 
+
 + (NSInteger)secondsSinceUnixTimestamp:(NSInteger)stamp
 {
 	return ([self epochTime] - stamp);

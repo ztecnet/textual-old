@@ -15,11 +15,11 @@
 				if ([keyDelegate respondsToSelector:@selector(memberListViewKeyDown:)]) {
 					[keyDelegate memberListViewKeyDown:e];
 				}
-				
+
 				break;
 		}
 	}
-    
+
 }
 
 - (void)drawContextMenuHighlightForRow:(int)row
@@ -39,7 +39,7 @@
 - (NSInteger)draggedRow:(id <NSDraggingInfo>)sender
 {
 	NSPoint p = [self convertPoint:[sender draggingLocation] fromView:nil];
-    
+
 	return [self rowAtPoint:p];
 }
 
@@ -47,7 +47,7 @@
 {
 	if (on) {
 		NSInteger row = [self draggedRow:sender];
-        
+
 		if (row < 0) {
 			[self deselectAll:nil];
 		} else {
@@ -67,11 +67,11 @@
 {
 	if ([self draggedRow:sender] >= 0) {
 		[self drawDraggingPoisition:sender on:YES];
-        
+
 		return NSDragOperationCopy;
 	} else {
 		[self drawDraggingPoisition:sender on:NO];
-        
+
 		return NSDragOperationNone;
 	}
 }

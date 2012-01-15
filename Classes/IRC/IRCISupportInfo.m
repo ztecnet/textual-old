@@ -30,7 +30,7 @@
 	if ((self = [super init])) {
 		[self reset];
 	}
-	
+
 	return self;
 }
 
@@ -43,18 +43,18 @@
 	[userModeOPrefix drain];
 	[userModeHPrefix drain];
 	[userModeVPrefix drain];
- 
-	
+
+
 	[super dealloc];
 }
 
 - (void)reset
 {
 	memset(modes, 0, MODES_SIZE);
-	
+
 	nickLen = 9;
 	modesCount = 3;
-	
+
     [self setValue:OP_VALUE forMode:'y'];
 	[self setValue:OP_VALUE forMode:'o'];
 	[self setValue:OP_VALUE forMode:'h'];
@@ -64,7 +64,7 @@
 	[self setValue:OP_VALUE forMode:'b'];
 	[self setValue:OP_VALUE forMode:'e'];
     [self setValue:OP_VALUE forMode:'u'];
-	
+
 	[self setValue:1 forMode:'I'];
 	[self setValue:1 forMode:'R'];
 	[self setValue:2 forMode:'k'];
@@ -83,16 +83,16 @@
 	if ([str hasSuffix:ISUPPORT_SUFFIX]) {
 		str = [str safeSubstringToIndex:(str.length - [ISUPPORT_SUFFIX length])];
 	}
-	
+
 	NSArray *ary = [str split:NSWhitespaceCharacter];
-	
+
 	for (NSString *s in ary) {
 		NSRange r = [s rangeOfString:@"="];
-		
+
 		if (NSDissimilarObjects(r.location, NSNotFound)) {
 			NSString *key = [[s safeSubstringToIndex:r.location] uppercaseString];
 			NSString *value = [s safeSubstringFromIndex:NSMaxRange(r)];
-			
+
 			if ([key isEqualToString:@"PREFIX"]) {
 				[self parsePrefix:value];
 			} else if ([key isEqualToString:@"CHANMODES"]) {
@@ -103,10 +103,10 @@
 				modesCount = [value integerValue];
 			} else if ([key isEqualToString:@"NETWORK"]) {
 				networkName = [value retain];
-			} 
+			}
 		}
 	}
-	
+
 	return NO;
 }
 
@@ -114,23 +114,23 @@
 {
 	NSMutableArray *ary = [NSMutableArray array];
 	NSMutableString *s = [[str mutableCopy] autodrain];
-	
+
 	BOOL plus = NO;
-	
+
 	while (NSObjectIsNotEmpty(s)) {
 		NSString *token = [s getToken];
 		if (NSObjectIsEmpty(token)) break;
-		
+
 		UniChar c = [token characterAtIndex:0];
-		
+
 		if (c == '+' || c == '-') {
 			plus = (c == '+');
-			
+
 			token = [token safeSubstringFromIndex:1];
-			
+
 			for (NSInteger i = 0; i < token.length; i++) {
 				c = [token characterAtIndex:i];
-				
+
 				switch (c) {
 					case '-':
 						plus = NO;
@@ -141,9 +141,9 @@
 					default:
 					{
 						NSInteger v = [self valueForMode:c];
-						
+
 						IRCModeInfo *m = [IRCModeInfo modeInfo];
-						
+
 						if ([self hasParamForMode:c plus:plus]) {
 							m.mode = c;
 							m.plus = plus;
@@ -153,16 +153,16 @@
 							m.plus = plus;
 							m.simpleMode = (v == 4);
 						}
-						
+
 						[ary safeAddObject:m];
-						
+
 						break;
 					}
 				}
 			}
 		}
 	}
-	
+
 	return ary;
 }
 
@@ -184,24 +184,24 @@
 		NSInteger endSignPos = [value stringPosition:@")"];
 		NSInteger modeLength = 0;
 		NSInteger charLength = 0;
-		
+
 		NSString *nodes;
 		NSString *chars;
-		
+
 		nodes = [value safeSubstringToIndex:endSignPos];
 		nodes = [nodes safeSubstringFromIndex:1];
-		
+
 		chars = [value safeSubstringAfterIndex:endSignPos];
-		
+
 		charLength = [chars length];
 		modeLength = [nodes length];
-		
+
 		if (charLength == modeLength) {
 			for (NSInteger i = 0; i < charLength; i++) {
 				UniChar  rawKey     = [nodes characterAtIndex:i];
 				NSString *modeKey   = [nodes stringCharacterAtIndex:i];
 				NSString *modeChar  = [chars stringCharacterAtIndex:i];
-				
+
 				if ([modeKey isEqualToString:@"q"] || [modeKey isEqualToString:@"u"]) {
 					self.userModeQPrefix = modeChar;
 				} else if ([modeKey isEqualToString:@"a"]) {
@@ -215,7 +215,7 @@
 				} else if ([modeKey isEqualToString:@"y"]) {
 					self.userModeYPrefix = modeChar;
 				}
-				
+
 				[self setValue:OP_VALUE forMode:rawKey];
 			}
 		}
@@ -225,13 +225,13 @@
 - (void)parseChanmodes:(NSString *)str
 {
 	NSArray *ary = [str split:@","];
-	
+
 	for (NSInteger i = 0; i < ary.count; i++) {
 		NSString *s = [ary safeObjectAtIndex:i];
-		
+
 		for (NSInteger j = 0; j < s.length; j++) {
 			UniChar c = [s characterAtIndex:j];
-			
+
 			[self setValue:(i + 1) forMode:c];
 		}
 	}
@@ -241,11 +241,11 @@
 {
 	if ('a' <= m && m <= 'z') {
 		NSInteger n = (m - 'a');
-		
+
 		modes[n] = value;
 	} else if ('A' <= m && m <= 'Z') {
 		NSInteger n = ((m - 'A') + 26);
-		
+
 		modes[n] = value;
 	}
 }
@@ -254,25 +254,25 @@
 {
 	if ('a' <= m && m <= 'z') {
 		NSInteger n = (m - 'a');
-		
+
 		return modes[n];
 	} else if ('A' <= m && m <= 'Z') {
 		NSInteger n = ((m - 'A') + 26);
-		
+
 		return modes[n];
 	}
-	
+
 	return 0;
 }
 
 - (IRCModeInfo *)createMode:(NSString *)mode
 {
 	IRCModeInfo *m = [IRCModeInfo modeInfo];
-	
+
 	m.mode = [mode characterAtIndex:0];
 	m.plus = NO;
 	m.param = NSNullObject;
-	
+
 	return m;
 }
 

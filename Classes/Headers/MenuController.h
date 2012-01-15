@@ -7,21 +7,21 @@
 @interface MenuController : NSObject
 {
 	IBOutlet NSMenuItem *closeWindowItem;
-	
+
 	IRCWorld *world;
 	MainWindow *window;
 	InputTextField *text;
 	MasterController *master;
-	
+
 	ServerList *serverList;
 	MemberList *memberList;
-	
+
 	NSString *pointedUrl;
 	NSString *pointedAddress;
 	NSString *pointedNick;
 	NSString *pointedChannelName;
 	NSString *currentSearchPhrase;
-	
+
 	NickSheet *nickSheet;
 	ModeSheet *modeSheet;
 	AboutPanel *aboutPanel;
@@ -31,7 +31,7 @@
 	ChannelSheet *channelSheet;
 	HighlightSheet *highlightSheet;
 	PreferencesController *preferencesController;
-	
+
 	BOOL isInFullScreenMode;
 }
 

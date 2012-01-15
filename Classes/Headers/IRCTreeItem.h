@@ -7,17 +7,17 @@
 @interface IRCTreeItem : NSObject <NSTableViewDataSource, NSTableViewDelegate>
 {
 	NSInteger uid;
-	
+
 	LogController *log;
-	
+
 	BOOL isKeyword;
 	BOOL isUnread;
 	BOOL isNewTalk;
-	
+
 	NSInteger keywordCount;
 	NSInteger dockUnreadCount;
 	NSInteger treeUnreadCount;
-	
+
 	InputHistory *inputHistory;
 	NSAttributedString *currentInputHistory;
 }

@@ -1,5 +1,5 @@
 /*
- * The AutoHyperlinks Framework is the legal property of its developers (DEVELOPERS), 
+ * The AutoHyperlinks Framework is the legal property of its developers (DEVELOPERS),
  * whose names are listed in the copyright file included with this source distribution.
  *
  * Redistribution and use in source and binary forms, with or without

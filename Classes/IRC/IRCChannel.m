@@ -31,20 +31,20 @@
 		mode    = [IRCChannelMode new];
 		members = [NSMutableArray new];
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc
 {
 	[mode drain];
-	[topic drain];	
+	[topic drain];
 	[config drain];
 	[logDate drain];
 	[logFile drain];
 	[members drain];
 	[storedTopic drain];
-	
+
 	[super dealloc];
 }
 
@@ -102,7 +102,7 @@
 		case CHANNEL_TYPE_CHANNEL: return @"channel";
 		case CHANNEL_TYPE_TALK: return @"talk";
 	}
-	
+
 	return nil;
 }
 
@@ -123,7 +123,7 @@
 - (void)preferencesChanged
 {
 	log.maxLines = [Preferences maxLogLines];
-	
+
 	if (logFile) {
 		if ([Preferences logTranscript]) {
 			[logFile reopenIfNeeded];
@@ -136,34 +136,34 @@
 - (void)activate
 {
 	isActive = YES;
-	
+
 	[mode clear];
 	[members removeAllObjects];
-	
+
 	isOp = NO;
 	isHalfOp = NO;
-	
+
 	self.topic = nil;
-	
+
 	isModeInit = NO;
 	errLastJoin = NO;
-	
+
 	status = IRCChannelJoined;
-	
+
 	[self reloadMemberList];
 }
 
 - (void)deactivate
 {
 	[members removeAllObjects];
-	
+
 	isOp = NO;
 	isHalfOp = NO;
 	isActive = NO;
 	errLastJoin = NO;
-	
+
 	status = IRCChannelParted;
-	
+
 	[self reloadMemberList];
 }
 
@@ -171,10 +171,10 @@
 {
 	if (NSObjectIsNotEmpty([Preferences completionSuffix])) {
 		NSArray *pieces = [text split:[Preferences completionSuffix]];
-		
+
 		if ([pieces count] > 1) {
 			IRCUser *talker = [self findMember:[pieces safeObjectAtIndex:0]];
-			
+
 			if (talker) {
 				[talker incomingConversation];
 			}
@@ -190,38 +190,38 @@
 - (BOOL)print:(LogLine *)line withHTML:(BOOL)rawHTML
 {
 	BOOL result = [log print:line withHTML:rawHTML];
-	
+
 	if ([Preferences logTranscript]) {
 		if (PointerIsEmpty(logFile)) {
 			logFile = [FileLogger new];
 			logFile.client = client;
 			logFile.channel = self;
 		}
-		
+
 		NSString *comp = [NSString stringWithFormat:@"%@", [[NSDate date] dateWithCalendarFormat:@"%Y%m%d%H%M%S" timeZone:nil]];
-		
+
 		if (logDate) {
 			if ([logDate isEqualToString:comp] == NO) {
 				[logDate drain];
-				
+
 				logDate = [comp retain];
 				[logFile reopenIfNeeded];
 			}
 		} else {
 			logDate = [comp retain];
 		}
-		
+
 		NSString *nickStr = NSNullObject;
-		
+
 		if (line.nick) {
 			nickStr = [NSString stringWithFormat:@"%@: ", line.nickInfo];
 		}
-		
+
 		NSString *s = [NSString stringWithFormat:@"%@%@%@", line.time, nickStr, line.body];
-		
+
 		[logFile writeLine:s];
 	}
-	
+
 	return result;
 }
 
@@ -231,32 +231,32 @@
 - (void)sortedInsert:(IRCUser *)item
 {
 	const NSInteger LINEAR_SEARCH_THRESHOLD = 5;
-	
+
 	NSInteger left = 0;
 	NSInteger right = members.count;
-	
+
 	while (right - left > LINEAR_SEARCH_THRESHOLD) {
 		NSInteger i = ((left + right) / 2);
-		
+
 		IRCUser *t = [members safeObjectAtIndex:i];
-		
+
 		if ([t compare:item] == NSOrderedAscending) {
 			left = (i + 1);
 		} else {
 			right = (i + 1);
 		}
 	}
-	
+
 	for (NSInteger i = left; i < right; ++i) {
 		IRCUser *t = [members safeObjectAtIndex:i];
-		
+
 		if ([t compare:item] == NSOrderedDescending) {
 			[members safeInsertObject:item atIndex:i];
-			
+
 			return;
 		}
 	}
-	
+
 	[members safeAddObject:item];
 }
 
@@ -268,14 +268,14 @@
 - (void)addMember:(IRCUser *)user reload:(BOOL)reload
 {
 	NSInteger n = [self indexOfMember:user.nick];
-	
+
 	if (n >= 0) {
 		[[members safeObjectAtIndex:n] adrv];
 		[members safeRemoveObjectAtIndex:n];
 	}
-	
+
 	[self sortedInsert:user];
-	
+
 	if (reload) {
 		[self reloadMemberList];
 	}
@@ -289,31 +289,31 @@
 - (void)removeMember:(NSString *)nick reload:(BOOL)reload
 {
 	NSInteger n = [self indexOfMember:nick];
-	
+
 	if (n >= 0) {
 		[[members safeObjectAtIndex:n] adrv];
 		[members safeRemoveObjectAtIndex:n];
 	}
-	
+
 	if (reload) [self reloadMemberList];
 }
 
 - (void)renameMember:(NSString *)fromNick to:(NSString *)toNick
 {
 	NSInteger n = [self indexOfMember:fromNick];
-	
+
 	if (n >= 0) {
 		IRCUser *m = [members safeObjectAtIndex:n];
-		
+
 		[m adrv];
-		
+
 		[self removeMember:toNick reload:NO];
-		
+
 		m.nick = toNick;
-		
+
 		[[members safeObjectAtIndex:n] adrv];
 		[members safeRemoveObjectAtIndex:n];
-		
+
 		[self sortedInsert:m];
 		[self reloadMemberList];
 	}
@@ -322,22 +322,22 @@
 - (void)updateOrAddMember:(IRCUser *)user
 {
 	NSInteger n = [self indexOfMember:user.nick];
-	
+
 	if (n >= 0) {
 		[[members safeObjectAtIndex:n] adrv];
 		[members safeRemoveObjectAtIndex:n];
 	}
-	
+
 	[self sortedInsert:user];
 }
 
 - (void)changeMember:(NSString *)nick mode:(char)modeChar value:(BOOL)value
 {
 	NSInteger n = [self indexOfMember:nick];
-	
+
 	if (n >= 0) {
 		IRCUser *m = [members safeObjectAtIndex:n];
-		
+
 		switch (modeChar) {
 			case 'q': m.q = value; break;
 			case 'a': m.a = value; break;
@@ -346,34 +346,34 @@
 			case 'h': m.h = value; break;
 			case 'v': m.v = value; break;
 		}
-		
+
 		[[members safeObjectAtIndex:n] adrv];
 		[members safeRemoveObjectAtIndex:n];
-		
+
 		if (m.q && NSObjectIsEmpty(client.isupport.userModeQPrefix)) {
 			m.q = NO;
 		}
-		
+
 		if (m.a && NSObjectIsEmpty(client.isupport.userModeAPrefix)) {
 			m.a = NO;
 		}
-        
+
         if (m.y && NSObjectIsEmpty(client.isupport.userModeYPrefix)) {
 			m.y = NO;
 		}
-		
+
 		if (m.o && NSObjectIsEmpty(client.isupport.userModeOPrefix)) {
 			m.o = NO;
 		}
-		
+
 		if (m.h && NSObjectIsEmpty(client.isupport.userModeHPrefix)) {
 			m.h = NO;
 		}
-		
+
 		if (m.v && NSObjectIsEmpty(client.isupport.userModeVPrefix)) {
 			m.v = NO;
 		}
-		
+
 		[self sortedInsert:m];
 		[self reloadMemberList];
 	}
@@ -382,7 +382,7 @@
 - (void)clearMembers
 {
 	[members removeAllObjects];
-	
+
 	[self reloadMemberList];
 }
 
@@ -394,10 +394,10 @@
 - (NSInteger)indexOfMember:(NSString *)nick options:(NSStringCompareOptions)mask
 {
 	NSInteger i = -1;
-	
+
 	for (IRCUser *m in members) {
 		i++;
-		
+
 		if (mask & NSCaseInsensitiveSearch) {
 			if ([nick isEqualNoCase:m.nick]) {
 				return i;
@@ -408,7 +408,7 @@
 			}
 		}
 	}
-	
+
 	return -1;
 }
 
@@ -425,11 +425,11 @@
 - (IRCUser *)findMember:(NSString *)nick options:(NSStringCompareOptions)mask
 {
 	NSInteger n = [self indexOfMember:nick options:mask];
-	
+
 	if (n >= 0) {
 		return [members safeObjectAtIndex:n];
 	}
-	
+
 	return nil;
 }
 
@@ -491,7 +491,7 @@
 - (id)tableView:(NSTableView *)sender objectValueForTableColumn:(NSTableColumn *)column row:(NSInteger)row
 {
 	IRCUser *user = [members safeObjectAtIndex:row];
-	
+
 	return TXTFLS(@"ACCESSIBILITY_MEMBER_LIST_DESCRIPTION", [user nick], [config.name safeSubstringFromIndex:1]);
 }
 
