@@ -69,6 +69,8 @@ static NSDateFormatter *dateTimeFormatter = nil;
 @synthesize encoding;
 @synthesize hasIRCopAccess;
 @synthesize highlights;
+@synthesize pendingCaps;
+@synthesize acceptedCaps;
 @synthesize identifyCTCP;
 @synthesize identifyMsg;
 @synthesize inWhoInfoRun;
@@ -112,10 +114,16 @@ NSString *rawhost;
 {
 	if ((self = [super init])) {
 		tryingNickNumber = -1;
+        
+        capPaused = 0;
 		
 		channels     = [NSMutableArray new];
 		highlights   = [NSMutableArray new];
 		commandQueue = [NSMutableArray new];
+        
+        acceptedCaps = [[NSMutableArray alloc] init];
+        pendingCaps = [[NSMutableArray alloc] init];
+        
 		trackedUsers = [NSMutableDictionary new];
 		
 		isupport = [IRCISupportInfo new];
@@ -197,6 +205,8 @@ NSString *rawhost;
 	[sentNick drain];
 	[serverHostname drain];
 	[trackedUsers drain];
+    [pendingCaps drain];
+    [acceptedCaps drain];
 	
 #ifdef IS_TRIAL_BINARY
 	[trialPeriodTimer stop];
@@ -542,27 +552,24 @@ NSString *rawhost;
 
 - (void)createChanInviteExceptionListDialog
 {
-	if (PointerIsEmpty(inviteExceptionSheet)) {
+	if (inviteExceptionSheet) {
+		[inviteExceptionSheet ok:nil];
+        
+		[inviteExceptionSheet drain];
+		inviteExceptionSheet = nil;
+        
+		[self createChanInviteExceptionListDialog];
+	} else {
 		IRCClient *u = [world selectedClient];
 		IRCChannel *c = [world selectedChannel];
-		
+        
 		if (PointerIsEmpty(u) || PointerIsEmpty(c)) return;
-		
+        
 		inviteExceptionSheet = [ChanInviteExceptionSheet new];
 		inviteExceptionSheet.delegate = self;
 		inviteExceptionSheet.window = world.window;
-	} else {
-		[inviteExceptionSheet ok:nil];
-		
-		[inviteExceptionSheet drain];
-		inviteExceptionSheet = nil;
-		
-		[self createChanBanExceptionListDialog];
-		
-		return;
+		[inviteExceptionSheet show];
 	}
-	
-	[inviteExceptionSheet show];
 }
 
 - (void)chanInviteExceptionDialogOnUpdate:(ChanInviteExceptionSheet *)sender
@@ -2635,6 +2642,7 @@ NSString *rawhost;
 			return YES;
 			break;
 		}
+            
 		default:
 		{   
             NSArray  *extensions = [NSArray arrayWithObjects:@".scpt", @".py", @".pyc", @".rb", @".pl", @".sh", @".bash", @"", nil];
@@ -2773,6 +2781,10 @@ NSString *rawhost;
 
 - (IRCChannel *)findChannelOrCreate:(NSString *)name useTalk:(BOOL)doTalk
 {
+    IRCChannel *c = [self findChannel:name];
+    if (c) {
+        return c;
+    }
 	if (doTalk) {
 		return [world createTalk:name client:self];
 	} else {
@@ -2896,6 +2908,7 @@ NSString *rawhost;
 	}
 	
 	[SoundPlayer play:[Preferences soundForEvent:type] isMuted:world.soundMuted];
+//    [SoundPlayer play:@"Beep" isMuted:world.soundMuted];
 	
 	if ([Preferences growlEnabledForEvent:type] == NO) return YES;
 	if ([Preferences stopGrowlOnActive] && [world.window isOnCurrentWorkspace]) return YES;
@@ -4224,6 +4237,39 @@ NSString *rawhost;
 	[self printError:m.sequence];
 }
 
+- (void)sendNextCap {
+	if (!capPaused) {
+		if (pendingCaps && [pendingCaps count]) {
+			NSString *cap = [pendingCaps lastObject];
+			[self send:IRCCI_CAP, @"REQ", cap, nil];
+			[pendingCaps removeLastObject];
+		} else {
+			[self send:IRCCI_CAP, @"END", nil];
+		}
+	}
+}
+
+- (void)pauseCap {
+	capPaused++;
+}
+
+- (void)resumeCap {
+	capPaused--;
+	[self sendNextCap];
+}
+
+- (BOOL)isCapAvailible:(NSString*)cap {
+	return [cap isEqualNoCase:@"znc.in/server-time"] || ([cap isEqualNoCase:@"sasl"] && NSObjectIsNotEmpty(config.nickPassword) && config.useSASL);
+}
+
+- (void)cap:(NSString*)cap result:(BOOL)supported {
+	if (supported && [cap isEqualNoCase:@"sasl"]) {
+		inSASLRequest = YES;
+		[self pauseCap];
+		[self send:IRCCI_AUTHENTICATE, @"PLAIN", nil];
+	}
+}
+
 - (void)receiveCapacityOrAuthenticationRequest:(IRCMessage *)m
 {
     /* Implementation based off Colloquy's own. */
@@ -4237,21 +4283,29 @@ NSString *rawhost;
     action = [action trim];
     
     if ([command isEqualNoCase:IRCCI_CAP]) {
-        if ([base isEqualNoCase:@"ACK"] || [base isEqualNoCase:@"LS"]) {
+        if ([base isEqualNoCase:@"LS"]) {
             NSArray *caps = [action componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
             
             for (NSString *cap in caps) {
-                if ([cap isEqualNoCase:@"SASL"]) {
-                    if ([base isEqualNoCase:@"LS"]) {
-                        [self sendLine:[NSString stringWithFormat:@"%@ REQ :sasl", IRCCI_CAP]];
-                    } else {
-                        [self send:IRCCI_AUTHENTICATE, @"PLAIN", nil];
-                        
-                        inSASLRequest = YES;
-                    }
+                                   if ([self isCapAvailible:cap]) {
+                        [pendingCaps addObject:cap];
                 } 
             }
+        } else if ([base isEqualNoCase:@"ACK"]) {
+            NSArray *caps = [action componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            for (NSString *cap in caps) {
+                [acceptedCaps addObject:cap];
+                [self cap:cap result:YES];
+            }
+        } else if ([base isEqualNoCase:@"NAK"]) {
+            NSArray *caps = [action componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            
+            for (NSString *cap in caps) {
+                 [self cap:cap result:NO];
+            }
         }
+            [self sendNextCap];
+            
     } else {
         if ([star isEqualToString:@"+"]) {
             NSData *usernameData = [config.nick dataUsingEncoding:config.encoding allowLossyConversion:YES];
@@ -5007,7 +5061,7 @@ NSString *rawhost;
             if (inSASLRequest) {
                 inSASLRequest = NO;
                 
-                [self send:IRCCI_CAP, @"END", nil];
+                [self resumeCap];
             }
             
             break;
@@ -5154,6 +5208,9 @@ NSString *rawhost;
 	if (isLoggedIn == NO && isConnecting == NO) return;
 	
 	BOOL prevConnected = isConnected;
+    
+    [acceptedCaps drain];
+    acceptedCaps = [[NSMutableArray alloc] init];
 	
 	[conn autodrain];
 	conn = nil;
@@ -5254,9 +5311,7 @@ NSString *rawhost;
         realName = config.nick;
     }
     
-    if (NSObjectIsNotEmpty(config.nickPassword) && config.useSASL) {
-        [self send:IRCCI_CAP, @"LS", nil];
-    }
+    [self send:IRCCI_CAP, @"LS", nil];
 	
 	if (NSObjectIsNotEmpty(config.password)) {
         [self send:IRCCI_PASS, config.password, nil];

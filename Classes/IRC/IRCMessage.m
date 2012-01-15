@@ -51,7 +51,7 @@
 	
 	NSMutableString *s = [line mutableCopy];
 	
-	if ([s hasPrefix:@":"]) {
+    if ([s hasPrefix:@":"]) {
 		NSString *t = [s getToken];
 		
 		t = [t safeSubstringFromIndex:1];

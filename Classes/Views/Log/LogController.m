@@ -167,12 +167,8 @@
 
 - (void)queueLoop
 {
-    if ([view isLoading]) {
         while ([view isLoading]) {
             [NSThread sleepForTimeInterval:0.2];
-            
-            continue;
-        }
     }
 }
 
