@@ -6,6 +6,7 @@
 *.pyc
 *.zip
 *.sh
+!checksize.sh
 Rakefile
 build/*
 */build/*
