@@ -5491,6 +5491,9 @@ NSString *rawhost;
         [[self invokeInBackgroundThread] processBundlesServerMessage:m];
     }
 
+    //if (cmd == IRCCI_MODE) {
+    //    [world updateTitle]; 
+    //}
     [world updateTitle];
 }
 
