@@ -3787,7 +3787,7 @@ NSString *rawhost;
 		if ([command isEqualToString:IRCCI_PING]) {
 			[self sendCTCPReply:nick command:command text:s];
 		} else if ([command isEqualToString:IRCCI_TIME]) {
-			[self sendCTCPReply:nick command:command text:[[NSDate date] description]];
+			[self sendCTCPReply:nick command:command text:[[NSDate date] descriptionWithLocale:[NSLocale currentLocale]]];
 		} else if ([command isEqualToString:IRCCI_VERSION]) {
 			NSString *ref = [[Preferences textualInfoPlist] objectForKey:@"Build Reference"];
 
@@ -4258,7 +4258,7 @@ NSString *rawhost;
 	[self sendNextCap];
 }
 
-- (BOOL)isCapAvailible:(NSString*)cap {
+- (BOOL)isCapAvailable:(NSString*)cap {
 	return [cap isEqualNoCase:@"znc.in/server-time"] || ([cap isEqualNoCase:@"sasl"] && NSObjectIsNotEmpty(config.nickPassword) && config.useSASL);
 }
 
@@ -4287,7 +4287,7 @@ NSString *rawhost;
             NSArray *caps = [action componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 
             for (NSString *cap in caps) {
-                                   if ([self isCapAvailible:cap]) {
+                                   if ([self isCapAvailable:cap]) {
                         [pendingCaps addObject:cap];
                 }
             }

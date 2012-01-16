@@ -16,6 +16,11 @@
 
 	return self;
 }
+- (void)dealloc {
+    [text release];
+    [header release];
+    [super dealloc];
+}
 
 - (void)start:(NSString *)topic
 {
@@ -31,7 +36,7 @@
 	[menu.master.formattingMenu enableSheetField:text];
 
 	[header setStringValue:nheader];
-	[text setAttributedStringValue:[topic attributedStringWithIRCFormatting:DefaultTextFieldFont]];
+    [text setAttributedStringValue:[topic attributedStringWithIRCFormatting:DefaultTextFieldFont followFormattingPreference:NO]];
 
 	[self startSheet];
 }

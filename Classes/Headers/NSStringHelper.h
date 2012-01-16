@@ -44,6 +44,7 @@
 - (NSString *)trim;
 
 - (id)attributedStringWithIRCFormatting:(NSFont *)defaultFont;
+- (id)attributedStringWithIRCFormatting:(NSFont *)defaultFont followFormattingPreference:(BOOL)formattingPreference;
 
 - (UniChar)safeCharacterAtIndex:(NSInteger)index;
 
