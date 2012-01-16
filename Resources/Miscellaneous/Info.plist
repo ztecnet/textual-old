@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Build Number</key>
-	<string>23</string>
+	<string>25</string>
 	<key>Build Reference</key>
-	<string>2.1 ZTN 1.1.2</string>
+	<string>2.1 ZTN 1.1.2-5-g97b518d-master</string>
 	<key>CFBundleExecutable</key>
 	<string>Textual</string>
 	<key>CFBundleIconFile</key>
@@ -47,7 +47,7 @@
 		<string>i386</string>
 	</array>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.6.6</string>
+	<string>10.6.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2010, 2011 Codeux Software</string>
 	<key>NSMainNibFile</key>
