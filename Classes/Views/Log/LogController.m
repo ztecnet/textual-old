@@ -628,7 +628,6 @@
                     int i = [sizeis intValue];
 
                     if (i >= imgsize) {
-                        [s appendFormat:@"<br /> The image above is to large to load. If you still wish to open it in your browser just click the link."];
                     } else {
                     [s appendFormat:@"<a href=\"%@\" onclick=\"return Textual.hide_inline_image(this)\"><img src=\"%@\" class=\"inlineimage\" style=\"max-width: %ipx;\" /></a>", url, imageUrl, [Preferences inlineImagesMaxWidth]];
                     }

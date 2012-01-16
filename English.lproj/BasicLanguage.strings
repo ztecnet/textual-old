@@ -27,7 +27,7 @@
 "SOUND_IS_ALREADY_MUTED" = "Sound is already muted.";
 "SOUND_IS_NO_LONGER_MUTED" = "Sound is no longer muted.";
 
-"DEFAULT_QPS_MESSAGE" = "[Textual IRC Client - ZTN Build: http://dev.ztecnet.net/textual/]";
+"DEFAULT_QPS_MESSAGE" = "[Textual IRC Client - ZTN Build: http://dev.ztecnet.net/Textual/]";
 "SLEEPING_APPLICATION_QUIT_MESSAGE" = "Computer has gone to sleep.";
 
 "DCC_REQUEST_ERROR_MESSAGE" = "The Textual IRC Client has received a DCC request that could not be processed.";
@@ -149,7 +149,7 @@
 "IRC_RAW_MODE_IS_ENABLED" = "Raw mode has been enabled. Textual will now output all data that it recieves and sends to the IRC server in the Mac OS X \"Console\" application. To disable execute \"/debug raw off\"";
 
 "IRC_CTCP_VERSION_TITLE" = "\002Current Version:\002 %@";
-"IRC_CTCP_VERSION_INFO" = "%1$@ %2$@ (http://dev.ztecnet.net/textual/)"; 
+"IRC_CTCP_VERSION_INFO" = "%1$@ %2$@ (http://dev.ztecnet.net/Textual/)"; 
 
 "IRC_SERVER_HAD_NETSPLIT" = "Netsplit: %@";
 
