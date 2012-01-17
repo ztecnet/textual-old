@@ -4259,14 +4259,24 @@ NSString *rawhost;
 }
 
 - (BOOL)isCapAvailable:(NSString*)cap {
-	return [cap isEqualNoCase:@"znc.in/server-time"] || ([cap isEqualNoCase:@"sasl"] && NSObjectIsNotEmpty(config.nickPassword) && config.useSASL);
+	return [cap isEqualNoCase:@"multi-prefix"] ||
+    [cap isEqualNoCase:@"identify-msg"] ||
+    [cap isEqualNoCase:@"identify-ctcp"] ||
+    //[cap isEqualNoCase:@"znc.in/server-time"] ||
+    ([cap isEqualNoCase:@"sasl"] && NSObjectIsNotEmpty(config.nickPassword) && config.useSASL);
 }
 
 - (void)cap:(NSString*)cap result:(BOOL)supported {
-	if (supported && [cap isEqualNoCase:@"sasl"]) {
-		inSASLRequest = YES;
-		[self pauseCap];
-		[self send:IRCCI_AUTHENTICATE, @"PLAIN", nil];
+	if (supported) {
+		if ([cap isEqualNoCase:@"sasl"]) {
+			inSASLRequest = YES;
+			[self pauseCap];
+			[self send:IRCCI_AUTHENTICATE, @"PLAIN", nil];
+		} else if ([cap isEqualNoCase:@"identify-msg"]) {
+			identifyMsg = YES;
+		} else if ([cap isEqualNoCase:@"identify-ctcp"]) {
+			identifyCTCP = YES;
+		}
 	}
 }
 
@@ -4829,55 +4839,57 @@ NSString *rawhost;
 		{
 			NSString *chname = [m paramAt:2];
 			NSString *trail  = [m paramAt:3];
-
+			
 			IRCChannel *c = [self findChannel:chname];
-
+			
 			if (c) {
 				NSArray *ary = [trail componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-
+				
 				for (NSString *nick in ary) {
 					nick = [nick trim];
-
+					
 					if (NSObjectIsEmpty(nick)) continue;
 
-					NSString *u  = [nick safeSubstringWithRange:NSMakeRange(0, 1)];
-					NSString *op = NSWhitespaceCharacter;
-
-					if ([u isEqualTo:isupport.userModeYPrefix] || [u isEqualTo:isupport.userModeOPrefix] ||
-						[u isEqualTo:isupport.userModeQPrefix] || [u isEqualTo:isupport.userModeHPrefix] ||
-						[u isEqualTo:isupport.userModeAPrefix] || [u isEqualTo:isupport.userModeVPrefix]) {
-
-						nick = [nick safeSubstringFromIndex:1];
-						op   = u;
-					}
-
 					IRCUser *m = [IRCUser newad];
-
-					m.nick        = nick;
-
-					m.y = ([op isEqualTo:isupport.userModeYPrefix]);
-                    m.q = ([op isEqualTo:isupport.userModeQPrefix]);
-					m.a = ([op isEqualTo:isupport.userModeAPrefix]);
-					m.o = ([op isEqualTo:isupport.userModeOPrefix] || m.q);
-					m.h = ([op isEqualTo:isupport.userModeHPrefix]);
-					m.v = ([op isEqualTo:isupport.userModeVPrefix]);
-
+					NSInteger i;
+					for (i = 0; i < nick.length; i++) {
+						NSString *prefix = [nick safeSubstringWithRange:NSMakeRange(i, 1)];
+                        
+						if ([prefix isEqualTo:isupport.userModeQPrefix]) {
+							m.q = YES;
+						} else if ([prefix isEqualTo:isupport.userModeAPrefix]) {
+							m.a = YES;
+                        } else if ([prefix isEqualTo:isupport.userModeYPrefix]) {
+							m.y = YES;
+						} else if ([prefix isEqualTo:isupport.userModeOPrefix]) {
+							m.o = YES;
+						} else if ([prefix isEqualTo:isupport.userModeHPrefix]) {
+							m.h = YES;
+						} else if ([prefix isEqualTo:isupport.userModeVPrefix]) {
+							m.v = YES;
+						} else {
+							break;
+						}
+					}
+					nick = [nick substringFromIndex:i];
+					m.nick = nick;
+					
 					m.supportInfo = isupport;
 					m.isMyself    = [nick isEqualNoCase:myNick];
-
+					
 					[c addMember:m reload:NO];
-
+					
 					if (m.isMyself) {
-						c.isOp     = (m.q || m.a | m.o | m.y);
+						c.isOp     = (m.q || m.a || m.o | m.y);
 						c.isHalfOp = (m.h || c.isOp);
 					}
 				}
-
+				
 				[c reloadMemberList];
-			}
-
+			} 
+			
 			break;
-		}
+        }
 		case 366:
 		{
 			NSString *chname = [m paramAt:1];

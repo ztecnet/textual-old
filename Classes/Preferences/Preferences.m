@@ -997,7 +997,7 @@ static NSInteger totalRunTime = 0;
 	[d setBool:NO  forKey:@"Preferences.General.dockbadge_countpub"];
 	[d setBool:NO  forKey:@"Preferences.General.disable_nickname_colors"];
 
-	[d setObject:@"Beep"						forKey:@"eventHighlightSound"];
+	[d setObject:@"Glass"						forKey:@"eventHighlightSound"];
 	[d setObject:@"ircop alert"					forKey:@"Preferences.General.ircop_alert_match"];
 	[d setObject:@"Guest"						forKey:@"Preferences.Identity.nickname"];
 	[d setObject:@"textual"						forKey:@"Preferences.Identity.username"];
