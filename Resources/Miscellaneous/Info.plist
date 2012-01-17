@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Build Number</key>
-	<string>42</string>
+	<string>44</string>
 	<key>Build Reference</key>
-	<string>2.1 ZTN 1.1.4-17-g8a4553b-master</string>
+	<string>2.1 ZTN 1.1.4-18-g66cb4fd-master</string>
 	<key>CFBundleExecutable</key>
 	<string>Textual</string>
 	<key>CFBundleIconFile</key>
