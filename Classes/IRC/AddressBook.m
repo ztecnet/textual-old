@@ -8,6 +8,7 @@
 @synthesize entryType;
 @synthesize ignorePublicMsg;
 @synthesize ignorePrivateMsg;
+@synthesize ignoreimages;
 @synthesize ignoreHighlights;
 @synthesize ignoreNotices;
 @synthesize ignoreCTCP;
@@ -33,6 +34,7 @@
 
 		ignorePublicMsg		= [dic boolForKey:@"ignorePublicMsg"];
 		ignorePrivateMsg	= [dic boolForKey:@"ignorePrivateMsg"];
+        ignoreimages        = [dic boolForKey:@"ignoreimages"];
 		ignoreHighlights	= [dic boolForKey:@"ignoreHighlights"];
 		ignoreNotices		= [dic boolForKey:@"ignoreNotices"];
 		ignoreCTCP			= [dic boolForKey:@"ignoreCTCP"];
@@ -123,6 +125,7 @@
 	[dic setObject:hostmask			forKey:@"hostmask"];
 	[dic setBool:ignorePublicMsg	forKey:@"ignorePublicMsg"];
 	[dic setBool:ignorePrivateMsg	forKey:@"ignorePrivateMsg"];
+    [dic setBool:ignoreimages       forKey:@"ignoreimages"];
 	[dic setBool:ignoreHighlights	forKey:@"ignoreHighlights"];
 	[dic setBool:ignorePMHighlights forKey:@"ignorePMHighlights"];
 	[dic setBool:ignoreNotices		forKey:@"ignoreNotices"];

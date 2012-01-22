@@ -2201,6 +2201,7 @@ NSString *rawhost;
 
 				g.ignorePublicMsg       = YES;
 				g.ignorePrivateMsg      = YES;
+                g.ignoreimages          = NO;
 				g.ignoreHighlights      = YES;
 				g.ignorePMHighlights    = YES;
 				g.ignoreNotices         = YES;
@@ -3502,6 +3503,7 @@ NSString *rawhost;
 																  @"ignorePMHighlights",
 																  @"ignoreNotices",
 																  @"ignorePublicMsg",
+                                                                  @"ignoreimages",
 																  @"ignorePrivateMsg", nil]];
 
 
@@ -3523,6 +3525,7 @@ NSString *rawhost;
 				return;
 			}
 		}
+        
 		IRCChannel *c = [self findChannel:target];
 		if (PointerIsEmpty(c)) return;
 

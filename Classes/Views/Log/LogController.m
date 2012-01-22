@@ -500,6 +500,11 @@
 	return [self print:line withHTML:NO];
 }
 
+- (BOOL)ignoreimagez:(NSInteger *)nick
+{
+    return NO;
+}
+
 - (BOOL)print:(LogLine *)line withHTML:(BOOL)rawHTML
 {
 	if (NSObjectIsEmpty(line.body)) return NO;
@@ -634,7 +639,7 @@
                 }
             }
         }
-	}
+	}      
 
 	NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
 

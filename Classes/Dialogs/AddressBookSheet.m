@@ -14,6 +14,7 @@
 @synthesize nickname;
 @synthesize ignorePublicMsg;
 @synthesize ignorePrivateMsg;
+@synthesize ignoreimages;
 @synthesize ignoreHighlights;
 @synthesize ignoreNotices;
 @synthesize ignoreCTCP;
@@ -57,6 +58,7 @@
 
 	[ignorePublicMsg	setState:ignore.ignorePublicMsg];
 	[ignorePrivateMsg	setState:ignore.ignorePrivateMsg];
+    [ignoreimages       setState:ignore.ignoreimages];
 	[ignoreHighlights	setState:ignore.ignoreHighlights];
 	[ignoreNotices		setState:ignore.ignoreNotices];
 	[ignoreCTCP			setState:ignore.ignoreCTCP];
@@ -77,6 +79,7 @@
 
 	ignore.ignorePublicMsg		= [ignorePublicMsg state];
 	ignore.ignorePrivateMsg		= [ignorePrivateMsg state];
+    ignore.ignoreimages         = [ignoreimages state];
 	ignore.ignoreHighlights		= [ignoreHighlights state];
 	ignore.ignoreNotices		= [ignoreNotices state];
 	ignore.ignoreCTCP			= [ignoreCTCP state];

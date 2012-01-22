@@ -8,6 +8,7 @@
 
 	IBOutlet NSButton *ignorePublicMsg;
 	IBOutlet NSButton *ignorePrivateMsg;
+    IBOutlet NSButton *ignoreimages;
 	IBOutlet NSButton *ignoreHighlights;
 	IBOutlet NSButton *ignoreNotices;
 	IBOutlet NSButton *ignoreCTCP;
@@ -29,6 +30,7 @@
 @property (nonatomic, retain) NSTextField *nickname;
 @property (nonatomic, retain) NSButton *ignorePublicMsg;
 @property (nonatomic, retain) NSButton *ignorePrivateMsg;
+@property (nonatomic, retain) NSButton *ignoreimages;
 @property (nonatomic, retain) NSButton *ignoreHighlights;
 @property (nonatomic, retain) NSButton *ignoreNotices;
 @property (nonatomic, retain) NSButton *ignoreCTCP;

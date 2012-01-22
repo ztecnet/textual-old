@@ -16,6 +16,7 @@ typedef enum {
 
 	BOOL ignorePublicMsg;
 	BOOL ignorePrivateMsg;
+    BOOL ignoreimages;
 	BOOL ignoreHighlights;
 	BOOL ignoreNotices;
 	BOOL ignoreCTCP;
@@ -30,6 +31,7 @@ typedef enum {
 @property (nonatomic, retain) NSString *hostmask;
 @property (nonatomic, assign) BOOL ignorePublicMsg;
 @property (nonatomic, assign) BOOL ignorePrivateMsg;
+@property (nonatomic, assign) BOOL ignoreimages;
 @property (nonatomic, assign) BOOL ignoreHighlights;
 @property (nonatomic, assign) BOOL ignoreNotices;
 @property (nonatomic, assign) BOOL ignoreCTCP;
