@@ -3507,7 +3507,8 @@ NSString *rawhost;
 																  @"ignorePrivateMsg", nil]];
 
 
-	if ([target isChannelName]) {
+    
+    if ([target isChannelName]) {
 		if ([ignoreChecks ignoreHighlights] == YES) {
 			if (type == LINE_TYPE_ACTION) {
 				type = LINE_TYPE_ACTION_NH;
