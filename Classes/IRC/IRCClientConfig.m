@@ -263,7 +263,7 @@ NSComparisonResult channelDataSort(IRCChannel *s1, IRCChannel *s2, void *context
 	fallbackEncoding    = (([dic integerForKey:@"fallback_encoding"]) ?: NSISOLatin1StringEncoding);
 
     pongInterval    = [dic integerForKey:@"pong_interval"];
-    //timeoutInterval = [dic integerForKey:@"timeout_interval"];
+    timeoutInterval = [dic integerForKey:@"timeout_interval"];
 
 	if ([dic stringForKey:@"leaving_comment"]) {
 		[leavingComment drain];

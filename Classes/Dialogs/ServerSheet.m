@@ -407,7 +407,7 @@
     /* Sockets */
 
     config.pongInterval = pongInterval.integerValue;
-    //config.timeoutInterval = timeoutInterval.integerValue;
+    config.timeoutInterval = timeoutInterval.integerValue;
 
     [client pongTimerIntervalChanged];
 
